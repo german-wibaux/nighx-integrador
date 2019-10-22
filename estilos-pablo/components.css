@@ -120,3 +120,28 @@ body {
     color: #250038;
     box-shadow: 0 0 0 2px rgba(105,255,51,.8);
 }
+
+/* FAQ */
+.faq {
+    border-radius: 0px;
+    border: none;
+    color: #D9D9D9;
+    background-color: #250038;
+    font-family: SegoeUI-Bold, Segoe UI;
+}
+.faq .card-header {
+    border-bottom: 25px solid black;
+    font-size: 30px;
+    font-weight: 400;
+    color: #D9D9D9;
+}
+.faq h2 {
+    font-size: 30px;
+    font-weight: 400;
+}
+.faq img {
+    vertical-align: unset;
+}
+.faq .card-body {
+    font-size: 22px;
+}
