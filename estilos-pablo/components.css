@@ -23,13 +23,13 @@ body {
 .outline-btn:hover {
     color: #250038;
     background: linear-gradient(#B9FF9F 0%, #69FF33 100%);
-    border-color: #69FF33;
+    border: none;
 }
 
 /* Solid button */
 .solid-btn {
     color: #250038;
-    border-color: #69FF33;
+    border: none;
     background: linear-gradient(#B9FF9F 0%, #69FF33 100%);
 }
 .solid-btn:hover {
@@ -100,4 +100,23 @@ body {
     transform: scale(1.2);
     transition: all 0.3s;
     transform-origin: 50% 50%;
+}
+
+/* Inputs */
+.input {
+    border-radius: 0px;
+    background: black;
+    border: none;
+    background-clip: border-box;
+    height: 50px;
+    font-size: 16px;
+    font-family: SegoeUI-Bold, Segoe UI;
+}
+.input::placeholder {
+    color: #9D9D9D;
+}
+.input:focus {
+    background-color: #D9D9D9;
+    color: #250038;
+    box-shadow: 0 0 0 2px rgba(105,255,51,.8);
 }
