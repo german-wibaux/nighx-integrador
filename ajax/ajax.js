@@ -19,6 +19,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
   const htmlButton = document.getElementById('html');
   htmlButton.onclick = function(event) {
     event.preventDefault;
-    render('test.html');
+    render('ajax/test.html');
   };
 });
