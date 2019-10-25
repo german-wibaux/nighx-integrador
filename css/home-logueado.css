@@ -1,7 +1,9 @@
 html, body, .estreno {
+    width: 1920px;
     height: 100%;
 }
-
+/* .body {
+} */
 .estreno {
     width: 1920px;
     height: 966px;
@@ -82,6 +84,9 @@ html, body, .estreno {
 }
 
 /* TIRAS */
+.tiras {
+    width: 1920px;
+}
 .tira {
     height: 410px;
     border-top: 2px solid #69FF33;
@@ -91,6 +96,9 @@ html, body, .estreno {
 
     }
     .sugerencias {
+        background: url(../images/sugerencias.svg);
+    }
+    .recomendaciones {
         background: url(../images/sugerencias.svg);
     }
 
