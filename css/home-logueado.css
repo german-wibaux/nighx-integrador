@@ -1,29 +1,25 @@
-* {
-    padding: 0;
-    margin: 0;
+html, body, header, .estreno {
+    height: 100%;
 }
-/* Img */
-.usuario-logueado-img {
-    width: 100vw;
+
+.estreno {
+    background: url(../images/usuario-logueado.jpg)no-repeat center center;
+    background-size: cover;
 }
-/* NAV */
-.navbar-nav {
-    margin: auto !important;
-}
-.navbar-brand {
-    margin: 0;
-}
-/* nav background*/
+
 .nav-bg {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100vw;
     height: 275px;
     padding-left: 140px;
     padding-right: 140px;
     padding-top: 30px;
     background: linear-gradient(rgb(0, 0, 0) 0%, rgb(37, 0, 56) 44%, rgba(255, 255, 255, 0) 100%);
+}
+
+.navbar-nav {
+    margin: auto !important;
+}
+.navbar-brand {
+    margin: 0;
 }
 
 /* Link en NAV */
@@ -63,7 +59,7 @@
     width: 900px;
     height: 348px;
     left: 142px;
-    top: 600px;
+    top: 700px;
     color: #D9D9D9;
     font-weight: normal;
 }
@@ -75,16 +71,12 @@
     line-height: 55px;
 }
 .estreno-nighx .btn {
-    bottom: 0px;
+    bottom: 20px;
 }
 .estreno-buttons {
     display: grid;
     grid-template-columns: 40% 50%;
 }
-
-
-
-
 
 /* Buttons en gral */
 .button {
@@ -99,40 +91,6 @@
     height: 62px;
 }
 
-/* Outline button */
-.outline-btn {
-    color: #D9D9D9;
-    border-color: #69FF33;
-}
-.outline-btn:hover {
-    color: #250038;
-    background: linear-gradient(#B9FF9F 0%, #69FF33 100%);
-    border: none;
-}
-
-/* Solid button */
-.solid-btn {
-    color: #250038;
-    border: none;
-    background: linear-gradient(#B9FF9F 0%, #69FF33 100%);
-}
-.solid-btn:hover {
-    border-color: #69FF33;
-    color: #250038;
-}
-
-/* Icon gray button */
-.icon-gray-btn {
-    color: #250038;
-    border-color: #69FF33;
-    background: #867291;
-}
-.icon-gray-btn:hover {
-    color: #D9D9D9;
-    background: #867291;
-    border-color: #69FF33;
-}
-
 /* Icon violet buton */
 .icon-violet-btn {
     position: absolute;
@@ -141,70 +99,16 @@
     border-color: #69FF33;
 }
 .icon-violet-btn:hover {
-    color: #D9D9D9;
-    background: rgba(41,6,60,.5);
+    background: rgba(41,6,60,1);
     border-color: #69FF33;
 }
 .icon-violet-btn .btn-text {
     position: relative;
     right: -30px;
 }
-
 /* iconos en botones */
 .icon {
     position: absolute;
     left: 20px;
     padding-right: 30px;
-}
-/* .btn .icon-scale {
-    transform: scale(1);
-    transition: all 0.3s;
-}
-.btn:hover .icon-scale {
-    transform: scale(1.2);
-    transition: all 0.3s;
-} */
-
-/* Inputs */
-.input {
-    border-radius: 0px;
-    background: black;
-    border: none;
-    background-clip: border-box;
-    height: 50px;
-    font-size: 16px;
-    font-family: SegoeUI-Bold, Segoe UI;
-}
-.input::placeholder {
-    color: #9D9D9D;
-}
-.input:focus {
-    background-color: #D9D9D9;
-    color: #250038;
-    box-shadow: 0 0 0 2px rgba(105,255,51,.8);
-}
-
-/* FAQ */
-.faq {
-    border-radius: 0px;
-    border: none;
-    color: #D9D9D9;
-    background-color: #250038;
-    font-family: SegoeUI-Bold, Segoe UI;
-}
-.faq .card-header {
-    border-bottom: 25px solid black;
-    font-size: 30px;
-    font-weight: 400;
-    color: #D9D9D9;
-}
-.faq h2 {
-    font-size: 30px;
-    font-weight: 400;
-}
-.faq img {
-    vertical-align: unset;
-}
-.faq .card-body {
-    font-size: 22px;
 }
