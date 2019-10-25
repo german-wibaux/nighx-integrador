@@ -1,13 +1,16 @@
-html, body, header, .estreno {
+html, body, .estreno {
     height: 100%;
 }
 
 .estreno {
+    width: 1920px;
+    height: 966px;
     background: url(../images/usuario-logueado.jpg)no-repeat center center;
-    background-size: cover;
+    background-size: 100%;
 }
 
 .nav-bg {
+    width: 1920px;
     height: 275px;
     padding-left: 140px;
     padding-right: 140px;
@@ -59,7 +62,7 @@ html, body, header, .estreno {
     width: 900px;
     height: 348px;
     left: 142px;
-    top: 700px;
+    top: 550px;
     color: #D9D9D9;
     font-weight: normal;
 }
@@ -77,6 +80,19 @@ html, body, header, .estreno {
     display: grid;
     grid-template-columns: 40% 50%;
 }
+
+/* TIRAS */
+.tira {
+    height: 410px;
+    border-top: 2px solid #69FF33;
+}
+    .continuar {
+        background: url(../images/sugerencias.svg);
+
+    }
+    .sugerencias {
+        background: url(../images/sugerencias.svg);
+    }
 
 /* Buttons en gral */
 .button {
