@@ -1,62 +1,60 @@
-html, body, .estreno {
-    width: 1920px;
+html, body {
     height: 100%;
 }
 .body {
     overflow: hidden;
 }
-.estreno {
+/* Home logueado background */
+.background {
     width: 1920px;
     height: 966px;
     background: url(../images/usuario-logueado.jpg)no-repeat center center;
     background-size: 100%;
 }
 
-.nav-bg {
-    width: 1920px;
-    height: 275px;
-    padding-left: 140px;
-    padding-right: 140px;
-    padding-top: 30px;
-    background: linear-gradient(rgb(0, 0, 0) 0%, rgb(37, 0, 56) 44%, rgba(255, 255, 255, 0) 100%);
-}
-
+/* NAV */
 .navbar-nav {
     margin: auto !important;
 }
 .navbar-brand {
     margin: 0;
 }
-
-/* Link en NAV */
-.link {
-    font-family: SegoeUI-Bold, Segoe UI;
-    font-size: 25px;
-    font-weight: 400;
-    color: #69FF33;
-    border-bottom: 2px solid transparent;
+.nav-bg {
+    width: 1920px;
+    height: 275px;
+    padding-left: 140px;
+    padding-right: 140px;
+    background: linear-gradient(rgb(0, 0, 0) 0%, rgb(37, 0, 56) 44%, rgba(255, 255, 255, 0) 100%);
 }
-.link:hover {
-    color: #D9D9D9;
-    text-decoration: none;
-}
-.link:focus {
-    color: #D9D9D9;
-    border-bottom: 2px solid #D9D9D9;
-}
-.nav-item {
-    padding-right: 60px;
-}
-/* Icono en NAV */
-.nav-icon {
-    padding-right: 10px;
-}
-.icon-img {
-    border: 2px solid transparent;
-}
-.icon-img:hover {
-    border: 2px solid #69FF33;
-}
+    /* Link en NAV */
+    .link {
+        font-family: SegoeUI-Bold, Segoe UI;
+        font-size: 25px;
+        font-weight: 400;
+        color: #69FF33;
+        border-bottom: 2px solid transparent;
+    }
+    .link:hover {
+        color: #D9D9D9;
+        text-decoration: none;
+    }
+    .link:focus {
+        color: #D9D9D9;
+        border-bottom: 2px solid #D9D9D9;
+    }
+    .nav-item {
+        padding-right: 60px;
+    }
+    /* Icono en NAV */
+    .nav-icon {
+        padding-right: 10px;
+    }
+    .icon-img {
+        border: 2px solid transparent;
+    }
+    .icon-img:hover {
+        border: 2px solid #69FF33;
+    }
 
 /* Estreno Nighx */
 .estreno-nighx {
@@ -82,6 +80,12 @@ html, body, .estreno {
     display: grid;
     grid-template-columns: 40% 50%;
 }
+/* Viernes */
+.viernes {
+    position: absolute;
+    top: 275px;
+    right: 0px;
+}
 
 /* TIRAS */
 .tiras {
@@ -99,76 +103,85 @@ html, body, .estreno {
     font-weight: bolder;
     font-size: 25px;
 }
-.tira {
-    height: 410px;
-    border-top: 2px solid #69FF33;
-    background: linear-gradient(#250038, #000000);
-    overflow: hidden;
-}
-.cards {
-    position: relative;
-    height: 291px;
-    width: 3110px;
-    
-}
-
-.scroll-right {
-    transform: translateX(-1220px);
-    transition: transform 1s ease;
-}
-.scroll-left {
-    transform: translateX(0px);
-    transition: transform 1s ease;
-}
-
-.card-movie {
-    width: 417px;
-    border-radius: 0px;
-    border: 2px solid #250038;
-}
-.card-movie .card-body {
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 13px;
-    padding-right: 10px;
-    padding-left: 16px;
-}
-.card-movie .card-body img {
-    position: relative;
-    top: -4px;
-    left: -9px;
-}
-.card-img-top {
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-}
-
-.tira-top {
-    padding: 0 140px 0 140px;
-}
-.arrows button {
-    width: 75px;
-    height: 75px;
-    border-radius: 0px;
-    background: transparent;
-    border: none;
-}
-.arrows button:hover {
-    background: transparent;
-}
-.arrows button:focus {
-    box-shadow: none;
-}
-.arrow-left {
-    transform: rotate(180deg);
-}
-.arrow-gray {
-    filter: grayscale(100%);
-}
-.arrow-green {
-    filter: grayscale(0%);
-}
+    /* Botón Flechas */
+    .arrows button {
+        width: 75px;
+        height: 75px;
+        border-radius: 0px;
+        background: transparent;
+        border: none;
+    }
+    .arrows button:hover {
+        background: transparent;
+    }
+    .arrows button:focus {
+        box-shadow: none;
+    }
+    .arrow-left {
+        transform: rotate(180deg);
+    }
+    .arrow-gray {
+        filter: grayscale(100%) brightness(0.5);
+    }
+    .arrow-green {
+        filter: grayscale(0%);
+    }
+    /* Tira */
+    .tira-top {
+        padding: 0 140px 0 140px;
+    }
+    .tira {
+        height: 410px;
+        border-top: 2px solid #69FF33;
+        background: linear-gradient(#250038, #000000);
+        overflow: hidden;
+    }
+    /* Tira scroll */
+    .scroll-right {
+        transform: translateX(-1220px);
+        transition: transform 1s ease;
+    }
+    .scroll-left {
+        transform: translateX(0px);
+        transition: transform 1s ease;
+    }
+    /* Movie Cards */
+    .cards {
+        position: relative;
+        height: 291px;
+        width: 3110px;
+        
+    }
+    .card-movie {
+        width: 417px;
+        border-radius: 0px;
+        border: 2px solid #250038;
+    }
+    .card-movie img {
+        transform: scale(1);
+        transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.6s;
+    }
+    .card-movie:hover img {
+        transform: scale(1.02);
+        transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.6s;
+    }
+    .card-movie .card-body {
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 13px;
+        padding-right: 10px;
+        padding-left: 16px;
+    }
+    .card-movie .card-body img {
+        position: relative;
+        top: -4px;
+        left: -9px;
+    }
+    .card-img-top {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
 
 
 /* Buttons en gral */
