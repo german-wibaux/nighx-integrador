@@ -50,35 +50,297 @@
         </div>
     </header>
     
-        <div class="estreno-nighx">
-            <h1>Estreno Nighx</h1>
-            <p>Ed y Lorraine Warren tratan de encerrar bajo llave a Annabelle, una muñeca poseída. Como demonólogos la colocaran en una vitrina bendecida como medida de seguridad.</p>
-            <div class="estreno-buttons">
-                <div>
-                    <button type="button" class="btn btn-outline-primary btn-lg button icon-violet-btn"><span class="icon"><img class="icon-scale" src="./images/icons/play.png" alt=""></span><span class="btn-text">Reproducir</span></button>
+    <div class="estreno-nighx">
+        <h1>Estreno Nighx</h1>
+        <p>Ed y Lorraine Warren tratan de encerrar bajo llave a Annabelle, una muñeca poseída. Como demonólogos la colocaran en una vitrina bendecida como medida de seguridad.</p>
+        <div class="estreno-buttons">
+            <div>
+                <button type="button" class="btn btn-outline-primary btn-lg button icon-violet-btn"><span class="icon"><img class="icon-scale" src="./images/icons/play.png" alt=""></span><span class="btn-text">Reproducir</span></button>
+            </div>
+            <div>
+                <button type="button" class="btn btn-outline-primary btn-lg button icon-violet-btn"><span class="icon"><img class="icon-scale" src="./images/icons/trailer.svg" alt=""></span><span class="btn-text">Trailer</span></button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="tiras">
+        <div class="tira">
+            <div class="tira-top d-flex justify-content-between">
+                <h1>Continuar viendo</h1>
+                <div class="btn-group arrows" role="group">
+                    <button id="lContinuar" type="button" class="btn btn-secondary arrow-left"><img
+                            id="laContinuar" class="arrow-gray" src="./images/icons/arrow-icon.svg" alt=""></button>
+                    <button id="rContinuar" type="button" class="btn btn-secondary arrow-right"><img
+                            id="raContinuar" src="./images/icons/arrow-icon.svg" alt=""></button>
                 </div>
-                <div>
-                    <button type="button" class="btn btn-outline-primary btn-lg button icon-violet-btn"><span class="icon"><img class="icon-scale" src="./images/icons/trailer.svg" alt=""></span><span class="btn-text">Trailer</span></button>
+            </div>
+            <div id="continuar" class="cards d-flex flex-row justify-content-between overflow-hidden">
+                <div class="card card-movie">
+                    <img src="images/cards/movie8.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" style="background: black;">
+                        <div>
+                            <h5 class="card-title">Martes 13 Jason Vuelve</h5>
+                        </div>
+                        <div>
+                            <a href="#"><img src="./images/icons/info-icon.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-movie">
+                    <img src="images/cards/movie9.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" style="background: black;">
+                        <div>
+                            <h5 class="card-title">Bastardos Sin Gloria</h5>
+                        </div>
+                        <div>
+                            <a href="#"><img src="./images/icons/info-icon.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-movie">
+                    <img src="images/cards/movie10.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" style="background: black;">
+                        <div>
+                            <h5 class="card-title">Aladín</h5>
+                        </div>
+                        <div>
+                            <a href="#"><img src="./images/icons/info-icon.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-movie">
+                    <img src="images/cards/movie11.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" style="background: black;">
+                        <div>
+                            <h5 class="card-title">Avatar</h5>
+                        </div>
+                        <div>
+                            <a href="#"><img src="./images/icons/info-icon.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-movie">
+                    <img src="images/cards/movie12.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" style="background: black;">
+                        <div>
+                            <h5 class="card-title">13 Razones</h5>
+                        </div>
+                        <div>
+                            <a href="#"><img src="./images/icons/info-icon.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-movie">
+                    <img src="images/cards/movie13.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" style="background: black;">
+                        <div>
+                            <h5 class="card-title">El Rey León</h5>
+                        </div>
+                        <div>
+                            <a href="#"><img src="./images/icons/info-icon.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-movie">
+                    <img src="images/cards/movie14.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" style="background: black;">
+                        <div>
+                            <h5 class="card-title">La Llamada 3</h5>
+                        </div>
+                        <div>
+                            <a href="#"><img src="./images/icons/info-icon.svg" alt=""></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <div class="tiras">
-            <div class="tira continuar">
-
+        
+        <div class="tira">
+            <div class="tira-top d-flex justify-content-between">
+                <h1>Sugerencias personalizadas</h1>
+                <div class="btn-group arrows" role="group">
+                    <button id="lSugerencias" type="button" class="btn btn-secondary arrow-left"><img class="arrow-gray" id="laSugerencias" src="./images/icons/arrow-icon.svg" alt=""></button>
+                    <button id="rSugerencias" type="button" class="btn btn-secondary arrow-right"><img id="raSugerencias" src="./images/icons/arrow-icon.svg" alt=""></button>
+                </div>
             </div>
-            <div class="tira sugerencias">
-
-            </div>
-            <div class="tira recomendaciones">
-
+            <div id="sugerencias" class="cards d-flex flex-row justify-content-between overflow-hidden">
+                <div class="card card-movie">
+                    <img src="images/cards/movie1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" style="background: black;">
+                        <div>
+                            <h5 class="card-title">Big Mouth</h5>
+                        </div>
+                        <div>
+                            <a href="#"><img src="./images/icons/info-icon.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-movie">
+                    <img src="images/cards/movie2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" style="background: black;">
+                        <div>
+                            <h5 class="card-title">Mad Max</h5>
+                        </div>
+                        <div>
+                            <a href="#"><img src="./images/icons/info-icon.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-movie">
+                    <img src="images/cards/movie3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" style="background: black;">
+                        <div>
+                            <h5 class="card-title">El Pionero</h5>
+                        </div>
+                        <div>
+                            <a href="#"><img src="./images/icons/info-icon.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-movie">
+                    <img src="images/cards/movie4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" style="background: black;">
+                        <div>
+                            <h5 class="card-title">Sin City</h5>
+                        </div>
+                        <div>
+                            <a href="#"><img src="./images/icons/info-icon.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-movie">
+                    <img src="images/cards/movie5.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" style="background: black;">
+                        <div>
+                            <h5 class="card-title">La Llamada 3</h5>
+                        </div>
+                        <div>
+                            <a href="#"><img src="./images/icons/info-icon.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-movie">
+                    <img src="images/cards/movie6.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" style="background: black;">
+                        <div>
+                            <h5 class="card-title">Martes 13</h5>
+                        </div>
+                        <div>
+                            <a href="#"><img src="./images/icons/info-icon.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-movie">
+                    <img src="images/cards/movie7.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" style="background: black;">
+                        <div>
+                            <h5 class="card-title">Bastardos Sin Gloria</h5>
+                        </div>
+                        <div>
+                            <a href="#"><img src="./images/icons/info-icon.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        
+        <div class="tira">
+            <div class="tira-top d-flex justify-content-between">
+                <h1>Recomendaciones destacadas</h1>
+                <div class="btn-group arrows" role="group">
+                    <button id="lRecomendaciones" type="button" class="btn btn-secondary arrow-left"><img
+                            id="laRecomendaciones" class="arrow-gray" src="./images/icons/arrow-icon.svg" alt=""></button>
+                    <button id="rRecomendaciones" type="button" class="btn btn-secondary arrow-right"><img
+                            id="raRecomendaciones" src="./images/icons/arrow-icon.svg" alt=""></button>
+                </div>
+            </div>
+            <div id="recomendaciones" class="cards d-flex flex-row justify-content-between overflow-hidden">
+                <div class="card card-movie">
+                    <img src="images/cards/movie15.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" style="background: black;">
+                        <div>
+                            <h5 class="card-title">13 Razones</h5>
+                        </div>
+                        <div>
+                            <a href="#"><img src="./images/icons/info-icon.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-movie">
+                    <img src="images/cards/movie16.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" style="background: black;">
+                        <div>
+                            <h5 class="card-title">El Rey León</h5>
+                        </div>
+                        <div>
+                            <a href="#"><img src="./images/icons/info-icon.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-movie">
+                    <img src="images/cards/movie17.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" style="background: black;">
+                        <div>
+                            <h5 class="card-title">Aladín</h5>
+                        </div>
+                        <div>
+                            <a href="#"><img src="./images/icons/info-icon.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-movie">
+                    <img src="images/cards/movie18.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" style="background: black;">
+                        <div>
+                            <h5 class="card-title">La Casa de Papel</h5>
+                        </div>
+                        <div>
+                            <a href="#"><img src="./images/icons/info-icon.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-movie">
+                    <img src="images/cards/movie3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" style="background: black;">
+                        <div>
+                            <h5 class="card-title">El Pionero</h5>
+                        </div>
+                        <div>
+                            <a href="#"><img src="./images/icons/info-icon.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-movie">
+                    <img src="images/cards/movie1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" style="background: black;">
+                        <div>
+                            <h5 class="card-title">Big Mouth</h5>
+                        </div>
+                        <div>
+                            <a href="#"><img src="./images/icons/info-icon.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-movie">
+                    <img src="images/cards/movie7.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" style="background: black;">
+                        <div>
+                            <h5 class="card-title">Bastardos Sin Gloria</h5>
+                        </div>
+                        <div>
+                            <a href="#"><img src="./images/icons/info-icon.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     
     
     
     <script src="./js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="./js/movie-scroll.js"></script>
     <script src="js/ajax.js"></script>
     
 </body>

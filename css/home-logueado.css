@@ -2,8 +2,9 @@ html, body, .estreno {
     width: 1920px;
     height: 100%;
 }
-/* .body {
-} */
+.body {
+    overflow: hidden;
+}
 .estreno {
     width: 1920px;
     height: 966px;
@@ -30,7 +31,6 @@ html, body, .estreno {
 /* Link en NAV */
 .link {
     font-family: SegoeUI-Bold, Segoe UI;
-    /* font-family: Helvetica, SegoeUI-Bold, Segoe UI; */
     font-size: 25px;
     font-weight: 400;
     color: #69FF33;
@@ -86,21 +86,90 @@ html, body, .estreno {
 /* TIRAS */
 .tiras {
     width: 1920px;
+    font-family: SegoeUI-Bold, Segoe UI;
+    color: #D9D9D9;
+}
+.tiras h1 {
+    position: relative;
+    top: 20px;
+    font-weight: bolder;
+    font-size: 25px;
+}
+.tiras h5 {
+    font-weight: bolder;
+    font-size: 25px;
 }
 .tira {
     height: 410px;
     border-top: 2px solid #69FF33;
+    background: linear-gradient(#250038, #000000);
+    overflow: hidden;
 }
-    .continuar {
-        background: url(../images/sugerencias.svg);
+.cards {
+    position: relative;
+    height: 291px;
+    width: 3110px;
+    
+}
 
-    }
-    .sugerencias {
-        background: url(../images/sugerencias.svg);
-    }
-    .recomendaciones {
-        background: url(../images/sugerencias.svg);
-    }
+.scroll-right {
+    transform: translateX(-1220px);
+    transition: transform 1s ease;
+}
+.scroll-left {
+    transform: translateX(0px);
+    transition: transform 1s ease;
+}
+
+.card-movie {
+    width: 417px;
+    border-radius: 0px;
+    border: 2px solid #250038;
+}
+.card-movie .card-body {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 13px;
+    padding-right: 10px;
+    padding-left: 16px;
+}
+.card-movie .card-body img {
+    position: relative;
+    top: -4px;
+    left: -9px;
+}
+.card-img-top {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.tira-top {
+    padding: 0 140px 0 140px;
+}
+.arrows button {
+    width: 75px;
+    height: 75px;
+    border-radius: 0px;
+    background: transparent;
+    border: none;
+}
+.arrows button:hover {
+    background: transparent;
+}
+.arrows button:focus {
+    box-shadow: none;
+}
+.arrow-left {
+    transform: rotate(180deg);
+}
+.arrow-gray {
+    filter: grayscale(100%);
+}
+.arrow-green {
+    filter: grayscale(0%);
+}
+
 
 /* Buttons en gral */
 .button {
