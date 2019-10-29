@@ -13,10 +13,11 @@
 </head>
 <body>
     <header>
+        <!-- NAV -->
         <nav class="navbar navbar-expand-lg nav-bg fixed-top">
             
             <a class="navbar-brand" href="#"><img src="./images/icons/logo.svg" alt=""></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"><img src="./images/icons/hamburg.svg" alt=""></span></button>
             
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <!-- Links -->
@@ -39,19 +40,59 @@
                 </ul>
                 
                 <!-- Icons -->
-                <div class="btn-group dropleft">
+                <div class="icons">
+                    <!-- Search -->
+                    <div class="btn-group dropleft">
                         <a data-toggle="dropdown" class="nav-icon" href="#"><img class="icon-img" src="./images/icons/search-icon.svg" alt=""></a>
-                    <div class="dropdown-menu dropdown-search">
-                        <form>
-                            <div class="form-group form-search">
-                                <input type="text" class="form-control form-control-sm input" id="search" placeholder="Título, personas, género">
-                            </div>
-                        </form>
+                        <div class="dropdown-menu dropdown-search">
+                            <form>
+                                <div class="form-group form-search">
+                                    <input type="text" class="form-control form-control-sm input" id="search" placeholder="Título, personas, género">
+                                </div>
+                            </form>
+                        </div>
                     </div>
-                </div>
-                <a class="nav-icon" href="#"><img class="icon-img" src="./images/icons/cast-icon.svg" alt=""></a>
-                <a class="nav-icon" href="#"><img class="icon-img" src="./images/icons/bell-icon.svg" alt=""></a>
-                <a class="nav-icon" href="#"><img class="icon-img" src="./images/icons/user-icon.svg" alt=""></a>
+                    <!-- Cast -->
+                    <div class="btn-group">
+                        <a data-toggle="dropdown" class="nav-icon" href="#"><img class="icon-img" src="./images/icons/cast-icon.svg" alt=""></a>
+                        <div class="dropdown-menu cast">
+                            <button class="dropdown-item" type="button">Smart TV</button>
+                            <button class="dropdown-item" type="button">Tablet</button>
+                            <button class="dropdown-item" type="button">Celular</button>
+                        </div>
+                    </div>
+                    <!-- Notificaciones -->
+                    <div class="btn-group">
+                        <a data-toggle="dropdown" class="nav-icon" href="#"><img class="icon-img" src="./images/icons/bell-notif-icon.svg" alt=""></a>
+                        <div class="dropdown-menu notifications">
+                            <div class="notif">
+                                <a href="#"><img src="./images/notif/notif1.png" alt=""></a>
+                            </div>
+                            <div class="dropdown-divider"></div>
+                            <div class="notif">
+                                <a href="#"><img src="./images/notif/notif2.png" alt=""></a>
+                            </div>
+                            <div class="dropdown-divider"></div>
+                            <div class="notif">
+                                <a href="#"><img src="./images/notif/notif3.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- User -->
+                    <div class="btn-group">
+                        <a data-toggle="dropdown" class="nav-icon" href="#"><img class="icon-img" src="./images/icons/user-icon.svg" alt=""></a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <button class="dropdown-item d-flex justify-content-between" type="button">Silvia<span><img src="./images/icons/user-dropdown-icon.png" alt=""></span></button>
+                            <button class="dropdown-item d-flex justify-content-between" type="button">Casimiro<span><img src="./images/icons/user-dropdown-icon.png" alt=""></span></button>
+                            <button class="dropdown-item d-flex justify-content-between" type="button">Ernesto<span><img src="./images/icons/user-dropdown-icon.png" alt=""></span></button>
+                            <button class="dropdown-item" type="button">Administrar perfiles</button>
+                            <div class="dropdown-divider"></div>
+                            <button class="dropdown-item" type="button">Cuenta</button>
+                            <button class="dropdown-item" type="button">Centro de ayuda</button>
+                            <button class="dropdown-item" type="button">Cerrar sesión</button>
+                        </div>
+                    </div>
+                </div>                           
             </div>
             
         </nav>
@@ -73,19 +114,16 @@
             </div>
         </div>
     </div>
-    <div class="viernes">
-        <a href="#"><img src="./images/icons/viernes.svg" alt=""></a>
-    </div>
     
+    <!-- TIRAS -->
     <div class="tiras">
+        <!-- Continuar -->
         <div class="tira">
             <div class="tira-top d-flex justify-content-between">
                 <h1>Continuar viendo</h1>
                 <div class="btn-group arrows" role="group">
-                    <button id="lContinuar" type="button" class="btn btn-secondary arrow-left"><img
-                            id="laContinuar" class="arrow-gray" src="./images/icons/arrow-icon.svg" alt=""></button>
-                    <button id="rContinuar" type="button" class="btn btn-secondary arrow-right"><img
-                            id="raContinuar" src="./images/icons/arrow-icon.svg" alt=""></button>
+                    <button id="lContinuar" type="button" class="btn btn-secondary arrow-left"><img id="laContinuar" class="arrow-gray" src="./images/icons/arrow-icon.svg" alt=""></button>
+                    <button id="rContinuar" type="button" class="btn btn-secondary arrow-right"><img id="raContinuar" src="./images/icons/arrow-icon.svg" alt=""></button>
                 </div>
             </div>
             <div id="continuar" class="cards d-flex flex-row justify-content-between overflow-hidden">
@@ -169,6 +207,7 @@
             </div>
         </div>
         
+        <!-- Sugerencias -->
         <div class="tira">
             <div class="tira-top d-flex justify-content-between">
                 <h1>Sugerencias personalizadas</h1>
@@ -258,14 +297,13 @@
             </div>
         </div>
         
+        <!-- Recomendaciones -->
         <div class="tira">
             <div class="tira-top d-flex justify-content-between">
                 <h1>Recomendaciones destacadas</h1>
                 <div class="btn-group arrows" role="group">
-                    <button id="lRecomendaciones" type="button" class="btn btn-secondary arrow-left"><img
-                            id="laRecomendaciones" class="arrow-gray" src="./images/icons/arrow-icon.svg" alt=""></button>
-                    <button id="rRecomendaciones" type="button" class="btn btn-secondary arrow-right"><img
-                            id="raRecomendaciones" src="./images/icons/arrow-icon.svg" alt=""></button>
+                    <button id="lRecomendaciones" type="button" class="btn btn-secondary arrow-left"><img id="laRecomendaciones" class="arrow-gray" src="./images/icons/arrow-icon.svg" alt=""></button>
+                    <button id="rRecomendaciones" type="button" class="btn btn-secondary arrow-right"><img id="raRecomendaciones" src="./images/icons/arrow-icon.svg" alt=""></button>
                 </div>
             </div>
             <div id="recomendaciones" class="cards d-flex flex-row justify-content-between overflow-hidden">
@@ -350,7 +388,25 @@
         </div>
     </div>
     
-    
+    <!-- FOOTER -->
+    <footer>
+        <div class="links d-flex flex-column justify-content-around">
+            <a href="#">Inicio</a>
+            <a href="#">Ayuda</a>
+            <a href="#">Planes</a>
+            <div>
+                <img src="./images/icons/logo-footer.png" alt="">
+            </div>
+            <div>
+                <img src="./images/icons/social-footer.svg" alt="">
+            </div>
+        </div>
+        <div class="copyright">
+            <div>
+                © 2019 by Nighx
+            </div>
+        </div>
+    </footer>
     
     <script src="./js/jquery-3.4.1.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
