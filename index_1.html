@@ -31,7 +31,7 @@
 		padding: 0;
 	}
 	.home_inicio_Class {
-		position: absolute;
+		/* position: absolute; */
 		box-sizing: border-box;
 		background: #E5E5E5;
 		width: 1920px;
@@ -42,6 +42,7 @@
 		overflow: hidden;
 		margin: 0;
 		padding: 0;
+		border-bottom: 12px solid #69FF33;
 		--web-view-name: home_inicio;
 		--web-view-id: home_inicio;
 		--web-enable-deep-linking: true;
@@ -181,76 +182,269 @@
 		color: rgba(217,217,217,1);
 	}
 	.section-two {
-		background: url('images/fondo_index.jpg');
+		background: url('images/fondoServicios.jpg') center no-repeat;
+		height: 800px;
+		width: 1920px;
+		border-bottom: 12px solid #69FF33;
+		background-size: cover;
+		margin: 0;
+		max-width: 1920px;
+	}
+	.section-distint {
+		background: url('images/fondoServicios.jpg') center no-repeat;
+		height: 1171px;
+		width: 1920px;
+		background-size: cover;
+		margin: 0;
+		max-width: 1920px;
+	}
+	button {
+		border-radius: 0px !important;
+		border: 4px solid transparent !important;
+		font-size: 22px !important;
+		padding-bottom: 0.8rem !important;
+		letter-spacing: 1.5px;
+		width: 180px;
+		height: 50px;
+		font-family: Sans-Serif;
+		font-weight: 700 !important;
+		padding: 0 !important;
+		text-align: center !important;
+	}
+	.crea_lista {
+		background: url('images/texto_creaTuLista.jpg') center no-repeat;
+	}
+
+	.smart {
+		background: url('images/fondo-smart.jpg') center no-repeat;
+	}
+
+	.beneficio {
+		background: url('images/fondo-beneficio.jpg') center no-repeat;
+	}
+
+	.crea_texto {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+
+	.smart-text {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+
+	.texto-beneficio {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+
+	.crea_texto > span:nth-child(1) {
+		position: relative;
+		overflow: visible;
+		white-space: nowrap;
+		line-height: 75px;
+		text-align: center;
+		font-family: Helvetica LT Std;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 64px;
+		color: rgba(217,217,217,1);
+		letter-spacing: 0.2px;
+	}
+
+	.crea_texto > span:nth-child(2) {
+		position: relative;
+		overflow: hidden;
+		width: 545px;
+		line-height: 55px;
+		text-align: center;
+		font-family: Helvetica LT Std;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 33px;
+		color: rgba(217,217,217,1);
+	}
+
+	.smart-text > span:nth-child(1) {
+		position: relative;
+		overflow: visible;
+		white-space: nowrap;
+		line-height: 75px;
+		text-align: center;
+		font-family: Helvetica LT Std;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 64px;
+		color: rgba(217,217,217,1);
+		letter-spacing: 0.2px;
+	}
+
+	.smart-text > span:nth-child(2) {
+		position: relative;
+		overflow: hidden;
+		width: 545px;
+		line-height: 55px;
+		text-align: center;
+		font-family: Helvetica LT Std;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 33px;
+		color: rgba(217,217,217,1);
+	}
+
+	.texto-beneficio > span:nth-child(1) {
+		position: relative;
+		overflow: visible;
+		white-space: nowrap;
+		line-height: 75px;
+		text-align: center;
+		font-family: Helvetica LT Std;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 64px;
+		color: rgba(217,217,217,1);
+		letter-spacing: 0.2px;
+	}
+
+	.texto-beneficio > span:nth-child(2) {
+		position: relative;
+		overflow: hidden;
+		width: 545px;
+		line-height: 55px;
+		text-align: center;
+		font-family: Helvetica LT Std;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 33px;
+		color: rgba(217,217,217,1);
+	}
+
+	/* Outline button */
+	.outline-btn {
+		color: #D9D9D9;
+		border-color: #69FF33 !important;
+	}
+	.btn-primary {
+		background-color: transparent;
+	}
+	.fixed-top {
+		display: flex;
+		justify-content: space-between;
+		background: linear-gradient(rgb(0, 0, 0) 0%, rgb(37, 0, 56) 44%, rgba(255, 255, 255, 0) 100%);
+		height: 275px;
+		padding-left: 140px;
+    	padding-right: 140px;
+	}
+	/* FOOTER */
+	footer {
+		width: 1920px;
+		background: black;
+		border-top: 12px solid #840000;
+		text-align: center;
+		color: #707070;
+	}
+	footer .links {
+		height: 430px;
+		font-size: 18px;
+		padding: 20px 0;
+	}
+	.links a {
+		/* text-decoration: none; */
+		color: #707070;
+	}
+	footer .copyright {
+		height: 100px;
+		border-top: 2px solid #69FF33;
+		padding: 35px 0;
+		font-size: 22px;
 	}
 </style>
 </head>
 <body>
- <div id="home_inicio" class="home_inicio_Class">
-	<!-- <div class="Componente_2_Class">
-		<div class="Button_Outline_Hover_Class">
-			<div class="Grupo_499_Class">
-				<div class="probarAhora probarAhora_Class">
-					<svg class="bg">
-						<linearGradient id="LinearGradientFill1" spreadMethod="pad" x1="0.5" x2="0.5" y1="0" y2="1">
-							<stop offset="0" stop-color="#d4fcc6" stop-opacity="1"></stop>
-							<stop offset="0.361" stop-color="#79ff4a" stop-opacity="1"></stop>
-							<stop offset="1" stop-color="#6fff3c" stop-opacity="1"></stop>
-							<stop offset="1" stop-color="#a7ff87" stop-opacity="1"></stop>
-						</linearGradient>
-						<rect fill="url(#LinearGradientFill1)" class="bg_Class" rx="0" ry="0" x="0" y="0" width="400" height="120">
-						</rect>
-					</svg>
-					<div class="Probar_ahora_Class">
-						<span>Probar ahora</span>
-					</div>
+ 	<div id="home_inicio" class="home_inicio_Class">
+
+		<nav class="navbar navbar-expand-lg nav-bg fixed-top">
+            
+				<a class="navbar-brand" href="#"><img src="./images/icons/logo.svg" alt=""></a>
+
+					<button id="html" class="btn btn-primary outline-btn" >Ingresar</button>
+				
 				</div>
-			</div>
+				
+			</nav>
+	</div>
+	<div class="row section-two " >
+		<div class="col-6 crea_lista" >
+
 		</div>
-	</div>
-	<div class="ingresar ingresar_Class">
-		<div class="Componente_2_A13_Group_4_Class">
-			<div class="Button_Outline_Text_Icon_Defau_Class">
-				<svg class="bg_A13_Rectangle_2">
-					<rect fill="transparent" stroke="rgba(105,255,51,1)" stroke-width="2px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" class="bg_A13_Rectangle_2_Class" rx="0" ry="0" x="0" y="0" width="178" height="52">
-					</rect>
-				</svg>
-			</div>
-			<div class="Ingresar_Class">
-				<span>Ingresar</span>
-			</div>
+		<div class="col-6 crea_texto" >
+						
+			<span>Crea tu lista<br/>de favoritos</span>
+			<span>Podrás transmitir más de 10,000 episodios de sus series favoritas, programas de horario estelar y nocturno de Nighx para ponerse al día con éxitos clásicos.</span>
+					
 		</div>
+
+	</div> 
+	<div class="row section-two" >
+		<div class="col-6 smart-text " >
+				<span>Disfruta en<br/>tu Smart Tv</span>
+				<span>Puedes ver en smart TV, PlayStation, 
+						Xbox, Chromecast, Apple TV, reproductores 
+						de Blu-ray y más. Elegir donde ver 
+						ahora es tu decisión</span>
+		</div>
+		<div class="col-6 smart " >
+
+		</div>
+	
 	</div>
-	<div class="logo logo_Class">
-		<svg class="logo_A13_Rectangle_3">
-			<pattern elementId="logo_A13_Rectangle_4" id="logo_A13_Rectangle_4_pattern" x="0" y="0" width="100%" height="100%">
-				<image x="0" y="0" width="100%" height="100%" href="logo_A13_Rectangle_4_pattern.png" xlink:href="logo_A13_Rectangle_4_pattern.png"></image>
-			</pattern>
-			<rect fill="url(#logo_A13_Rectangle_4_pattern)" class="logo_A13_Rectangle_3_Class" rx="0" ry="0" x="0" y="0" width="228" height="88">
-			</rect>
-		</svg>
+	<div class="row section-two" >
+		<div class="col-6 beneficio " >
+
+		</div>
+		<div class="col-6 texto-beneficio" >
+				<span>Calificanos para<br/>obtener beneficios</span>
+				<span>Calificando cualquiera de nuestros 
+						productos, participas de sorteos por 
+						descuentos promocionales pensados de  
+						acuerdo a tus referencias.</span>
+		</div>
+	
 	</div>
-	<div class="Miles_de_pel_culas_cl_sicos_y__Class">
-		<span>Miles de películas<br/>clásicos y estrenos.<br/>Series originales</span>
-	</div> -->
-</div>
-<div class="row section-two" >
-	<!-- <div class="col left" >
+	<div class="row section-distint" >
+		<div class="col-6" >
 
-	</div>
-	<div class="col right" >
+		</div>
+		<div class="col-6" >
 
-	</div> -->
-
-</div> 
-
-<!-- <div class="row" >
-	<div class="col" >
-		<div id="ajax">
-
-		</div> 
-	</div>
-</div> -->
+		</div>
+	
+	</div>   
+	<!-- FOOTER -->
+	<footer>
+        <div class="links d-flex flex-column justify-content-around">
+            <a href="#">Inicio</a>
+            <a href="#">Ayuda</a>
+            <a href="#">Planes</a>
+            <div>
+                <img src="./images/icons/logo-footer.png" alt="">
+            </div>
+            <div>
+                <img src="./images/icons/social-footer.svg" alt="">
+            </div>
+        </div>
+        <div class="copyright">
+            <div>
+                © 2019 by Nighx
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
