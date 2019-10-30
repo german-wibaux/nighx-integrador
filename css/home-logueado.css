@@ -255,7 +255,7 @@ html, body {
 .arrows button:focus {
     box-shadow: none;
 }
-.arrow-left {
+.arrow-left, .arrow-left-mobile {
     transform: rotate(180deg);
 }
 .arrow-gray {
@@ -263,6 +263,9 @@ html, body {
 }
 .arrow-green {
     filter: grayscale(0%);
+}
+.arrow-left-mobile, .arrow-right-mobile {
+    display: none;
 }
 /* Tira */
 .tira-top {
@@ -320,6 +323,81 @@ html, body {
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
 }
+
+/* TIRAS Mobile */
+@media (max-width: 375px) {
+    .tiras {
+        width: 375px;
+        height: 300px;
+        padding-bottom: 0px;
+    }
+    .tiras h1 {
+        top: 5px;
+        font-size: 12px;
+    }
+    .tiras h5 {
+        font-size: 8px;
+    }
+    .tira {
+        height: 100px;
+    }
+    .tira-top {
+        padding: 0 35px 0 35px;
+    }
+    .arrow-left, .arrow-right {
+        display: none;
+    }
+    .arrow-left-mobile, .arrow-right-mobile {
+        display: block;
+    }
+    .arrows button {
+        width: 25px;
+        height: 25px;
+    }
+    .arrow-left-mobile img {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+    }
+    .arrow-right-mobile img {
+        position: absolute;
+        top: 4px;
+        left: 5px;
+    }
+    .cards {
+        height: 75px;
+        width: 625px;
+    }
+    .card-movie {
+        width: 90px;
+        border: 1px solid #250038;
+    }
+    .card, .card-movie {
+        border: unset;
+        border-right: 1px solid #250038;
+    }
+    .card-body {
+        padding: 0px;
+    }
+    .card-movie .card-body {
+        height: 25px;
+        padding-top: 2px;
+        padding-right: 6px;
+        padding-left: 2px;
+    }
+    .card-movie .card-body img {
+        transform: scale(0.3);
+        top: -11px;
+        transition: none;
+    }
+    .info-icon {
+        width: 17px;
+        height: 17px;
+    }
+    .scroll-right {
+        transform: translateX(-260px);
+    }
+} 
 
 
 /* Buttons en gral */
@@ -379,4 +457,32 @@ footer .copyright {
     border-top: 2px solid #69FF33;
     padding: 35px 0;
     font-size: 22px;
+}
+/* FOOTER Mobile */
+@media (max-width: 375px) {
+    footer {
+        width: 375px;
+        border-top: 2px solid #69FF33;
+    }
+    footer .links {
+        height: 150px;
+        font-size: 10px;
+        padding: 5px 0;
+        justify-content: center !important;
+    }
+    footer .links a {
+        margin-bottom: 2px;
+    }
+    footer img {
+        transform: scale(0.4);
+    }
+    .footer-logo {
+        height: 50px;
+    }
+    footer .copyright {
+        height: 45px;
+        border-top: 1px solid #69FF33;
+        padding: 10px 0;
+        font-size: 12px;
+    }
 }
