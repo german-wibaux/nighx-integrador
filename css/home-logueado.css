@@ -8,12 +8,24 @@ html, body {
 .body {
     overflow: hidden;
 }
-/* Home logueado background */
-.background {
+/* Home logueado main */
+.main {
     width: 1920px;
     height: 966px;
     background: url(../images/usuario-logueado.jpg)no-repeat center center;
     background-size: 100%;
+}
+/* Main Mobile */
+@media (max-width: 375px) {
+    .main {
+        width: 375px;
+        height: 250px;
+        bottom: 0px;
+        background-position: bottom;
+        background-size: cover;
+        background-position-x: -25px;
+        background-position-y: 20px;
+    }
 }
 
 /* NAV */
@@ -49,111 +61,111 @@ html, body {
         display: unset;
     }
 }
-    /* Link en NAV */
-    .link {
-        font-family: SegoeUI-Bold, Segoe UI;
-        font-size: 25px;
-        font-weight: 400;
-        color: #69FF33;
-        border-bottom: 2px solid transparent;
-    }
-    .link:hover {
-        color: #D9D9D9;
-        text-decoration: none;
-    }
-    .link:focus {
-        color: #D9D9D9;
-        border-bottom: 2px solid #D9D9D9;
-    }
-    .nav-item {
-        padding-right: 60px;
-    }
-    /* Icono en NAV */
-    .nav-icon {
-        padding-right: 10px;
-    }
-    .nav-icon:focus img {
-        border: 2px solid #69FF33;
-    }
-    .icon-img {
-        border: 2px solid transparent;
-    }
-    .icon-img:hover {
-        border: 2px solid #69FF33;
-    }
+/* Link en NAV */
+.link {
+    font-family: SegoeUI-Bold, Segoe UI;
+    font-size: 25px;
+    font-weight: 400;
+    color: #69FF33;
+    border-bottom: 2px solid transparent;
+}
+.link:hover {
+    color: #D9D9D9;
+    text-decoration: none;
+}
+.link:focus {
+    color: #D9D9D9;
+    border-bottom: 2px solid #D9D9D9;
+}
+.nav-item {
+    padding-right: 60px;
+}
+/* Icono en NAV */
+.nav-icon {
+    padding-right: 10px;
+}
+.nav-icon:focus img {
+    border: 2px solid #69FF33;
+}
+.icon-img {
+    border: 2px solid transparent;
+}
+.icon-img:hover {
+    border: 2px solid #69FF33;
+}
 
-    /* Input search */
-    .form-search {
-        margin-bottom: 0px;
-    }
-    .form-search .input {
-        font-family: Roboto;
-        font-size: 14px;
-    }
-    .dropdown-search {
-        padding: 0px;
-        min-width: 15rem;
-        border: 2px solid rgba(105,255,51,1);
-        border-radius: 0px;
-    }
-    .input {
-        border-radius: 0px;
-        background: black;
-        border: none;
-        background-clip: border-box;
-        height: 50px;
-        font-size: 16px;
-        font-family: SegoeUI-Bold, Segoe UI;
-    }
-    .input::placeholder {
-        color: #9D9D9D;
-    }
-    .input:focus {
-        background-color: #D9D9D9;
-        color: #250038;
-        box-shadow: 0 0 0 2px rgba(105,255,51,.8);
-    }
+/* Input search */
+.form-search {
+    margin-bottom: 0px;
+}
+.form-search .input {
+    font-family: Roboto;
+    font-size: 14px;
+}
+.dropdown-search {
+    padding: 0px;
+    min-width: 15rem;
+    border: 2px solid rgba(105,255,51,1);
+    border-radius: 0px;
+}
+.input {
+    border-radius: 0px;
+    background: black;
+    border: none;
+    background-clip: border-box;
+    height: 50px;
+    font-size: 16px;
+    font-family: SegoeUI-Bold, Segoe UI;
+}
+.input::placeholder {
+    color: #9D9D9D;
+}
+.input:focus {
+    background-color: #D9D9D9;
+    color: #250038;
+    box-shadow: 0 0 0 2px rgba(105,255,51,.8);
+}
 
-    /* Dropdown menus */
-    .dropdown-menu-right {
-        right: 10px;
-        left: auto;
-    }
-    .dropdown-menu {
-        border: 2px solid rgba(105,255,51,1);
-        border-radius: 0px;
-        margin: 0px;
-        padding: 0px;
-    }
-    .cast {
-        left: -55px;
-    }
-    .dropdown-item {
-        height: 40px;
-        background: linear-gradient(#250038, #000000);
-        color: #D9D9D9;
-        font-size: 16px;
-        font-weight: bold;
-    }
-    .dropdown-item:hover {
-        color: rgb(255, 255, 255);
-    }
-    .dropdown-divider {
-        margin: 0px;
-        border-top: 2px solid rgba(105,255,51,1);
-    }
-        /* Notificación */
-        .notifications {
-            width: 330px;
-            height: 681px;
-            left: -215px;
-            background: linear-gradient(#250038, #000000);
-            overflow: auto;
-        }
-        .notif {
-            width: 320px;
-            height: 271px;
-        }
+/* Dropdown menus */
+.dropdown-menu-right {
+    right: 10px;
+    left: auto;
+}
+.dropdown-menu {
+    border: 2px solid rgba(105,255,51,1);
+    border-radius: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+.cast {
+    left: -55px;
+}
+.dropdown-item {
+    height: 40px;
+    background: linear-gradient(#250038, #000000);
+    color: #D9D9D9;
+    font-size: 16px;
+    font-weight: bold;
+}
+.dropdown-item:hover {
+    color: rgb(255, 255, 255);
+}
+.dropdown-divider {
+    margin: 0px;
+    border-top: 2px solid rgba(105,255,51,1);
+}
+/* Notificación */
+.notifications {
+    width: 330px;
+    height: 681px;
+    left: -215px;
+    background: linear-gradient(#250038, #000000);
+    overflow: auto;
+}
+.notif {
+    width: 320px;
+    height: 271px;
+}
 
 /* Estreno Nighx */
 .estreno-nighx {
@@ -179,6 +191,37 @@ html, body {
     display: grid;
     grid-template-columns: 40% 50%;
 }
+.mobile-button {
+    display: none;
+}
+/* Estreno Nighx Mobile */
+@media (max-width: 375px) {
+    .estreno-nighx {
+        width: 200px;
+        height: 60px;
+        left: 30px;
+        top: 170px;
+        padding-left: 5px;
+    }
+    .estreno-nighx h1 {
+        font-size: 14px;
+    }
+    .estreno-nighx p {
+        display: none;
+    }
+    .estreno-buttons {
+        grid-template-columns: 50% 50%;
+    }
+    .estreno-buttons .button {
+        display: none;
+    }
+    .estreno-buttons .mobile-button {
+        display: block;
+        position: absolute;
+        bottom: 0px;
+    }
+    
+}
 
 /* TIRAS */
 .tiras {
@@ -198,85 +241,85 @@ html, body {
     font-weight: bolder;
     font-size: 25px;
 }
-    /* Botón Flechas */
-    .arrows button {
-        width: 75px;
-        height: 75px;
-        border-radius: 0px;
-        background: transparent;
-        border: none;
-    }
-    .arrows button:hover {
-        background: transparent;
-    }
-    .arrows button:focus {
-        box-shadow: none;
-    }
-    .arrow-left {
-        transform: rotate(180deg);
-    }
-    .arrow-gray {
-        filter: grayscale(100%) brightness(0.5);
-    }
-    .arrow-green {
-        filter: grayscale(0%);
-    }
-    /* Tira */
-    .tira-top {
-        padding: 0 140px 0 140px;
-    }
-    .tira {
-        height: 410px;
-        border-top: 2px solid #69FF33;
-        background: linear-gradient(#250038, #000000);
-        overflow: hidden;
-    }
-    /* Tira scroll */
-    .scroll-right {
-        transform: translateX(-1220px);
-        transition: transform 1s ease;
-    }
-    .scroll-left {
-        transform: translateX(0px);
-        transition: transform 1s ease;
-    }
-    /* Movie Cards */
-    .cards {
-        position: relative;
-        height: 291px;
-        width: 3110px;
-        
-    }
-    .card-movie {
-        width: 417px;
-        border-radius: 0px;
-        border: 2px solid #250038;
-    }
-    .card-movie img {
-        transform: scale(1);
-        transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.6s;
-    }
-    .card-movie:hover img {
-        transform: scale(1.02);
-        transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.6s;
-    }
-    .card-movie .card-body {
-        height: 60px;
-        display: flex;
-        justify-content: space-between;
-        padding-top: 13px;
-        padding-right: 10px;
-        padding-left: 16px;
-    }
-    .card-movie .card-body img {
-        position: relative;
-        top: -4px;
-        left: -9px;
-    }
-    .card-img-top {
-        border-top-left-radius: 0px;
-        border-top-right-radius: 0px;
-    }
+/* Botón Flechas */
+.arrows button {
+    width: 75px;
+    height: 75px;
+    border-radius: 0px;
+    background: transparent;
+    border: none;
+}
+.arrows button:hover {
+    background: transparent;
+}
+.arrows button:focus {
+    box-shadow: none;
+}
+.arrow-left {
+    transform: rotate(180deg);
+}
+.arrow-gray {
+    filter: grayscale(100%) brightness(0.5);
+}
+.arrow-green {
+    filter: grayscale(0%);
+}
+/* Tira */
+.tira-top {
+    padding: 0 140px 0 140px;
+}
+.tira {
+    height: 410px;
+    border-top: 2px solid #69FF33;
+    background: linear-gradient(#250038, #000000);
+    overflow: hidden;
+}
+/* Tira scroll */
+.scroll-right {
+    transform: translateX(-1220px);
+    transition: transform 1s ease;
+}
+.scroll-left {
+    transform: translateX(0px);
+    transition: transform 1s ease;
+}
+/* Movie Cards */
+.cards {
+    position: relative;
+    height: 291px;
+    width: 3110px;
+    
+}
+.card-movie {
+    width: 417px;
+    border-radius: 0px;
+    border: 2px solid #250038;
+}
+.card-movie img {
+    transform: scale(1);
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.6s;
+}
+.card-movie:hover img {
+    transform: scale(1.02);
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.6s;
+}
+.card-movie .card-body {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 13px;
+    padding-right: 10px;
+    padding-left: 16px;
+}
+.card-movie .card-body img {
+    position: relative;
+    top: -4px;
+    left: -9px;
+}
+.card-img-top {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
 
 
 /* Buttons en gral */
@@ -318,7 +361,7 @@ html, body {
 footer {
     width: 1920px;
     background: black;
-    border-top: 12px solid #840000;
+    border-top: 4px solid #69FF33;
     text-align: center;
     color: #707070;
 }
