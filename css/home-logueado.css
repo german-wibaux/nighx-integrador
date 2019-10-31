@@ -328,7 +328,7 @@ html, body {
 @media (max-width: 375px) {
     .tiras {
         width: 375px;
-        height: 300px;
+        height: 380px;
         padding-bottom: 0px;
     }
     .tiras h1 {
@@ -336,10 +336,13 @@ html, body {
         font-size: 12px;
     }
     .tiras h5 {
-        font-size: 8px;
+        font-size: 10px;
+        text-align: center;
     }
     .tira {
-        height: 100px;
+        /* height: 100px; */
+        height: 120px;
+        border-top: 1px solid #69FF33;
     }
     .tira-top {
         padding: 0 35px 0 35px;
@@ -365,37 +368,41 @@ html, body {
         left: 5px;
     }
     .cards {
-        height: 75px;
-        width: 625px;
+        /* height: 75px; */
+        height: 95px;
+        width: 750px;
     }
     .card-movie {
-        width: 90px;
+        width: 110px;
         border: 1px solid #250038;
     }
     .card, .card-movie {
         border: unset;
         border-right: 1px solid #250038;
+        background-color: transparent;
     }
     .card-body {
         padding: 0px;
     }
     .card-movie .card-body {
         height: 25px;
+        flex-direction: column;
         padding-top: 2px;
         padding-right: 6px;
         padding-left: 2px;
     }
     .card-movie .card-body img {
         transform: scale(0.3);
-        top: -11px;
+        top: -25px;
         transition: none;
     }
     .info-icon {
         width: 17px;
         height: 17px;
+        align-self: flex-end;
     }
     .scroll-right {
-        transform: translateX(-260px);
+        transform: translateX(-380px);
     }
 } 
 
