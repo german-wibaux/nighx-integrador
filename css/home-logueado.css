@@ -42,6 +42,9 @@ html, body {
     padding-right: 140px;
     background: linear-gradient(rgb(0, 0, 0) 0%, rgb(37, 0, 56) 44%, rgba(255, 255, 255, 0) 100%);
 }
+.icons-mobile {
+    display: none;
+}
 /* NAV Mobile */
 @media (max-width: 375px) {
     .nav-bg {
@@ -56,9 +59,30 @@ html, body {
     }
     .navbar-toggler {
         padding-right: 5px;
+        transform: scale(0.95);
     }
     .navbar-toggler-icon {
         display: unset;
+        vertical-align: top;
+    }
+    .icons {
+        display: none;
+    }
+    .icons-mobile {
+        position: absolute;
+        display: block;
+        transform: scale(0.5);
+        top: 25px;
+        left: 72px;
+    }
+    .nav-item {
+        padding-right: 60px;
+    }
+    .nav-item a {
+        font-size: 12px;
+    }
+    .nav-link {
+        padding: 0px;
     }
 }
 /* Link en NAV */
@@ -441,6 +465,55 @@ html, body {
     left: 20px;
     padding-right: 30px;
 }
+
+
+
+/* PROXIMOS LANZAMIENTOS */
+.proximos {
+    width: 1920px;
+    height: 800px;
+    border-top: 2px solid #69FF33;
+    background: black;
+}
+.proximos-gradient {
+    width: 1920px;
+    height: 800px;
+    background: linear-gradient(#250038 0%, rgba(0,0,0,0.3) 60%, rgba(1,0,2,0) 80%, rgba(0,0,0,0));
+}
+.proximos-header {
+    width: 1920px;
+    height: 125px;
+}
+.proximos-tira {
+    width: 3660px;
+    height: 550px;
+    margin-left: 140px;
+    overflow: hidden;
+}
+.proximos-overlay {
+    position: relative;
+    left: 1360px;
+    top: -550px;
+    width: 1220px;
+    height: 550px;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 1000;
+}
+.proximos-card {
+    width: 1220px;
+    height: 550px;
+}
+.proximos-buttons {
+    width: 550px;
+    position: relative;
+    left: 595px;
+    bottom: 120px;
+}
+.proximos-like-buttons {
+    width: 210px;
+    height: 62px;
+}
+
 
 /* FOOTER */
 footer {
