@@ -471,37 +471,46 @@ html, body {
 /* PROXIMOS LANZAMIENTOS */
 .proximos {
     width: 1920px;
-    height: 800px;
+    height: 900px;
     border-top: 2px solid #69FF33;
     background: black;
 }
 .proximos-gradient {
     width: 1920px;
-    height: 800px;
+    height: 1000px;
     background: linear-gradient(#250038 0%, rgba(0,0,0,0.3) 60%, rgba(1,0,2,0) 80%, rgba(0,0,0,0));
 }
 .proximos-header {
     width: 1920px;
-    height: 125px;
+    height: 200px;
+    padding-left: 140px;
+    padding-right: 140px;
+    padding-top: 100px;
+    font-size: 50px;
+    color: #D9D9D9;
 }
 .proximos-tira {
-    width: 3660px;
+    width: 1780px;
     height: 550px;
     margin-left: 140px;
     overflow: hidden;
+    
 }
 .proximos-overlay {
+    width: 560px;
+    height: 550px;
     position: relative;
     left: 1360px;
     top: -550px;
-    width: 1220px;
-    height: 550px;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.9);
     z-index: 1000;
+    overflow: hidden;
 }
 .proximos-card {
     width: 1220px;
     height: 550px;
+    transition: transform 1s ease;
+    /* transform: translateX(0px); */
 }
 .proximos-buttons {
     width: 550px;

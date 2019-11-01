@@ -17,4 +17,53 @@ window.addEventListener('DOMContentLoaded', (event) => {
         event.preventDefault;
         heart.src = './images/icons/heart-green-icon.svg';
     }
+
+    const cards = document.getElementsByClassName('proximos-card');
+    const overlay = document.getElementsByClassName('proximos-overlay')[0];
+    const laProximos = document.getElementById('laProximos');
+    const raProximos = document.getElementById('raProximos');
+
+    const cardWidth = 1220;
+    const numOfCards = 4;
+    let pixels = 0;
+    let currentCard = 1;
+
+    document.getElementById('rProximos').onclick = function (event) {
+        event.preventDefault;
+
+        if (currentCard >= 1 && currentCard < numOfCards) {
+            currentCard++;
+            pixels += cardWidth;
+            for (let i = 0; i < cards.length; i++) {
+                const card = cards[i];
+                card.style = 'transform: translateX(-' + pixels + 'px);';
+            }
+            if (currentCard == numOfCards) {
+                laProximos.classList.remove('arrow-gray');
+                laProximos.classList.add('arrow-green');
+                raProximos.classList.remove('arrow-green');
+                raProximos.classList.add('arrow-gray');
+                overlay.style = 'display: none;';
+            }
+        }
+    };
+    document.getElementById('lProximos').onclick = function (event) {
+        event.preventDefault;
+
+        if (currentCard > 1 && currentCard <= numOfCards) {
+            currentCard--;
+            pixels -= cardWidth;
+            overlay.style = 'display: block;';
+            for (let i = 0; i < cards.length; i++) {
+                const card = cards[i];
+                card.style = 'transform: translateX(-' + pixels + 'px);';
+            }
+            if (currentCard == 1) {
+                laProximos.classList.remove('arrow-green');
+                laProximos.classList.add('arrow-gray');
+                raProximos.classList.remove('arrow-gray');
+                raProximos.classList.add('arrow-green');
+            }
+        }
+    };    
 });
