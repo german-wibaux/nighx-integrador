@@ -6,51 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <!-- Bootstrap CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/login.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
     <!-- <link rel="stylesheet" href="./css/home-logueado.css"> -->
     <title>Nighx</title>
 </head>
 <body>
-    <header>        
-        <nav class="navbar navbar-expand-lg nav-bg fixed-top">        
-            <a class="navbar-brand" href="#"><img src="./images/icons/logo.svg" alt=""></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button> 
-        </nav>      
-        <div class="container">
-            <div class="container_form">
-                <form>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control input" id="exampleInputPassword1" placeholder="Password">
-                    </div>
-                    <div class="form-group form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                    </div>
-                    <button id="html" class="btn btn-primary outline-btn" >Ingresar</button>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
-                <form>
-                    <div class="form-group">
-                        <input type="email" class="form-control form-control-lg input" id="email" aria-describedby="emailHelp" placeholder="correo electrónico">
-                    </div>
-                    <div class="form-group">
-                        <input type="password" class="form-control form-control-lg input" id="password" placeholder="contraseña">
-                    </div>
-                </form>
+    <header>
+        <div class="background_nav">
+        </div>        
+        <nav class="navbar navbar-expand-lg nav-bg fixed-top">  
+            <div class="nav__elements">
+                <a class="navbar-brand" href="#"><img src="./images/icons/logoN.png" alt=""></a>
+            </div>      
+        </nav>
+    </header>   
+
+   <div class="container">
+        <div class="container_form">
+            <h1 class="color_text_global">Inicio de sesión</h1>
+            <form>
+                <div class="form-group">
+                    <input type="email" class="form-control input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su email">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control input" id="exampleInputPassword1" placeholder="Ingrese su contraseña">
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label color_text_global" for="exampleCheck1">Recordar mis datoss</label>
+                    <a class="recoverPassword" href="">Olvidé mi contraseña</a>
+                </div>
+                <button class="buttonForm btn btn-primary outline-btn" >Iniciar sesión</button>
+                <p class="color_text_global newAcount">¿Eres nuevo en Nighx?</p>
+                <button class="buttonForm btn btn-primary outline-btn" >Crear cuenta en Nighx</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="links d-flex flex-column justify-content-around">
+            <a href="#">Inicio</a>
+            <a href="#">Ayuda</a>
+            <a href="#">Planes</a>
+            <div class="footer-logo">
+                <img src="./images/icons/logo_footer.png" alt="">
+            </div>
+            <div>
+                <img src="./images/icons/social-footer.svg" alt="">
             </div>
         </div>
-    </header>   
-    
-    <script src="./js/jquery-3.4.1.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/ajax.js"></script>
+        <div class="copyright">
+            <div>
+                © 2019 by Nighx
+            </div>
+        </div>
+    </footer>
+    <!-- <script src="./js/jquery-3.4.1.min.js"></script> -->
+    <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+    <!-- <script src="js/ajax.js"></script> -->
     
 </body>
 </html>
