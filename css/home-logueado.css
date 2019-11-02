@@ -9,6 +9,9 @@ html, body {
     overflow: hidden;
 }
 /* Home logueado main */
+.main-mobile {
+    display: none;
+}
 .main {
     width: 1920px;
     height: 966px;
@@ -16,15 +19,19 @@ html, body {
     background-size: 100%;
 }
 /* Main Mobile */
+
+
 @media (max-width: 375px) {
     .main {
+        display: none;
+    }
+    .main-mobile {
+        display: block;
         width: 375px;
-        height: 250px;
-        bottom: 0px;
-        background-position: bottom;
-        background-size: cover;
-        background-position-x: -25px;
-        background-position-y: 20px;
+        height: 480px;
+        position: relative;
+        top: -80px;
+        z-index: -1000;
     }
 }
 
@@ -535,8 +542,6 @@ html, body {
 
 /* PROXIMOS LANZAMIENTOS */
 .proximos {
-display: none;
-
     width: 1920px;
     height: 900px;
     border-top: 2px solid #69FF33;
