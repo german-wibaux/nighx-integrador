@@ -73,12 +73,14 @@ h1 {
     margin-bottom:50px;
 }
 a.PregFrec {
+    font-size: 16px;
     color: rgb(105, 255, 51);
     text-align: center;
-    margin-top:15px;
+    margin-top:38px;
     width: 100%;
 }
 a.recoverPassword {
+    font-size: 16px;
     color: rgb(105, 255, 51);
     margin-right: 0px;
     margin-bottom: 50px;
