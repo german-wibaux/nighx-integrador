@@ -86,7 +86,6 @@ a.recoverPassword {
     font-size: 16px;
     color: rgb(105, 255, 51);
     margin-right: 0px;
-    margin-bottom: 50px;
 }
 .form-check {
     display: flex;
@@ -285,7 +284,13 @@ footer .copyright {
     }
     header {
         width: 375px;
-        height: 150px;
+        height: 100px;
+    }
+    .newAcount {
+        margin-top: 40px;
+    }
+    a.PregFrec.newAcount  {
+        margin-top: 20px;
     }
    .background_nav {
     height: 275px;
@@ -293,11 +298,11 @@ footer .copyright {
     background-color: black;
     }
     .logoCenter {
-        width: 50%;
+        width: 70px;
     }
     .nav-bg {
         padding: 0;
-        height: 150px;
+        height: 100px;
         width: 375px;
     }
     .container_form {
@@ -310,9 +315,17 @@ footer .copyright {
     }
     
     .container {
+        height: 686px;
         padding: 0;
         max-width: 375px;
     }
+    .input {
+        margin-top: 30px;
+    }
+    .form-group {
+        margin-bottom: 1rem;
+    }
+    
     .buttonForm {
         width: 310px;
     }
