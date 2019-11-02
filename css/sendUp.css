@@ -341,7 +341,9 @@ html, body, .estreno {
         header {
             width: 375px;
         }
-       
+       .background_nav {
+           max-width: 375px;
+       }
         .nav-bg {
             width: 100%;
             height: 275px;
