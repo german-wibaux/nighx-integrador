@@ -29,6 +29,9 @@ html, body {
 }
 
 /* NAV */
+.nav-mobile {
+    display: none;
+}
 .navbar-nav {
     margin: auto !important;
 }
@@ -37,54 +40,12 @@ html, body {
 }
 .nav-bg {
     width: 1920px;
-    height: 275px;
+    height: 200px;
     padding-left: 140px;
     padding-right: 140px;
-    background: linear-gradient(rgb(0, 0, 0) 0%, rgb(37, 0, 56) 44%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(rgb(0, 0, 0) 0%, rgb(37, 0, 56) 50%, rgba(255, 255, 255, 0) 100%);
 }
-.icons-mobile {
-    display: none;
-}
-/* NAV Mobile */
-@media (max-width: 375px) {
-    .nav-bg {
-        width: 375px;
-        height: 100px;
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-    .navbar-brand img {
-        width: 83px;
-        height: 43px;
-    }
-    .navbar-toggler {
-        padding-right: 5px;
-        transform: scale(0.95);
-    }
-    .navbar-toggler-icon {
-        display: unset;
-        vertical-align: top;
-    }
-    .icons {
-        display: none;
-    }
-    .icons-mobile {
-        position: absolute;
-        display: block;
-        transform: scale(0.5);
-        top: 25px;
-        left: 72px;
-    }
-    .nav-item {
-        padding-right: 60px;
-    }
-    .nav-item a {
-        font-size: 12px;
-    }
-    .nav-link {
-        padding: 0px;
-    }
-}
+
 /* Link en NAV */
 .link {
     font-family: SegoeUI-Bold, Segoe UI;
@@ -189,6 +150,110 @@ html, body {
 .notif {
     width: 320px;
     height: 271px;
+}
+
+/* NAV Mobile */
+@media (max-width: 375px) {
+    .nav-desktop {
+        display: none;
+    }
+    .navbar {
+        padding: 0px;
+        padding-top: 10px;
+    }
+    .nav-mobile {
+        display: block;
+        height: 80px;
+        background: linear-gradient(rgb(0, 0, 0) 0%, rgb(37, 0, 56) 50%, rgba(255, 255, 255, 0) 100%);
+    }
+    .navbar-brand {
+        padding-left: 30px;
+    }
+    .navbar-toggler {
+        position: relative;
+        left: 15px;
+        line-height: unset;
+        padding: 0px;
+    }
+    .navbar-toggler:focus {
+        outline: none;
+    }
+    .icons-mobile {
+        display: inline-flex;
+        margin-top: 7px;
+        padding-right: 30px;
+    }
+    .nav-icon {
+        padding: 0px !important;
+    }
+    .nav-icon:focus img {
+        border: 1px solid #69FF33;
+        outline: none;
+    }
+    .icon-img:hover {
+        border: 1px solid #69FF33 !important;
+    }
+    .icon-img {
+        border: 1px solid transparent;
+    }
+    .dropdown-menu {
+        border: 1px solid rgba(105,255,51,1);
+        margin-top: 10px;
+    }
+    .dropdown-menu-right {
+        right: -30px;
+        left: auto;
+    }
+    .dropdown-item {
+        font-size: 14px;
+        height: 43px;
+    }
+    .dropdown-divider {
+        border-top: 1px solid rgba(105,255,51,1);
+    }
+    .dropdown-search {
+        border: 1px solid rgba(105,255,51,1);
+        left: -60px;
+        min-width: 165px;
+    }
+    .dropdown-search .input {
+        background: #D9D9D9;
+        height: 37px;
+    }
+    .cast {
+        left: -52px;
+    }
+    .notifications {
+        width: 199px;
+        height: 364px;
+        left: -118px;
+    }
+    .notif {
+        width: 199px;
+        height: 137px;
+        margin-left: 5px;
+        margin-top: 5px;
+    }
+    /* Links Mobile */
+    .navbar-collapse {
+        background: linear-gradient(#250038, #000000);
+        border-bottom: 1px solid #69FF33;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .links-mobile {
+        height: 308px;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-item {
+        padding: 0px;
+    }
+    .link {
+        font-size: 22px;
+        font-weight: 350;
+        border: none;
+    }
 }
 
 /* Estreno Nighx */
@@ -470,6 +535,8 @@ html, body {
 
 /* PROXIMOS LANZAMIENTOS */
 .proximos {
+display: none;
+
     width: 1920px;
     height: 900px;
     border-top: 2px solid #69FF33;
@@ -477,7 +544,7 @@ html, body {
 }
 .proximos-gradient {
     width: 1920px;
-    height: 1000px;
+    height: 900px;
     background: linear-gradient(#250038 0%, rgba(0,0,0,0.3) 60%, rgba(1,0,2,0) 80%, rgba(0,0,0,0));
 }
 .proximos-header {
@@ -485,7 +552,7 @@ html, body {
     height: 200px;
     padding-left: 140px;
     padding-right: 140px;
-    padding-top: 100px;
+    padding-top: 120px;
     font-size: 50px;
     color: #D9D9D9;
 }
@@ -493,8 +560,7 @@ html, body {
     width: 1780px;
     height: 550px;
     margin-left: 140px;
-    overflow: hidden;
-    
+    overflow: hidden;  
 }
 .proximos-overlay {
     width: 560px;
@@ -509,8 +575,7 @@ html, body {
 .proximos-card {
     width: 1220px;
     height: 550px;
-    transition: transform 1s ease;
-    /* transform: translateX(0px); */
+    transition: transform 0.5s ease;
 }
 .proximos-buttons {
     width: 550px;
@@ -522,7 +587,34 @@ html, body {
     width: 210px;
     height: 62px;
 }
-
+/* PROXIMOS LANZAMIENTOS Mobile */
+@media (max-width: 375px) {
+    .proximos {
+        width: 375px;
+        height: 175px;
+        border-top: 1px solid #69FF33;
+    }
+    .proximos-gradient {
+        width: 375px;
+        height: 175px;
+    }
+    .proximos-header {
+        width: 375px;
+        height: 40px;
+        padding-left: 35px;
+        padding-right: 35px;
+        padding-top: 10px;
+    }
+    .proximos-header h1 {
+        font-size: 12px;
+    }
+    .proximos-tira {
+        width: 340px;
+        height: 550px;
+        margin-left: 35px;
+        overflow: hidden;  
+    }
+}
 
 /* FOOTER */
 footer {
@@ -533,7 +625,8 @@ footer {
     color: #707070;
 }
 footer .links {
-    height: 430px;
+    /* height: 430px; */
+    height: 250px;
     font-size: 18px;
     padding: 20px 0;
 }

@@ -34,6 +34,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
         if (currentCard >= 1 && currentCard < numOfCards) {
             currentCard++;
             pixels += cardWidth;
+            laProximos.classList.remove('arrow-gray');
+            laProximos.classList.add('arrow-green');
             for (let i = 0; i < cards.length; i++) {
                 const card = cards[i];
                 card.style = 'transform: translateX(-' + pixels + 'px);';
@@ -54,6 +56,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
             currentCard--;
             pixels -= cardWidth;
             overlay.style = 'display: block;';
+            raProximos.classList.remove('arrow-gray');
+            raProximos.classList.add('arrow-green');
             for (let i = 0; i < cards.length; i++) {
                 const card = cards[i];
                 card.style = 'transform: translateX(-' + pixels + 'px);';
