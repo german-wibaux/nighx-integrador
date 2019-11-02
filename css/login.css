@@ -72,13 +72,21 @@ header {
 h1 {
     margin-bottom:50px;
 }
+a.PregFrec {
+    color: rgb(105, 255, 51);
+    text-align: center;
+    margin-top:15px;
+    width: 100%;
+}
 a.recoverPassword {
     color: rgb(105, 255, 51);
     margin-right: 0px;
     margin-bottom: 50px;
 }
 .form-check {
-    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    height: 25px;
 }
 button {  
     border-radius: 0px !important;
@@ -93,17 +101,17 @@ button {
     text-align: center !important;
 }
 .buttonForm {
-    width: 436px;
-    
+    width: 436px;    
+    margin-top: 20px;
 }
 .newAcount {
-    margin-top: 50px;
-    margin-bottom: 10px;
+    margin-top: 100px;
+    margin-bottom: -5px;
     text-align: center;
 }
 /* Outline button */
 .outline-btn {
-    color: #D9D9D9;
+    background: rgb(217, 217, 217);
     border-color: rgb(105, 255, 51) !important;
 }
 .btn-primary {
@@ -112,17 +120,24 @@ button {
 .btn-primary:hover {
     background-color: rgba(37, 0, 56, 1);
 }
+.form-check {
+    padding-left: 0px;
+}
 .form-check-label {
-    margin-left: 10px;
+    margin-left: 30px;
 }
 
 .form-check-input {
+    margin-left: 0px;
     height: 20px;
     width: 20px;
 }
+.containerItemForm {
+justify-content: space-around;
+}
 .input {
     margin-bottom: 10px;
-    margin-top: 50px;
+    margin-top: 40px;
     border-radius: 0px;
     background: rgb(217, 217, 217);
     border: none;
@@ -136,13 +151,12 @@ button {
     color: rgb(37, 0, 56);
     box-shadow: 0 0 0 2px rgba(105,255,51,.8);
 }
-.form-check-input {
 
-}
 /*BODY*/
 .container {
-    margin: 0px;   
-    height: 1080px; 
+    margin: 0px;  
+    margin-top: -1px; 
+    height: 980px; 
     width: 1920px;
     max-width: 1920px;
     background-image: linear-gradient(rgb(0, 0, 0) 0%, rgb(37, 0, 56) 100%);
@@ -209,6 +223,7 @@ button {
     left: 20px;
     padding-right: 30px;
 }
+/* FOOTER */
 .footerContainer {
     height: 500px;
     width: 1920px;
@@ -216,49 +231,52 @@ button {
     align-items: center;
     justify-content: center;
     background-color: black;
-
 }
 .footerInfoContainer {
     display: block;
     width: 100%;
 } 
-hr {
-    margin: 0;
-    width: 100%;
-    height: 4px;
-    background-color: #rgb(105, 255, 51);;
+.icons-social {
+    margin-bottom: 50px;
 }
-hr.thin {
-    height: 1px;
-}
-/* FOOTER */
 footer {
     width: 1920px;
     background: black;
-    border-top: 4px solid #rgb(105, 255, 51);;
+    border-top: 4px solid rgb(105, 255, 51);;
     text-align: center;
-    color: #707070;
+    color: rgb(112, 112, 112);
 }
 footer .links {
     height: 430px;
-    font-size: 18px;
-    padding: 20px 0;
+    font-size: 22px;
+    padding-top: 110px;
+    padding-bottom: 20px;
+}
+.footer-logo{
+    height: 50px;
+    margin-bottom: 30px;
 }
 .links a {
     /* text-decoration: none; */
-    color: #707070;
+    color: rgb(112, 112, 112);
+    display: inline-block;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.links a:hover {
+    color: rgb(217, 217, 217);
 }
 footer .copyright {
     height: 100px;
-    border-top: 2px solid #rgb(105, 255, 51);;
+    border-top: 2px solid rgb(105, 255, 51);;
     padding: 35px 0;
-    font-size: 22px;
+    font-size: 18px;
 }
 /* FOOTER Mobile */
 @media (max-width: 375px) {
     footer {
         width: 375px;
-        border-top: 2px solid #rgb(105, 255, 51);;
+        border-top: 2px solid rgb(105, 255, 51);;
     }
     footer .links {
         height: 150px;
@@ -272,12 +290,13 @@ footer .copyright {
     footer img {
         transform: scale(0.4);
     }
-    .footer-logo {
+    .footer-logo{
         height: 50px;
+        margin-bottom: 30px;
     }
     footer .copyright {
         height: 45px;
-        border-top: 1px solid #rgb(105, 255, 51);;
+        border-top: 1px solid rgb(105, 255, 51);;
         padding: 10px 0;
         font-size: 12px;
     }
