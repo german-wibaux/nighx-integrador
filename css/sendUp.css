@@ -3,13 +3,16 @@ html, body, .estreno {
         height: 100%;
     }
     header {
-        height: 275px;
+        height: 200px;
         width: 100%;
     }
     .color_text_global {
         color: #D9D9D9;
     }  
     /*NAV*/
+    .logoCenter {
+        width: 120px;
+    }
     .navbar-brand {
         margin: 0;
     }
@@ -38,11 +41,11 @@ html, body, .estreno {
         border: 2px solid transparent;
     }
     .icon-img:hover {
-        border: 2px solid rgb(105, 255, 51);;
+        border: 2px solid rgb(105, 255, 51);
     }
     .nav-bg {
         max-width: 1920px;
-        height: 275px;
+        height: 200px;
         padding-left: 140px;
         padding-right: 140px;
         background: linear-gradient(rgb(217, 217, 217) 0%, rgba(255, 255, 255, .5) 50%, rgba(255, 255, 255, 0) 75%);
@@ -58,12 +61,21 @@ html, body, .estreno {
         width: 1920px;
         background-color: black;
     }
+
     .title_dark {
         color: rgb(37, 0, 56);
-        margin-top: 25px;
+        margin-top: 50px;
+        margin-bottom: 0px;
+    }
+    hr {
+        margin-top: 0px;
+        border: 0; border-top: 2px solid rgba(105,255,51);
+        width: 100%;
+        margin-bottom: 0px;
+
     }
     .container_steps {
-        width: 500px;
+        width: 700px;
         margin-bottom: 50px;
     }
     .multi-steps > li.is-active:before, .multi-steps > li.is-active ~ li:before {
@@ -72,7 +84,7 @@ html, body, .estreno {
         font-weight: 700;
    }
     .multi-steps > li.is-active:after, .multi-steps > li.is-active ~ li:after {
-        background-color: #ededed;
+        background-color: rgb(217, 217, 217);
    }
     .multi-steps {
         display: table;
@@ -84,12 +96,11 @@ html, body, .estreno {
         text-align: center;
         display: table-cell;
         position: relative;
-        color: tomato;
+        color: rgb(37, 0, 56);
    }
     .multi-steps > li:before {
         content: '\f00c';
         content: '\2713';
-    
         content: '\10003';
         content: '\10004';
         content: '\2713';
@@ -103,80 +114,51 @@ html, body, .estreno {
         font-weight: bold;
         border-width: 2px;
         border-style: solid;
-        border-color: tomato;
+        border-color: rgb(37, 0, 56);
         border-radius: 50%;
+        z-index: 1;
    }
     .multi-steps > li:after {
         content: '';
-        height: 2px;
+        height: 10px;
         width: 100%;
-        background-color: tomato;
+        margin-left: 18px;
+        background-color: rgb(37, 0, 56);
         position: absolute;
         top: 16px;
         left: 50%;
-        z-index: -1;
+        z-index: 0;
    }
     .multi-steps > li:last-child:after {
         display: none;
    }
     .multi-steps > li.is-active:before {
-        background-color: rgb(37, 0, 56);
+        background-color: rgb(105, 255, 51);
         border-color: rgb(105, 255, 51);
-        color: rgb(105, 255, 51);
+        color: rgb(37, 0, 56);
         z-index: 1;
 
    }
     .multi-steps > li.is-active ~ li {
-        color: #808080;
+        color: rgb(112, 112, 112);
    }
     .multi-steps > li.is-active ~ li:before {
         background-color: #ededed;
         border-color: #ededed;
    }
     
-    .container_form {
-        align-self: flex-start;
-        width: 600px;
-        height: 750px;
-        padding: 80px;
-        background-image: linear-gradient(rgb(37, 0, 56) 0%, rgb(0, 0, 0) 100%);
-        border: 2px solid rgb(105, 255, 51);
-    }   
+    
     h1 {
         margin-bottom:50px;
     }
-    a.PregFrec {
-        font-size: 16px;
-        color: rgb(105, 255, 51);
-        text-align: center;
-        margin-top:38px;
-        width: 100%;
+    
+    h1.card-title {
+        font-weight: 600;
     }
-    a.recoverPassword {
-        font-size: 16px;
-        color: rgb(105, 255, 51);
-        margin-right: 0px;
-        margin-bottom: 50px;
-    }
-    .form-check {
-        display: flex;
-        justify-content: space-between;
-        height: 25px;
-    }
-    button {  
-        border-radius: 0px !important;
-        border: 4px solid transparent !important;
-        font-size: 22px !important;
-        padding-bottom: 0.8rem !important;
-        letter-spacing: 1.5px;
-        height: 55px;
-        font-family: Sans-Serif;
-        font-weight: 700 !important;
-        padding: 0 !important;
-        text-align: center !important;
-    }
+    
     .buttonForm {
-        width: 436px;    
+        width: 300px;   
+        height: 50px; 
         margin-top: 20px;
     }
     .newAcount {
@@ -184,16 +166,28 @@ html, body, .estreno {
         margin-bottom: -5px;
         text-align: center;
     }
-    /* Outline button */
-    .outline-btn {
-        background: rgb(217, 217, 217);
-        border-color: rgb(105, 255, 51) !important;
-    }
+    /* Button */
+  
     .btn-primary {
-        background-color: rgba(37, 0, 56, .5);
+        background: linear-gradient(#d4fcc6 0%, #79ff4a 44%, #6fff3c 100%);
+        width: 250px;
+        height: 60px;
+        border: 0 solid transparent !important;
+        font-weight: bold !important;
+        font-size: 22px !important;        
+        letter-spacing: 0.49px;
+        margin-bottom: 7rem;
+        color: rgba(36,0,58);
     }
+
     .btn-primary:hover {
-        background-color: rgba(37, 0, 56, 1);
+        background: linear-gradient(#d4fcc6 0%, #79ff4a 44%, #6fff3c 100%);
+        border: 3px solid rgba(37, 0, 56) !important;
+        font-weight: 600 !important;
+        color: rgba(36,0,58) !important;
+    }
+    .btn-primary:active {
+        border: 4px solid rgba(37, 0, 56) !important;
     }
     .form-check {
         padding-left: 0px;
@@ -231,7 +225,7 @@ html, body, .estreno {
     .container {
         margin: 0px;  
         margin-top: 0px; 
-        height: 980px; 
+        height: 850px; 
         width: 1920px;
         max-width: 1920px;
         background-image: linear-gradient(rgb(255,255, 255) 0%,rgb(217, 217, 217) 100%);
@@ -266,36 +260,54 @@ html, body, .estreno {
         grid-template-columns: 40% 50%;
     }
     .card-header{
+        padding: 20px 40px;
         background-color: rgba(37, 0, 56);
         color: rgb(217, 217, 217);
     }
     .list-unstyled {
-        font-size:larger;
-        font-weight: 700;
+        font-size:18px;
     }
     .mb-3, .my-3 {
         width: 1300px;
     }
+   
+    .card {
+        border: 4px solid rgb(37,0,56);
+        margin-left: 20px;
+        margin-right: 20px;
+        background: linear-gradient(rgb(255,255,255)0%,rgb(255,255,255)50%, rgb(217,217,217) 100%);
+        color: rgb(112, 112, 112);
+
+    }
+    .card:hover > .card-header > h4 {
+        color: rgb(105,255,51);
+    }
+    .card:hover {
+        color: rgb(37,0,56);
+        background: white;
+        font-weight: 600 !important;
+    }
+    .card-derck {
+        height: 300px;
+    }
     .card-body {
-        border: 4px solid rgb(105, 255, 51);
-        margin-top: -2px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    /* .card-body:active {
+        background-color: rgba(105,255,51,.5);  
+   }
+    .card-body:focus {
+         background-color: rgba(105,255,51,.5);  
     }
     .card-body:hover {
-        background-color: rgba(105, 255, 51,.3);
-        margin-top: -2px;
-    }
+        color: rgba(36,0,58);
+    } */
     /* Buttons en gral */
-    .button {
-        border-radius: 0px;
-        font-weight: bold;
-        border: 4px solid transparent;
-        font-size: 22px;
-        padding-bottom: 0.8rem;
-        letter-spacing: 1.5px;
-        width: 257px;
-        height: 62px;
-    }
     
+  
     /* Icon violet buton */
     .icon-violet-btn {
         position: absolute;
