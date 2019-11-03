@@ -1,87 +1,1120 @@
-<!doctype html>
-
-<html lang="en">
+<!DOCTYPE html>
+<html>
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Nighx</title>
-    <meta name="description" content="The Nighx web site">
-    <meta name="author" content="Grupo 12">
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Nighx</title>
+	<meta name="description" content="The Nighx web site">
+	<meta name="author" content="Grupo 12">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+	<title>index</title>
+	<style id="applicationStylesheet" type="text/css">
+		body {
+			font-family: 'Open Sans', sans-serif;
+		}
+
+		.mediaViewInfo {
+			--web-view-name: home_inicio;
+			--web-view-id: home_inicio;
+			--web-enable-deep-linking: true;
+		}
+
+		:root {
+			--web-view-ids: home_inicio;
+		}
+
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		.home_inicio_Class {
+			/* position: absolute; */
+			box-sizing: border-box;
+			background: #E5E5E5;
+			width: 1920px;
+			height: 1080px;
+			background: url('images/fondo_index.jpg');
+			background-size: cover;
+			background-color: rgba(255, 255, 255, 1);
+			overflow: hidden;
+			margin: 0;
+			padding: 0;
+			border-bottom: 12px solid #69FF33;
+			--web-view-name: home_inicio;
+			--web-view-id: home_inicio;
+			--web-enable-deep-linking: true;
+		}
+
+		.Componente_2_Class {
+			position: absolute;
+			width: 400px;
+			height: 120px;
+			left: 760px;
+			top: 820px;
+			overflow: visible;
+		}
+
+		.Button_Outline_Hover_Class {
+			position: absolute;
+			width: 400px;
+			height: 120px;
+			left: 0px;
+			top: 0px;
+			overflow: visible;
+		}
+
+		.Grupo_499_Class {
+			position: absolute;
+			width: 400px;
+			height: 120px;
+			left: 0px;
+			top: 0px;
+			overflow: visible;
+		}
+
+		.probarAhora_Class {
+			position: absolute;
+			width: 400px;
+			height: 120px;
+			left: 0px;
+			top: 0px;
+			overflow: visible;
+		}
+
+		.bg {
+			position: absolute;
+			overflow: visible;
+			width: 400px;
+			height: 120px;
+			left: 0px;
+			top: 0px;
+		}
+
+		.Probar_ahora_Class {
+			position: absolute;
+			left: 76px;
+			top: 35px;
+			overflow: visible;
+			width: 249px;
+			white-space: nowrap;
+			text-align: center;
+			/* font-family: Helvetica LT Std; */
+			font-style: normal;
+			font-weight: bold;
+			font-size: 37px;
+			color: rgba(37, 0, 56, 1);
+			letter-spacing: 0.49px;
+		}
+
+		.ingresar_Class {
+			position: absolute;
+			width: 178px;
+			height: 52px;
+			left: 1599px;
+			top: 58px;
+			overflow: visible;
+		}
+
+		.Componente_2_A13_Group_4_Class {
+			position: absolute;
+			width: 178px;
+			height: 52px;
+			left: 0px;
+			top: 0px;
+			overflow: visible;
+		}
+
+		.Button_Outline_Text_Icon_Defau_Class {
+			position: absolute;
+			width: 178px;
+			height: 52px;
+			left: 0px;
+			top: 0px;
+			overflow: visible;
+		}
+
+		.bg_A13_Rectangle_2 {
+			position: absolute;
+			overflow: visible;
+			width: 178px;
+			height: 52px;
+			left: 0px;
+			top: 0px;
+		}
+
+		.Ingresar_Class {
+			position: absolute;
+			left: 45px;
+			top: 13px;
+			overflow: visible;
+			width: 89px;
+			white-space: nowrap;
+			text-align: center;
+			/* font-family: Helvetica LT Std; */
+			font-style: normal;
+			font-weight: normal;
+			font-size: 22px;
+			color: rgba(217, 217, 217, 1);
+			letter-spacing: 0.49px;
+		}
+
+		.logo_Class {
+			position: absolute;
+			width: 228px;
+			height: 88px;
+			left: 129.074px;
+			top: 34px;
+			overflow: visible;
+		}
+
+		.logo_A13_Rectangle_3 {
+			position: absolute;
+			overflow: visible;
+			width: 228px;
+			height: 88px;
+			left: 0px;
+			top: 0px;
+		}
+
+		.Miles_de_pel_culas_cl_sicos_y__Class {
+			position: absolute;
+			left: 657px;
+			top: 434px;
+			overflow: visible;
+			width: 607px;
+			white-space: nowrap;
+			line-height: 80px;
+			margin-top: -8px;
+			text-align: center;
+			/* font-family: Helvetica LT Std; */
+			font-style: normal;
+			font-weight: bold;
+			font-size: 64px;
+			color: rgba(217, 217, 217, 1);
+		}
+
+		.section-two {
+			background: rgb(37, 0, 56);
+
+			height: 800px;
+			width: 1920px;
+			border-bottom: 12px solid #69FF33;
+			background-size: cover;
+			margin: 0;
+			max-width: 1920px;
+		}
+
+		.section-distint {
+			background: linear-gradient(rgba(37, 0, 56, 1) 0%, rgba(0, 0, 0, 1) 33%, rgba(0, 0, 0, 1) 52%, rgba(0, 0, 0, 1) 66%, rgba(37, 0, 56, 1) 100%);
+			/* height: 1171px; */
+			width: 1920px;
+			background-size: cover;
+			margin: 0;
+			max-width: 1920px;
+		}
+
+		.section-distint>.mask-distint {
+			/* background: linear-gradient(rgba(0, 0, 0, 1) 0%, rgba(37,0,56, 1) 20%, rgba(37,0,56, 1) 50%, rgba(37,0,56, 1) 80%, rgba(0, 0, 0, 1) 100%); */
+			height: 100%;
+			width: 100%;
+			/* background: rgba(0,0,0,1); */
+			background: linear-gradient(rgba(0, 0, 0, 1) 0%, rgba(37, 0, 56, 1) 33%, rgba(37, 0, 56, 1) 50%, rgba(37, 0, 56, 1) 66%, rgba(0, 0, 0, 1) 100%)
+		}
+
+		.section-distint>.faq {
+			height: 100%;
+			width: 100%;
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.section-distint>.faq>.content-faq {
+			/* height: 500px; */
+			width: 700px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			align-items: center;
+			margin-bottom: 15rem;
+		}
+
+		.section-distint>.faq>.content-faq>.faq1 {
+			width: 635px;
+			height: 76px;
+		}
+
+		button {
+			border-radius: 0px !important;
+			border: 4px solid transparent !important;
+			font-size: 22px !important;
+			padding-bottom: 0.8rem !important;
+			letter-spacing: 1.5px;
+			width: 180px;
+			height: 50px;
+			/* font-family: Sans-Serif; */
+			font-weight: 700 !important;
+			padding: 0 !important;
+			text-align: center !important;
+		}
+
+		.crea_lista {
+			background: url('images/texto_creaTuLista.jpg') center no-repeat;
+			background-size: cover;
+		}
+
+		.smart {
+			background: url('images/fondo-smart.jpg') center no-repeat;
+			background-size: cover;
+		}
+
+		.beneficio {
+			background: url('images/fondo-beneficio.jpg') center no-repeat;
+			background-size: cover;
+		}
+
+		.crea_texto {
+			background: linear-gradient(rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, .03) 20%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 1) 100%);
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.smart-text {
+			background: linear-gradient(rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, .03) 20%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 1) 100%);
+
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.texto-beneficio {
+			background: linear-gradient(rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, .03) 20%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 1) 100%);
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.crea_texto>span:nth-child(1) {
+			position: relative;
+			overflow: visible;
+			white-space: nowrap;
+			line-height: 75px;
+			text-align: center;
+			/* font-family: Helvetica LT Std; */
+			font-style: normal;
+			font-weight: bold;
+			font-size: 64px;
+			color: rgba(217, 217, 217, 1);
+			letter-spacing: 0.2px;
+		}
+
+		.crea_texto>span:nth-child(2) {
+			position: relative;
+			overflow: hidden;
+			width: 563px;
+			line-height: 55px;
+			text-align: center;
+			/* font-family: Helvetica LT Std; */
+			font-style: normal;
+			font-weight: normal;
+			font-size: 33px;
+			color: rgba(217, 217, 217, 1);
+			margin-top: 4rem;
+		}
+
+		.smart-text>span:nth-child(1) {
+			position: relative;
+			overflow: visible;
+			white-space: nowrap;
+			line-height: 75px;
+			text-align: center;
+			/* font-family: Helvetica LT Std; */
+			font-style: normal;
+			font-weight: bold;
+			font-size: 64px;
+			color: rgba(217, 217, 217, 1);
+			letter-spacing: 0.2px;
+		}
+
+		.smart-text>span:nth-child(2) {
+			position: relative;
+			overflow: hidden;
+			width: 70%;
+			line-height: 55px;
+			text-align: center;
+			/* font-family: Helvetica LT Std; */
+			font-style: normal;
+			font-weight: normal;
+			font-size: 33px;
+			color: rgba(217, 217, 217, 1);
+			margin-top: 4rem;
+		}
+
+		.texto-beneficio>span:nth-child(1) {
+			position: relative;
+			overflow: visible;
+			white-space: nowrap;
+			line-height: 75px;
+			text-align: center;
+			/* font-family: Helvetica LT Std; */
+			font-style: normal;
+			font-weight: bold;
+			font-size: 64px;
+			color: rgba(217, 217, 217, 1);
+			letter-spacing: 0.2px;
+		}
+
+		.texto-beneficio>span:nth-child(2) {
+			position: relative;
+			overflow: hidden;
+			width: 70%;
+			line-height: 55px;
+			text-align: center;
+			/* font-family: Helvetica LT Std; */
+			font-style: normal;
+			font-weight: normal;
+			font-size: 33px;
+			color: rgba(217, 217, 217, 1);
+			margin-top: 4rem;
+		}
+
+		/* Outline button */
+		.outline-btn {
+			color: #D9D9D9;
+			border-color: #69FF33 !important;
+		}
+
+		.btn-primary {
+			background-color: transparent;
+			background-color: rgb(36, 0, 57);
+			width: 178px;
+			height: 52px;
+			font-size: 22px !important;
+			padding-bottom: 1px !important;
+		}
+
+		.fixed-top {
+			display: flex;
+			justify-content: space-between;
+			background: linear-gradient(rgb(0, 0, 0) 0%, rgb(37, 0, 56) 44%, rgba(255, 255, 255, 0) 100%);
+			height: 275px;
+			padding-left: 140px;
+			padding-right: 140px;
+			width: 1920px;
+		}
+
+		.btn-primary:hover {
+			background-color: transparent;
+		}
+
+		/* FOOTER */
+		/* FOOTER */
+		.footerContainer {
+			height: 500px;
+			width: 1920px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: black;
+		}
+
+		.footerInfoContainer {
+			display: block;
+			width: 100%;
+		}
+
+		.icons-social {
+			margin-bottom: 60px;
+		}
+
+		footer {
+			width: 1920px;
+			background: black;
+			border-top: 4px solid rgb(105, 255, 51);
+			;
+			text-align: center;
+			color: rgb(112, 112, 112);
+		}
+
+		footer .links {
+			height: 430px;
+			font-size: 22px;
+			padding-top: 110px;
+			padding-bottom: 20px;
+		}
+
+		.footer-logo {
+			height: 50px;
+			margin-bottom: 30px;
+		}
+
+		.links a {
+			/* text-decoration: none; */
+			color: rgb(112, 112, 112);
+			display: inline-block;
+			justify-content: space-between;
+			margin-bottom: 50px;
+		}
+
+		.links a:hover {
+			color: rgb(217, 217, 217);
+		}
+
+		footer .copyright {
+			height: 100px;
+			border-top: 2px solid rgb(105, 255, 51);
+			;
+			padding: 35px 0;
+			font-size: 18px;
+		}
+
+		#home_inicio {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+		}
+
+		#in-inicio {
+			height: 60%;
+			display: flex;
+			justify-content: space-between;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		#in-inicio>.text-in {
+			text-align: center;
+			line-height: 4.8rem;
+			font-weight: bold;
+			font-size: 57px;
+			color: rgba(217, 217, 217, 1);
+		}
+
+		#in-inicio>#html-in {
+			background: linear-gradient(#d4fcc6 0%, #79ff4a 44%, #6fff3c 100%);
+			width: 400px;
+			height: 120px;
+			color: #fff !important;
+			border: 0 solid transparent !important;
+			font-weight: bold !important;
+			font-size: 37px !important;
+			color: rgba(37, 0, 56, 1) !important;
+			letter-spacing: 0.49px;
+			margin-bottom: 7rem;
+		}
+
+		.faq {
+			border-radius: 0px;
+			border: none;
+			color: #D9D9D9;
+			background-color: transparent;
+			font-family: SegoeUI-Bold, Segoe UI;
+		}
+
+		.faq .card-header {
+			margin-bottom: 1.2rem !important;
+			font-size: 30px;
+			font-weight: 400;
+			color: #D9D9D9;
+			background-color: #250038;
+		}
+
+		.faq h2 {
+			font-size: 30px;
+			font-weight: 400;
+			font-family: 'Open Sans', sans-serif;
+			height: 50px;
+			position: relative;
+			margin-left: 20px;
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+		}
+
+		.faq h3 {
+			margin-bottom: 4rem !important;
+			font-size: 64px;
+			font-weight: 300;
+			margin-top: 15rem;
+		}
+
+		.faq img {
+			vertical-align: unset;
+		}
+
+		.faq .card-body {
+			font-size: 22px;
+			background-color: #250038;
+			margin-bottom: 1.2rem;
+		}
+
+		.accordion {
+			height: 100%;
+			width: 581px;
+		}
+
+		.accordion>.card>.card-header {
+			padding: 12px 0;
+		}
+
+		.accordion>.card>.card-header>.btn-link {
+			position: absolute;
+			width: 100%;
+			height: 74px;
+			top: 0;
+			display: flex;
+			justify-content: flex-end;
+			padding-right: 2rem !important;
+		}
+
+		.brand-mobile {
+			display: none;
+		}
+
+		/* NAV */
+		.nav-mobile {
+			display: none;
+		}
+
+		.navbar-nav {
+			margin: auto !important;
+		}
+
+		.navbar-brand {
+			margin: 0;
+		}
+
+		.nav-bg {
+			width: 1920px;
+			height: 200px;
+			padding-left: 140px;
+			padding-right: 140px;
+			background: linear-gradient(rgb(0, 0, 0) 0%, rgb(37, 0, 56) 50%, rgba(255, 255, 255, 0) 100%);
+		}
+
+		/* Link en NAV */
+		.link {
+			font-family: SegoeUI-Bold, Segoe UI;
+			font-size: 25px;
+			font-weight: 400;
+			color: #69FF33;
+			border-bottom: 2px solid transparent;
+		}
+
+		.link:hover {
+			color: #D9D9D9;
+			text-decoration: none;
+		}
+
+		.link:focus {
+			color: #D9D9D9;
+			border-bottom: 2px solid #D9D9D9;
+		}
+
+		.nav-item {
+			padding-right: 60px;
+		}
+
+		/* Icono en NAV */
+		.nav-icon {
+			padding-right: 10px;
+		}
+
+		.nav-icon:focus img {
+			border: 2px solid #69FF33;
+		}
+
+		.icon-img {
+			border: 2px solid transparent;
+		}
+
+		.icon-img:hover {
+			border: 2px solid #69FF33;
+		}
+
+		.btn-primary:active {
+			background-color: transparent !important;
+		}
+
+		.btn-primary:focus {
+			box-shadow: none !important;
+		}
+
+		@media only screen and (max-width: 600px) {
+			footer {
+				width: 375px;
+				/* border-top: 2px solid rgb(105, 255, 51);; */
+			}
+
+			.crea_texto>span:nth-child(2) {
+				margin-top: 0;
+				font-size: 16px;
+				width: 250px;
+				line-height: 25px;
+			}
+
+			.crea_texto>span:nth-child(1) {
+				letter-spacing: 0.2px;
+				margin-bottom: 1rem;
+				font-size: 30px;
+				line-height: 35px;
+			}
+
+			
+
+			#in-inicio>#html-in {
+				margin-bottom: 7rem;
+				margin-right: 0 !important;
+				font-size: 14px !important;
+				width: 155px;
+				height: 46px;
+			}
+
+			#in-inicio {
+				height: unset;
+			}
+
+			#in-inicio>.text-in {
+				margin-bottom: 13rem;
+				line-height: 47px;
+				font-size: 32px;
+			}
+
+			.home_inicio_Class {
+				background: url("images/back-mobile.jpg");
+			}
+
+			.btn-primary {
+				margin-right: 30px !important;
+				font-size: 14px !important;
+				height: 30px;
+				width: 100px;
+				border: solid 2px #69FF33 !important;
+			}
+
+			
+
+			#home_inicio {
+				width: 100%;
+				justify-content: space-between;
+				height: 670px;
+			}
+
+			.fixed-top {
+				width: 100%;
+				position: relative;
+			}
+
+			.section-two {
+				width: 100%;
+				flex-direction: column;
+				align-items: center;
+				height: 600px;
+			}
+
+			.crea_lista {
+				width: 100%;
+				max-width: 100%;
+				height: 300px;
+				max-height: 300px;
+				background-size: 375px;
+			}
+
+			.crea_texto {
+				width: 100%;
+				max-width: 100%;
+				height: 300px;
+				max-height: 300px;
+			}
+
+			.navbar {
+				display: flex;
+				justify-content: space-between;
+				flex-direction: row;
+				align-items: baseline;
+				padding: 10px 0 0 0;
+				height: 54.5px;
+			}
+
+			/* .navbar > .navbar-brand > img {
+	width: auto;
+    height: 3.5rem;
+  } */
+			.navbar-brand {
+				padding-left: 30px;
+				padding-top: 7px;
+			}
+
+			.brand-destop {
+				display: none;
+			}
+
+			.brand-mobile {
+				display: unset;
+			}
+
+			.smart-text {
+				width: 100%;
+				max-width: 100%;
+				height: 300px;
+				max-height: 300px;
+				background-size: 375px;
+			}
+
+			.smart-text>span:nth-child(1) {
+				letter-spacing: 0.2px;
+				margin-bottom: 1rem;
+				font-size: 30px;
+				line-height: 35px;
+			}
+
+			.smart-text>span:nth-child(2) {
+				margin-top: 0;
+				font-size: 16px;
+				width: 250px;
+				line-height: 25px;
+			}
+
+			.smart {
+				width: 100%;
+				max-width: 100%;
+				height: 247px;
+				max-height: 300px;
+			}
+
+			.beneficio {
+				width: 100%;
+				max-width: 100%;
+				height: 300px;
+				max-height: 300px;
+				background-size: 375px;
+			}
+
+			.texto-beneficio {
+				width: 100%;
+				max-width: 100%;
+				height: 247px;
+				max-height: 300px;
+			}
+
+			.texto-beneficio>span:nth-child(1) {
+				letter-spacing: 0.2px;
+				margin-bottom: 1rem;
+				font-size: 30px;
+				line-height: 35px;
+			}
+
+			.texto-beneficio>span:nth-child(2) {
+				margin-top: 0;
+				font-size: 16px;
+				width: 250px;
+				line-height: 25px;
+			}
+
+			.section-distint {
+				width: 100%;
+			}
+
+			.faq {
+				justify-content: space-evenly;
+			}
+
+			.faq h3 {
+				letter-spacing: 0.2px;
+				margin-bottom: 0 !important;
+				font-size: 30px;
+				line-height: 35px;
+				margin: 0;
+				padding: 3rem 0;
+			}
+
+			.section-distint>.faq>.content-faq {
+				width: 100%;
+				margin: 0;
+				padding-bottom: 3rem;
+			}
+
+			.accordion {
+				width: 100%;
+			}
+
+			.faq h2 {
+				margin-top: 0;
+				font-size: 22px;
+				width: 250px;
+				line-height: 25px;
+			}
+
+			.fq img {
+				width: 23px;
+			}
+
+			.btn-primary:active {
+				background-color: transparent !important;
+			}
+
+			.btn-primary:focus {
+				box-shadow: none !important;
+			}
+		}
+	</style>
 </head>
 
 <body>
+	<div id="home_inicio" class="home_inicio_Class">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Nighx</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+		<nav class="navbar navbar-expand-lg nav-bg fixed-top">
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Series</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Peliculas</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Estrenos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Mi lista</a>
-                </li>
-            </ul>
+			<a class="navbar-brand brand-destop" href="#"><img src="./images/icons/logo.svg" alt=""></a>
+			<a class="navbar-brand brand-mobile" href="#"><img src="./images/icons/logo-mobile.svg" alt=""></a>
 
-            <button id="html" class="btn btn-primary" >Ingresar</button>
 
-        </div>
-    </nav>
+			<button id="html" class="btn btn-primary outline-btn">Ingresar</button>
 
-    <div class="row" >
-        <div class="col" >
-            <div id="ajax">
 
-            </div>
-        </div>
-    </div>
 
-    <footer class="pt-4 my-md-5 pt-md-5 border-top">
-        <div class="row">
-            
-            <div class="col-6 col-md text-center">
-                <ul class="list-unstyled text-small">
-                    <li><a class="text-muted" href="#">Inicio</a></li>
-                    <li><a class="text-muted" href="#">Ayuda</a></li>
-                    <li><a class="text-muted" href="#">Planes</a></li>
-                    <a class="navbar-brand" href="#">Nighx</a>
-                    	
-                </ul>
-                <ul class="social-network social-circle">
-                        <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-                    </ul>
-            </div>
-        </div>
-    </footer>
+		</nav>
+		<div id="in-inicio">
+			<div class="text-in">
+				<span>Miles de películas<br />clásicos y estrenos.<br />Series originales</span>
+			</div>
+			<button id="html-in" class="btn btn-primary outline-btn">Probar ahora</button>
+		</div>
+	</div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/ajax.js"></script>
+	</div>
+	<div class="row section-two ">
+		<div class="col-6 crea_lista">
 
+		</div>
+		<div class="col-6 crea_texto">
+			<span>Crea tu lista<br />de favoritos</span>
+			<span>Podrás transmitir más de 10,000 episodios de sus series favoritas, programas de horario estelar y
+				nocturno de Nighx para ponerse al día con éxitos clásicos.</span>
+
+		</div>
+
+	</div>
+	<div class="row section-two">
+		<div class="col-6 smart-text ">
+			<span>Disfruta en<br />tu Smart Tv</span>
+			<span>Puedes ver en smart TV, PlayStation,
+				Xbox, Chromecast, Apple TV, reproductores
+				de Blu-ray y más. Elegir donde ver
+				ahora es tu decisión</span>
+		</div>
+		<div class="col-6 smart ">
+
+		</div>
+
+	</div>
+	<div class="row section-two">
+		<div class="col-6 beneficio ">
+
+		</div>
+		<div class="col-6 texto-beneficio">
+			<span>Calificanos para<br />obtener beneficios</span>
+			<span>Calificando cualquiera de nuestros
+				productos, participas de sorteos por
+				descuentos promocionales pensados de
+				acuerdo a tus referencias.</span>
+		</div>
+
+	</div>
+	<div class="row section-distint">
+		<!-- <div class="mask-distint" >
+
+		</div> -->
+		<div class="faq">
+			<h3>Preguntas frecuentes</h3>
+			<div class="content-faq">
+				<!-- <div class="faq1" >
+	
+				</div>
+				<div class="faq1" >
+	
+				</div>
+				<div class="faq1" >
+	
+				</div>
+				<div class="faq1" >
+	
+				</div>
+				<div class="faq1" >
+	
+				</div> -->
+				<div class="accordion" id="accordionExample">
+					<div class="card faq">
+						<div class="card-header" id="headingOne">
+							<h2 class="mb-0">
+								¿Qué es Nighx?
+
+							</h2>
+							<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+								aria-expanded="true" aria-controls="collapseOne"><img class="faqPlus"
+									src="./images/icons/plus.svg" alt=""></button>
+						</div>
+
+						<div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+							data-parent="#accordionExample">
+							<div class="card-body">
+								Nighx es un servicio de streaming que ofrece una gran variedad de programas, películas y
+								documentales premiados en casi cualquier pantalla conectada a internet.
+								<br><br>
+								Todo lo que quieras ver, sin límites ni comerciales, a un costo muy accesible. Siempre
+								hay algo nuevo por descubrir, ¡y todas las semanas se agregan más programas y películas!
+							</div>
+						</div>
+					</div>
+					<div class="card faq">
+						<div class="card-header" id="headingTwo">
+							<h2 class="mb-0">
+								¿Cuánto cuesta Nighx?
+
+							</h2>
+							<button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+								data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><img
+									class="faqPlus" src="./images/icons/plus.svg" alt=""></button>
+						</div>
+						<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+							data-parent="#accordionExample">
+							<div class="card-body">
+								Ve Nighx en tu smartphone, Tablet, Smart TV, laptop o dispositivo de streaming, todo por
+								una tarifa plana mensual muy accesible. Planes desde $89.90 al mes (sin impuestos). Sin
+								costos adicionales ni contratos.
+							</div>
+						</div>
+					</div>
+					<div class="card faq">
+						<div class="card-header" id="headingThree">
+							<h2 class="mb-0">
+								¿Dónde puedo ver Nighx?
+
+							</h2>
+							<button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+								data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><img
+									class="faqPlus" src="./images/icons/plus.svg" alt=""></button>
+						</div>
+						<div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+							data-parent="#accordionExample">
+							<div class="card-body">
+								Ve donde quieras, cuando quieras y en todos los dispositivos que quieras. Inicia sesión
+								en tu cuenta de Netflix para ver contenido al instante a través de netflix.com o en
+								cualquier dispositivo con conexión a internet que cuente con la app de Netflix, como
+								smart TV, smartphones, tablets, reproductores multimedia y consolas de juegos.
+								<br><br>
+								Además, puedes descargar tus programas favoritos con iOS, Android o la app para Windows
+								10. Con la función de descarga, puedes ver donde vayas y sin conexión a internet. Lleva
+								Netflix contigo adonde sea.
+							</div>
+						</div>
+					</div>
+
+
+
+
+
+
+					<div class="card faq">
+						<div class="card-header" id="headingThree">
+							<h2 class="mb-0">
+								¿Como cancelo mi plan?
+
+							</h2>
+							<button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+								data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree"><img
+									class="faqPlus" src="./images/icons/plus.svg" alt=""></button>
+						</div>
+						<div id="collapseFour" class="collapse" aria-labelledby="headingThree"
+							data-parent="#accordionExample">
+							<div class="card-body">
+								Netflix es flexible. Sin contratos molestos ni compromisos. Cancela la membresía online
+								con solo dos clics. No hay cargos por cancelación. Empieza y termina cuando quieras.
+								<br><br>
+							</div>
+						</div>
+					</div>
+					<div class="card faq">
+						<div class="card-header" id="headingThree">
+							<h2 class="mb-0">
+								¿Qué puedo ver en Nighx?
+
+							</h2>
+							<button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+								data-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree"><img
+									class="faqPlus" src="./images/icons/plus.svg" alt=""></button>
+						</div>
+						<div id="collapseFive" class="collapse" aria-labelledby="headingThree"
+							data-parent="#accordionExample">
+							<div class="card-body">
+								Netflix tiene un amplio catálogo de programas, películas, documentales, animes,
+								originales premiados y más. Todo lo que quieras ver, cuando quieras.
+								<br><br>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+
+
+	</div>
+
+
+	</div>
+	<!-- FOOTER -->
+	<footer>
+		<div>
+			<div class="links d-flex flex-column justyify-content-around">
+				<a href="#">Inicio</a>
+				<a href="#">Ayuda</a>
+				<a href="#">Planes</a>
+			</div>
+			<div>
+				<div class="footer-logo">
+					<img src="./images/icons/logo_footer.png" alt="">
+				</div>
+				<div class="icons-social">
+					<img src="./images/icons/social-footer.svg" alt="">
+				</div>
+			</div>
+
+		</div>
+		<div class="copyright">
+			<div>
+				<p>© 2019 by Nighx</p>
+			</div>
+		</div>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
 </body>
 
 </html>
