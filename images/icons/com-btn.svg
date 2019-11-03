@@ -1,0 +1,14 @@
+<svg id="com-btn" xmlns="http://www.w3.org/2000/svg" width="217" height="46" viewBox="0 0 217 46">
+  <g id="botonTransparente">
+    <g id="Component">
+      <g id="Button_Outline_Text_Icon_Default" data-name="Button Outline Text Icon Default" opacity="0.75">
+        <g id="bg" fill="#230035" stroke="#69ff33" stroke-width="4">
+          <rect width="217" height="46" stroke="none"/>
+          <rect x="2" y="2" width="213" height="42" fill="none"/>
+        </g>
+      </g>
+      <text id="Comentarios" transform="translate(96 29)" fill="#d9d9d9" font-size="16" font-family="SegoeUI-Bold, Segoe UI" font-weight="700" letter-spacing="0.049em"><tspan x="-51.615" y="0">Comentarios</tspan></text>
+    </g>
+  </g>
+  <path id="Polygon_4" data-name="Polygon 4" d="M9,0l9,15H0Z" transform="translate(180.005 38.234) rotate(-120)" fill="#69ff33"/>
+</svg>

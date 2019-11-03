@@ -1,0 +1,10 @@
+<svg id="cerrar" xmlns="http://www.w3.org/2000/svg" width="45" height="63" viewBox="0 0 45 63">
+  <text id="Cerrar-2" data-name="Cerrar" transform="translate(37 60)" fill="#d9d9d9" font-size="10" font-family="SegoeUI, Segoe UI"><tspan x="-26.938" y="0">Cerrar</tspan></text>
+  <g id="cerrar-3" data-name="cerrar">
+    <circle id="Ellipse_18" data-name="Ellipse 18" cx="22.5" cy="22.5" r="22.5" fill="#840000"/>
+    <g id="Group_371" data-name="Group 371" transform="translate(11 11)">
+      <rect id="Rectangle_633" data-name="Rectangle 633" width="31.078" height="3" rx="1.5" transform="translate(0 22.286) rotate(-45)" fill="#d9d9d9"/>
+      <rect id="Rectangle_634" data-name="Rectangle 634" width="31.078" height="3" rx="1.5" transform="translate(1.393 0) rotate(45)" fill="#d9d9d9"/>
+    </g>
+  </g>
+</svg>
