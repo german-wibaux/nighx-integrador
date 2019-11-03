@@ -634,6 +634,9 @@ footer .copyright {
         max-width: 1450px;
     }
 }
+.modal {
+    top: -10px;
+}
 .transparencia {
     width: 1920px;
     height: 1080px;
