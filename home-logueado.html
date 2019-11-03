@@ -8,80 +8,636 @@
     <!-- Bootstrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/home-logueado.css">
-    <!-- <link rel="stylesheet" href="./css/home-logueado.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./images/icons/N.png" sizes="32x32">
     <title>Nighx</title>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg nav-bg fixed-top">
-            
-            <a class="navbar-brand" href="#"><img src="./images/icons/logo.svg" alt=""></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link link" href="#">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link link" href="#">Series</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link link" href="#">Películas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link link" href="#">Estrenos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link link" href="#">Mi Lista</a>
-                    </li>
-                </ul>
-                
-                <a class="nav-icon" href="#"><img class="icon-img" src="./images/icons/search-icon.svg" alt=""></a>
-                <a class="nav-icon" href="#"><img class="icon-img" src="./images/icons/cast-icon.svg" alt=""></a>
-                <a class="nav-icon" href="#"><img class="icon-img" src="./images/icons/bell-icon.svg" alt=""></a>
-                <a class="nav-icon" href="#"><img class="icon-img" src="./images/icons/user-icon.svg" alt=""></a>
-            </div>
-            
-        </nav>
-        
-        <div class="estreno">
-            
+        <!-- NAV -->
+        <div class="nav-desktop">
+            <nav class="navbar navbar-expand-lg nav-bg fixed-top">
+
+                <a class="navbar-brand" href="#"><img src="./images/icons/logo.svg" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><img src="./images/icons/hamburg.svg" alt=""></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Links -->
+
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link link" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link" href="#">Series</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link" href="#">Películas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link" href="#">Estrenos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link" href="#">Mi Lista</a>
+                        </li>
+                    </ul>
+
+
+                    <!-- Icons -->
+                    <div class="icons">
+                        <!-- Search -->
+                        <div class="btn-group dropleft">
+                            <a data-toggle="dropdown" class="nav-icon" href="#"><img class="icon-img"
+                                    src="./images/icons/search-icon.svg" alt=""></a>
+                            <div class="dropdown-menu dropdown-search">
+                                <form>
+                                    <div class="form-group form-search">
+                                        <input type="text" class="form-control form-control-sm input" id="search"
+                                            placeholder="Título, personas, género">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- Cast -->
+                        <div class="btn-group">
+                            <a data-toggle="dropdown" class="nav-icon" href="#"><img class="icon-img"
+                                    src="./images/icons/cast-icon.svg" alt=""></a>
+                            <div class="dropdown-menu cast">
+                                <button class="dropdown-item" type="button">Smart TV</button>
+                                <button class="dropdown-item" type="button">Tablet</button>
+                                <button class="dropdown-item" type="button">Celular</button>
+                            </div>
+                        </div>
+                        <!-- Notificaciones -->
+                        <div class="btn-group">
+                            <a data-toggle="dropdown" class="nav-icon" href="#"><img class="icon-img"
+                                    src="./images/icons/bell-notif-icon.svg" alt=""></a>
+                            <div class="dropdown-menu notifications">
+                                <div class="notif">
+                                    <a href="#"><img src="./images/notif/notif1.png" alt=""></a>
+                                </div>
+                                <div class="dropdown-divider"></div>
+                                <div class="notif">
+                                    <a href="#"><img src="./images/notif/notif2.png" alt=""></a>
+                                </div>
+                                <div class="dropdown-divider"></div>
+                                <div class="notif">
+                                    <a href="#"><img src="./images/notif/notif3.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- User -->
+                        <div class="btn-group">
+                            <a data-toggle="dropdown" class="nav-icon" href="#"><img class="icon-img"
+                                    src="./images/icons/user-icon.svg" alt=""></a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <button class="dropdown-item d-flex justify-content-between" type="button">Silvia<span><img
+                                            src="./images/icons/user-dropdown-icon.png" alt=""></span></button>
+                                <button class="dropdown-item d-flex justify-content-between" type="button">Casimiro<span><img
+                                            src="./images/icons/user-dropdown-icon.png" alt=""></span></button>
+                                <button class="dropdown-item d-flex justify-content-between" type="button">Ernesto<span><img
+                                            src="./images/icons/user-dropdown-icon.png" alt=""></span></button>
+                                <button class="dropdown-item" type="button">Administrar perfiles</button>
+                                <div class="dropdown-divider"></div>
+                                <button class="dropdown-item" type="button">Cuenta</button>
+                                <button class="dropdown-item" type="button">Centro de ayuda</button>
+                                <button class="dropdown-item" type="button">Cerrar sesión</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </nav>
         </div>
+        
+
+        <!-- NAV MOBILE -->
+        <div class="nav-mobile fixed-top">
+            <nav class="navbar navbar-expand-lg fixed-top">
+        
+                <a class="navbar-brand" href="#"><img src="./images/icons/logo-mobile.svg" alt=""></a>
+        
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+                    aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><img src="./images/icons/hamburg.svg" alt=""></span>
+                </button>
+        
+                <div class="icons-mobile">
+                    <!-- Search -->
+                    <div class="btn-group">
+                        <a data-toggle="dropdown" class="nav-icon" href="#"><img class="icon-img"
+                                src="./images/icons/search-icon-mobile.svg" alt=""></a>
+                        <div class="dropdown-menu dropdown-search">
+                            <form>
+                                <div class="form-group form-search">
+                                    <input type="text" class="form-control form-control-sm input" id="search"
+                                        placeholder="Título, personas, género">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- Cast -->
+                    <div class="btn-group">
+                        <a data-toggle="dropdown" class="nav-icon" href="#"><img class="icon-img"
+                                src="./images/icons/cast-icon-mobile.svg" alt=""></a>
+                        <div class="dropdown-menu cast">
+                            <button class="dropdown-item" type="button">Smart TV</button>
+                            <button class="dropdown-item" type="button">Tablet</button>
+                            <button class="dropdown-item" type="button">Celular</button>
+                        </div>
+                    </div>
+                    <!-- Notificaciones -->
+                    <div class="btn-group">
+                        <a data-toggle="dropdown" class="nav-icon" href="#"><img class="icon-img"
+                                src="./images/icons/bell-notif-icon-mobile.svg" alt=""></a>
+                        <div class="dropdown-menu notifications">
+                            <div class="notif">
+                                <a href="#"><img src="./images/notif/notif1-mobile.svg" alt=""></a>
+                            </div>
+                            <div class="dropdown-divider"></div>
+                            <div class="notif">
+                                <a href="#"><img src="./images/notif/notif2-mobile.svg" alt=""></a>
+                            </div>
+                            <div class="dropdown-divider"></div>
+                            <div class="notif">
+                                <a href="#"><img src="./images/notif/notif3-mobile.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- User -->
+                    <div class="btn-group">
+                        <a data-toggle="dropdown" class="nav-icon" href="#"><img class="icon-img"
+                                src="./images/icons/user-icon-mobile.svg" alt=""></a>
+                        <div class="dropdown-menu dropdown-user dropdown-menu-right">
+                            <button class="dropdown-item d-flex justify-content-between" type="button">Silvia<span><img
+                                        src="./images/icons/user-dropdown-icon.png" alt=""></span></button>
+                            <button class="dropdown-item d-flex justify-content-between" type="button">Casimiro<span><img
+                                        src="./images/icons/user-dropdown-icon.png" alt=""></span></button>
+                            <button class="dropdown-item d-flex justify-content-between" type="button">Ernesto<span><img
+                                        src="./images/icons/user-dropdown-icon.png" alt=""></span></button>
+                            <button class="dropdown-item" type="button">Administrar perfiles</button>
+                            <div class="dropdown-divider"></div>
+                            <button class="dropdown-item" type="button">Cuenta</button>
+                            <button class="dropdown-item" type="button">Centro de ayuda</button>
+                            <button class="dropdown-item" type="button">Cerrar sesión</button>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <!-- Links -->
+                    <ul class="navbar-nav mr-auto links-mobile">
+                        <li class="nav-item">
+                            <a class="nav-link link" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link" href="#">Series</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link" href="#">Películas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link" href="#">Estrenos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link" href="#">Mi Lista</a>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </nav>
+        </div>
+
     </header>
-    
-    <main>
+
+    <!-- MAIN ESTRENO -->
+    <div class="main">
         <div class="estreno-nighx">
             <h1>Estreno Nighx</h1>
-            <p>Ed y Lorraine Warren tratan de encerrar bajo llave a Annabelle, una muñeca poseída. Como demonólogos la colocaran en una vitrina bendecida como medida de seguridad.</p>
+            <p>Ed y Lorraine Warren tratan de encerrar bajo llave a Annabelle, una muñeca poseída. Como demonólogos la colocaran
+                en una vitrina bendecida como medida de seguridad.</p>
             <div class="estreno-buttons">
                 <div>
                     <button type="button" class="btn btn-outline-primary btn-lg button icon-violet-btn"><span class="icon"><img class="icon-scale" src="./images/icons/play.png" alt=""></span><span class="btn-text">Reproducir</span></button>
+                    <a class="mobile-button" href="#"><img src="./images/icons/reproducir-button-mobile.svg" alt=""></a>
                 </div>
                 <div>
                     <button type="button" class="btn btn-outline-primary btn-lg button icon-violet-btn"><span class="icon"><img class="icon-scale" src="./images/icons/trailer.svg" alt=""></span><span class="btn-text">Trailer</span></button>
+                    <a class="mobile-button" href="#"><img src="./images/icons/trailer-button-mobile.svg" alt=""></a>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="tiras">
-            <div class="tira continuar">
-
+    <!-- MAIN MOBILE -->
+    <div class="main-mobile">
+        <img src="./images/mainbg-mobile.svg" alt="">
+    </div>
+    
+    <!-- TIRAS -->
+    <div class="tiras">
+        <!-- Continuar -->
+        <section class="tira">
+            <div class="tira-top d-flex justify-content-between">
+                <h1>Continuar viendo</h1>
+                <div class="btn-group arrows" role="group">
+                    <button id="lContinuar" type="button" class="btn btn-secondary arrow-left"><img id="laContinuar" class="arrow-gray" src="./images/icons/arrow-icon.svg" alt=""></button>
+                    <button id="lContinuarM" type="button" class="btn btn-secondary arrow-left-mobile"><img id="laContinuarM" class="arrow-gray" src="./images/icons/arrow-icon-mobile.svg" alt=""></button>
+                    <button id="rContinuar" type="button" class="btn btn-secondary arrow-right"><img id="raContinuar" src="./images/icons/arrow-icon.svg" alt=""></button>
+                    <button id="rContinuarM" type="button" class="btn btn-secondary arrow-right-mobile"><img id="raContinuarM" src="./images/icons/arrow-icon-mobile.svg" alt=""></button>
+                </div>
             </div>
-            <div class="tira sugerencias">
-
+            <div id="continuar" class="cards d-flex flex-row justify-content-between overflow-hidden">
+                <div class="card card-movie">
+                    <img src="images/cards/movie8.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" style="background: black;">
+                        <div>
+                            <h5 class="card-title">Martes 13</h5>
+                        </div>
+                        <div class="info-icon">
+                            <a href="#"><img src="./images/icons/info-icon.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-movie">
+                    <img src="images/cards/movie9.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" style="background: black;">
+                        <div>
+                            <h5 class="card-title">Bastardos Sin Gloria</h5>
+                        </div>
+                        <div class="info-icon">
+                            <a href="#"><img src="./images/icons/info-icon.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-movie">
+                    <img src="images/cards/movie10.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" style="background: black;">
+                        <div>
+                            <h5 class="card-title">Aladín</h5>
+                        </div>
+                        <div class="info-icon">
+                            <a href="#"><img src="./images/icons/info-icon.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-movie">
+                    <img src="images/cards/movie11.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" style="background: black;">
+                        <div>
+                            <h5 class="card-title">Avatar</h5>
+                        </div>
+                        <div class="info-icon">
+                            <a href="#"><img src="./images/icons/info-icon.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-movie">
+                    <img src="images/cards/movie12.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" style="background: black;">
+                        <div>
+                            <h5 class="card-title">13 Razones</h5>
+                        </div>
+                        <div class="info-icon">
+                            <a href="#"><img src="./images/icons/info-icon.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-movie">
+                    <img src="images/cards/movie13.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" style="background: black;">
+                        <div>
+                            <h5 class="card-title">El Rey León</h5>
+                        </div>
+                        <div class="info-icon">
+                            <a href="#"><img src="./images/icons/info-icon.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-movie">
+                    <img src="images/cards/movie14.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" style="background: black;">
+                        <div>
+                            <h5 class="card-title">La Llamada 3</h5>
+                        </div>
+                        <div class="info-icon">
+                            <a href="#"><img src="./images/icons/info-icon.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="tira recomendaciones">
+        </section>
+        
+        <!-- Sugerencias -->
+        <section class="tira">
+            <div class="tira-top d-flex justify-content-between">
+                <h1>Sugerencias personalizadas</h1>
+                <div class="btn-group arrows" role="group">
+                    <button id="lSugerencias" type="button" class="btn btn-secondary arrow-left"><img class="arrow-gray" id="laSugerencias" src="./images/icons/arrow-icon.svg" alt=""></button>
+                    <button id="lSugerenciasM" type="button" class="btn btn-secondary arrow-left-mobile"><img class="arrow-gray" id="laSugerenciasM" src="./images/icons/arrow-icon-mobile.svg" alt=""></button>
+                    <button id="rSugerencias" type="button" class="btn btn-secondary arrow-right"><img id="raSugerencias" src="./images/icons/arrow-icon.svg" alt=""></button>
+                    <button id="rSugerenciasM" type="button" class="btn btn-secondary arrow-right-mobile"><img id="raSugerenciasM" src="./images/icons/arrow-icon-mobile.svg" alt=""></button>
+                </div>
+            </div>
+            <div id="sugerencias" class="cards d-flex flex-row justify-content-between overflow-hidden">
+                <div class="card card-movie">
+                    <img src="images/cards/movie1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" style="background: black;">
+                        <div>
+                            <h5 class="card-title">Big Mouth</h5>
+                        </div>
+                        <div class="info-icon">
+                            <a href="#"><img src="./images/icons/info-icon.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-movie">
+                    <img src="images/cards/movie2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" style="background: black;">
+                        <div>
+                            <h5 class="card-title">Mad Max</h5>
+                        </div>
+                        <div class="info-icon">
+                            <a href="#"><img src="./images/icons/info-icon.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-movie">
+                    <img src="images/cards/movie3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" style="background: black;">
+                        <div>
+                            <h5 class="card-title">El Pionero</h5>
+                        </div>
+                        <div class="info-icon">
+                            <a href="#"><img src="./images/icons/info-icon.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-movie">
+                    <img src="images/cards/movie4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" style="background: black;">
+                        <div>
+                            <h5 class="card-title">Sin City</h5>
+                        </div>
+                        <div class="info-icon">
+                            <a href="#"><img src="./images/icons/info-icon.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-movie">
+                    <img src="images/cards/movie5.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" style="background: black;">
+                        <div>
+                            <h5 class="card-title">La Llamada 3</h5>
+                        </div>
+                        <div class="info-icon">
+                            <a href="#"><img src="./images/icons/info-icon.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-movie">
+                    <img src="images/cards/movie6.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" style="background: black;">
+                        <div>
+                            <h5 class="card-title">Martes 13</h5>
+                        </div>
+                        <div class="info-icon">
+                            <a href="#"><img src="./images/icons/info-icon.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-movie">
+                    <img src="images/cards/movie7.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" style="background: black;">
+                        <div>
+                            <h5 class="card-title">Bastardos Sin Gloria</h5>
+                        </div>
+                        <div class="info-icon">
+                            <a href="#"><img src="./images/icons/info-icon.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Recomendaciones -->
+        <section class="tira">
+            <div class="tira-top d-flex justify-content-between">
+                <h1>Recomendaciones destacadas</h1>
+                <div class="btn-group arrows" role="group">
+                    <button id="lRecomendaciones" type="button" class="btn btn-secondary arrow-left"><img id="laRecomendaciones" class="arrow-gray" src="./images/icons/arrow-icon.svg" alt=""></button>
+                    <button id="lRecomendacionesM" type="button" class="btn btn-secondary arrow-left-mobile"><img id="laRecomendacionesM" class="arrow-gray" src="./images/icons/arrow-icon-mobile.svg" alt=""></button>
+                    <button id="rRecomendaciones" type="button" class="btn btn-secondary arrow-right"><img id="raRecomendaciones" src="./images/icons/arrow-icon.svg" alt=""></button>
+                    <button id="rRecomendacionesM" type="button" class="btn btn-secondary arrow-right-mobile"><img id="raRecomendacionesM" src="./images/icons/arrow-icon-mobile.svg" alt=""></button>
+                </div>
+            </div>
+            <div id="recomendaciones" class="cards d-flex flex-row justify-content-between overflow-hidden">
+                <div class="card card-movie">
+                    <img src="images/cards/movie15.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" style="background: black;">
+                        <div>
+                            <h5 class="card-title">13 Razones</h5>
+                        </div>
+                        <div class="info-icon">
+                            <a href="#"><img src="./images/icons/info-icon.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-movie">
+                    <img src="images/cards/movie16.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" style="background: black;">
+                        <div>
+                            <h5 class="card-title">El Rey León</h5>
+                        </div>
+                        <div class="info-icon">
+                            <a href="#"><img src="./images/icons/info-icon.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-movie">
+                    <img src="images/cards/movie17.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" style="background: black;">
+                        <div>
+                            <h5 class="card-title">Aladín</h5>
+                        </div>
+                        <div class="info-icon">
+                            <a href="#"><img src="./images/icons/info-icon.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-movie">
+                    <img src="images/cards/movie18.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" style="background: black;">
+                        <div>
+                            <h5 class="card-title">La Casa de Papel</h5>
+                        </div>
+                        <div class="info-icon">
+                            <a href="#"><img src="./images/icons/info-icon.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-movie">
+                    <img src="images/cards/movie3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" style="background: black;">
+                        <div>
+                            <h5 class="card-title">El Pionero</h5>
+                        </div>
+                        <div class="info-icon">
+                            <a href="#"><img src="./images/icons/info-icon.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-movie">
+                    <img src="images/cards/movie1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" style="background: black;">
+                        <div>
+                            <h5 class="card-title">Big Mouth</h5>
+                        </div>
+                        <div class="info-icon">
+                            <a href="#"><img src="./images/icons/info-icon.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-movie">
+                    <img src="images/cards/movie7.jpg" class="card-img-top" alt="...">
+                    <div class="card-body" style="background: black;">
+                        <div>
+                            <h5 class="card-title">Bastardos Sin Gloria</h5>
+                        </div>
+                        <div class="info-icon">
+                            <a href="#"><img src="./images/icons/info-icon.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 
+    <!-- PROXIMOS LANZAMIENTOS -->
+    <div class="proximos">
+        <div class="proximos-gradient">
+            <div class="proximos-header d-flex justify-content-between">
+                <h1>Próximos lanzamientos</h1>
+                <div class="btn-group arrows" role="group">
+                    <button id="lProximos" type="button" class="btn btn-secondary arrow-left"><img id="laProximos" class="arrow-gray"
+                            src="./images/icons/arrow-icon.svg" alt=""></button>
+                    <!-- <button id="lContinuarM" type="button" class="btn btn-secondary arrow-left-mobile"><img id="laContinuarM"
+                            class="arrow-gray" src="./images/icons/arrow-icon-mobile.svg" alt=""></button> -->
+                    <button id="rProximos" type="button" class="btn btn-secondary arrow-right"><img id="raProximos"
+                            src="./images/icons/arrow-icon.svg" alt=""></button>
+                    <!-- <button id="rContinuarM" type="button" class="btn btn-secondary arrow-right-mobile"><img id="raContinuarM"
+                            src="./images/icons/arrow-icon-mobile.svg" alt=""></button> -->
+                </div>
+            </div>
+            
+            <div class="proximos-tira d-flex justify-content-start">
+                <div class="proximos-card">
+                    <img src="./images/proximos/proximos1.svg" alt="">
+                    <div class="proximos-buttons d-flex justify-content-between">
+                        <div class="proximos-trailer-button">
+                            <button type="button" class="btn btn-outline-primary btn-lg button icon-violet-btn"><span class="icon"><img class="icon-scale" src="./images/icons/trailer.svg" alt=""></span><span class="btn-text">Trailer</span></button>
+                        </div>
+                        <div class="proximos-like-buttons d-flex justify-content-around align-items-center">
+                            <div class="tup-icon" style="cursor: pointer;"><img id="tup" src="./images/icons/tup-icon.svg" alt=""></div>
+                            <div class="tdown-icon" style="cursor: pointer;"><img id="tdown" src="./images/icons/tdown-icon.svg" alt=""></div>
+                            <div class="heart-icon" style="cursor: pointer;"><img id="heart" src="./images/icons/heart-icon.svg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="proximos-card">
+                    <img src="./images/proximos/proximos2.svg" alt="">
+                    <div class="proximos-buttons d-flex justify-content-between">
+                        <div class="proximos-trailer-button">
+                            <button type="button" class="btn btn-outline-primary btn-lg button icon-violet-btn"><span class="icon"><img class="icon-scale" src="./images/icons/trailer.svg" alt=""></span><span class="btn-text">Trailer</span></button>
+                        </div>
+                        <div class="proximos-like-buttons d-flex justify-content-around align-items-center">
+                            <div class="tup-icon" style="cursor: pointer;"><img id="tup" src="./images/icons/tup-icon.svg" alt=""></div>
+                            <div class="tdown-icon" style="cursor: pointer;"><img id="tdown" src="./images/icons/tdown-icon.svg" alt=""></div>
+                            <div class="heart-icon" style="cursor: pointer;"><img id="heart" src="./images/icons/heart-icon.svg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="proximos-card">
+                    <img src="./images/proximos/proximos3.svg" alt="">
+                    <div class="proximos-buttons d-flex justify-content-between">
+                        <div class="proximos-trailer-button">
+                            <button type="button" class="btn btn-outline-primary btn-lg button icon-violet-btn"><span class="icon"><img class="icon-scale" src="./images/icons/trailer.svg" alt=""></span><span class="btn-text">Trailer</span></button>
+                        </div>
+                        <div class="proximos-like-buttons d-flex justify-content-around align-items-center">
+                            <div class="tup-icon" style="cursor: pointer;"><img id="tup" src="./images/icons/tup-icon.svg" alt=""></div>
+                            <div class="tdown-icon" style="cursor: pointer;"><img id="tdown" src="./images/icons/tdown-icon.svg" alt=""></div>
+                            <div class="heart-icon" style="cursor: pointer;"><img id="heart" src="./images/icons/heart-icon.svg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="proximos-card">
+                    <img src="./images/proximos/proximos4.svg" alt="">
+                    <div class="proximos-buttons d-flex justify-content-between">
+                        <div class="proximos-trailer-button">
+                            <button type="button" class="btn btn-outline-primary btn-lg button icon-violet-btn"><span class="icon"><img class="icon-scale" src="./images/icons/trailer.svg" alt=""></span><span class="btn-text">Trailer</span></button>
+                        </div>
+                        <div class="proximos-like-buttons d-flex justify-content-around align-items-center">
+                            <div class="tup-icon" style="cursor: pointer;"><img id="tup" src="./images/icons/tup-icon.svg" alt=""></div>
+                            <div class="tdown-icon" style="cursor: pointer;"><img id="tdown" src="./images/icons/tdown-icon.svg" alt=""></div>
+                            <div class="heart-icon" style="cursor: pointer;"><img id="heart" src="./images/icons/heart-icon.svg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="proximos-overlay">
+            
             </div>
         </div>
-    </main>
+    </div>
+
+    <!-- PROXIMOS LANZAMIENTOS MOBILE -->
+    <div class="proximos-mobile">
+        <div class="proximos-header-mobile">
+            <h1>Próximos lanzamientos</h1>
+        </div>
+        <div class="proximos-buttons-mobile d-flex justify-content-between">
+            <button id="lProximos-mobile" type="button" class="btn proximos-btn-mobile"><img id="laProximos-mobile" src="./images/icons/lArrow-mobile.svg" alt=""></button>
+            <button id="rProximos-mobile" type="button" class="btn proximos-btn-mobile"><img id="raProximos-mobile" src="./images/icons/rArrow-mobile.svg" alt=""></button>
+        </div>
+        <div class="proximos-card-mobile">
+            
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div>
+            <div class="links d-flex flex-column justyify-content-around">
+                <a href="#">Inicio</a>
+                <a href="#">Ayuda</a>
+                <a href="#">Planes</a>
+            </div>
+            <div>
+                <div class="footer-logo">
+                    <img src="./images/icons/logo_footer.png" alt="">
+                </div>
+                <div class="icons-social">
+                    <img src="./images/icons/social-footer.svg" alt="">
+                </div>
+            </div>
     
-    
+        </div>
+        <div class="copyright">
+            <div>
+                <p>© 2019 by Nighx</p>
+            </div>
+        </div>
+    </footer>
     
     <script src="./js/jquery-3.4.1.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/ajax.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/cards-scroll.js"></script>
+    <script src="./js/proximos.js"></script>
+    <script src="./js/ajax.js"></script>
     
 </body>
 </html>

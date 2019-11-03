@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="49" height="48" viewBox="0 0 49 48">
+  <g id="rArrow-mobile" transform="translate(-26.574 183.004)">
+    <rect id="bg" width="49" height="48" transform="translate(26.574 -183.004)" fill="#230036" opacity="0.6"/>
+    <path id="icn_arrow" data-name="icn arrow" d="M22.032,23.789l-2.461-2.461-6.8,6.8V0H9.258V28.125l-6.8-6.8L0,23.789,11.016,34.805Z" transform="translate(33.865 -147.995) rotate(-90)" fill="#66f931"/>
+  </g>
+</svg>
