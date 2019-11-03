@@ -2,6 +2,7 @@
     margin: 0px;
 }
 html, body {
+    font-family: 'Open Sans', sans-serif;
     width: 100%;
     height: 100%;
 }
@@ -18,9 +19,8 @@ html, body {
     background: url(../images/usuario-logueado.jpg)no-repeat center center;
     background-size: 100%;
 }
+
 /* Main Mobile */
-
-
 @media (max-width: 375px) {
     .main {
         display: none;
@@ -642,81 +642,63 @@ html, body {
 }
 
 
-/* @media (max-width: 375px) {
-    .proximos-card {
-        display: none;
-    }
-    .proximos-card-mobile {
-        display: block;
-    }
-    .proximos {
-        width: 375px;
-        height: 220px;
-        border-top: 1px solid #69FF33;
-    }
-    .proximos-gradient {
-        width: 375px;
-        height: 220px;
-    }
-    .proximos-header {
-        width: 375px;
-        height: 40px;
-        padding-left: 35px;
-        padding-right: 35px;
-        padding-top: 10px;
-    }
-    .proximos-header h1 {
-        font-size: 12px;
-    }
-    .proximos-tira {
-        width: 340px;
-        height: 150px;
-        margin-left: 35px;
-        overflow: hidden;  
-    }
-    .proximos-card {
-        height: 120px;
-        width: 266px;
-    }
-    .proximos-card img {
-        height: 120px;
-    }
-    .proximos-overlay {
-        height: 150px;
-    }
-    .proximos-buttons {
-        left: -77px;
-        bottom: 50px;
-        transform: scale(0.25);
-    }
-} */
-
 /* FOOTER */
+.footerContainer {
+    height: 500px;
+    width: 1920px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+.footerInfoContainer {
+    display: block;
+    width: 100%;
+} 
+.icons-social {
+    margin-bottom: 60px;
+}
 footer {
     width: 1920px;
     background: black;
-    border-top: 4px solid #69FF33;
+    border-top: 4px solid rgb(105, 255, 51);;
     text-align: center;
-    color: #707070;
+    color: rgb(112, 112, 112);
 }
 footer .links {
-    /* height: 430px; */
-    height: 250px;
-    font-size: 18px;
-    padding: 20px 0;
+    height: 430px;
+    font-size: 22px;
+    padding-top: 110px;
+    padding-bottom: 20px;
+}
+.footer-logo{
+    height: 50px;
+    margin-bottom: 30px;
 }
 .links a {
     /* text-decoration: none; */
-    color: #707070;
+    color: rgb(112, 112, 112);
+    display: inline-block;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.links a:hover {
+    color: rgb(217, 217, 217);
 }
 footer .copyright {
     height: 100px;
-    border-top: 2px solid #69FF33;
+    border-top: 2px solid rgb(105, 255, 51);;
     padding: 35px 0;
-    font-size: 22px;
+    font-size: 18px;
 }
+
 /* FOOTER Mobile */
 @media (max-width: 375px) {
+    footer {
+        width:375px;
+    }
+}
+/* @media (max-width: 375px) {
     footer {
         width: 375px;
         border-top: 2px solid #69FF33;
@@ -742,4 +724,4 @@ footer .copyright {
         padding: 10px 0;
         font-size: 12px;
     }
-}
+} */
