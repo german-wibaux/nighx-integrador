@@ -11,13 +11,16 @@ header {
 }
 
 /*NAV*/
+img.logCenter {
+    width: 80%;
+}
 .navbar-brand {
     margin: 0;
 }
 .link {
     font-size: 25px;
     font-weight: 400;
-    color: #rgb(105, 255, 51);;
+    color: rgb(105, 255, 51);
     border-bottom: 2px solid transparent;
 }
 .link:hover {
@@ -46,7 +49,7 @@ header {
     height: 275px;
     padding-left: 140px;
     padding-right: 140px;
-    background: linear-gradient(rgb(0, 0, 0) 0%, rgb(37, 0, 56) 50%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(rgb(0, 0, 0) 0%, rgb(37, 0, 56) 50%, rgb(0,0,0) 100%);
 }
 .nav__elements {
     width: 100%;
@@ -83,7 +86,6 @@ a.recoverPassword {
     font-size: 16px;
     color: rgb(105, 255, 51);
     margin-right: 0px;
-    margin-bottom: 50px;
 }
 .form-check {
     display: flex;
@@ -290,11 +292,61 @@ a {
     a {
         color: inherit;
     }
-    footer {
-        width: 375px;
-        border-top: 2px solid rgb(105, 255, 51);;
+    .h1, h1 {
+        font-size: 2rem;
+        margin:0;
     }
-    footer .links {
+    header {
+        width: 375px;
+        height: 100px;
+    }
+    .newAcount {
+        margin-top: 40px;
+    }
+    a.PregFrec.newAcount  {
+        margin-top: 20px;
+    }
+   .background_nav {
+    height: 275px;
+    width: 375px;
+    background-color: black;
+    }
+    .logoCenter {
+        width: 70px;
+    }
+    .nav-bg {
+        padding: 0;
+        height: 100px;
+        width: 375px;
+    }
+    .container_form {
+        align-self: flex-start;
+        width: 100%;        
+        height: 750px;
+        padding: 30px;
+        background-image: linear-gradient(rgb(37, 0, 56) 0%, rgb(0, 0, 0) 100%);
+        border: 2px solid rgb(105, 255, 51);
+    }
+    
+    .container {
+        height: 686px;
+        padding: 0;
+        max-width: 375px;
+    }
+    .input {
+        margin-top: 30px;
+    }
+    .form-group {
+        margin-bottom: 1rem;
+    }
+    
+    .buttonForm {
+        width: 310px;
+    }
+   footer {
+        width:375px;
+    }
+    /* footer .links {
         height: 150px;
         font-size: 10px;
         padding: 5px 0;
@@ -315,5 +367,5 @@ a {
         border-top: 1px solid rgb(105, 255, 51);;
         padding: 10px 0;
         font-size: 12px;
-    }
+    } */
 }

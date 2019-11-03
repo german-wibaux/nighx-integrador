@@ -421,6 +421,11 @@ html, body {
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
 }
+.info-icon .btn-primary {
+    padding: 0px;
+    background-color: transparent;
+    border-color: transparent;
+}
 
 /* TIRAS Mobile */
 @media (max-width: 375px) {
@@ -690,6 +695,80 @@ footer .copyright {
     border-top: 2px solid rgb(105, 255, 51);;
     padding: 35px 0;
     font-size: 18px;
+}
+
+/* MODAL INFO PELI */
+@media (min-width: 1200px) {
+    .modal-xl {
+        max-width: 1450px;
+    }
+}
+.transparencia {
+    width: 1920px;
+    height: 1080px;
+}
+.modal-content {
+    background-color: #000000;
+    border: none;
+}
+.modal-header {
+    /* font-size: 42px; */
+    background: #000000;
+    color: #D9D9D9;
+    border: none;
+}
+.modal-body {
+    padding: 0px;
+}
+.modal-body img {
+    width: 100%;
+}
+button.close {
+    position: relative;
+    top: 50px;
+    right: 50px;
+}
+.com-btn {
+    top: 710px;
+    left: 1000px;
+    color: transparent;
+    background-color: transparent;
+    border-color: transparent;
+}
+.com-btn:hover {
+    color: transparent;
+    background-color: transparent;
+    border-color: transparent;
+}
+.com-btn:focus {
+    outline: none;
+}
+.show>.btn-secondary.dropdown-toggle {
+    color: transparent;
+    background-color: transparent;
+    border-color: transparent;
+}
+.show>.btn-secondary.dropdown-toggle:focus {
+    box-shadow: none;
+}
+.btn-secondary.focus, .btn-secondary:focus {
+    box-shadow: none;
+}
+.btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+    color: transparent;
+    background-color: transparent;
+    border-color: transparent;
+}
+.btn-secondary:not(:disabled):not(.disabled):active:focus, .show>.btn-secondary.dropdown-toggle:focus {
+    box-shadow: none;
+}
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    color: transparent;
+    background-color: transparent;
+    border-color: transparent;
+}
+.btn-primary.focus, .btn-primary:focus {
+    box-shadow: none;
 }
 
 /* FOOTER Mobile */
