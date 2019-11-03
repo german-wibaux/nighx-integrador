@@ -394,6 +394,11 @@
     	padding-right: 140px;
 		width: 1920px;
 	}
+
+	.btn-primary:hover {
+		background-color: transparent;
+	}
+
 	/* FOOTER */
 /* FOOTER */
 .footerContainer {
@@ -534,20 +539,9 @@ footer .copyright {
     justify-content: flex-end;
     padding-right: 2rem !important;
 }
-/* NAV */
-/* .navbar-nav {
-  margin: auto !important;
+.brand-mobile {
+	display: none;
 }
-.navbar-brand {
-  margin: 0;
-}
-.nav-bg {
-  width: 1920px;
-  height: 275px;
-  padding-left: 140px;
-  padding-right: 140px;
-  background: linear-gradient(rgb(0, 0, 0) 0%, rgb(37, 0, 56) 44%, rgba(255, 255, 255, 0) 100%);
-} */
 
 /* NAV */
 .nav-mobile {
@@ -599,34 +593,18 @@ footer .copyright {
 .icon-img:hover {
     border: 2px solid #69FF33;
 }
+.btn-primary:active {
+	background-color: transparent !important;
+}
+.btn-primary:focus {
+	box-shadow: none !important;
+}
 
 @media only screen and (max-width: 600px) {
 	footer {
         width: 375px;
         /* border-top: 2px solid rgb(105, 255, 51);; */
     }
-    /* footer .links {
-        height: 150px;
-        font-size: 10px;
-        padding: 5px 0;
-        justify-content: center !important;
-    }
-    footer .links a {
-        margin-bottom: 2px;
-    }
-    footer img {
-        transform: scale(0.4);
-    }
-    .footer-logo{
-        height: 50px;
-        margin-bottom: 30px;
-    }
-    footer .copyright {
-        height: 45px;
-        border-top: 1px solid rgb(105, 255, 51);;
-        padding: 10px 0;
-        font-size: 12px;
-    } */
 	.crea_texto > span:nth-child(2) {
 		margin-top: 0;
 		font-size: 16px;
@@ -708,6 +686,99 @@ footer .copyright {
 	padding-left: 30px;
     padding-top: 7px;
 }
+.brand-destop {
+	display: none;
+}
+.brand-mobile {
+	display: unset;
+}
+.smart-text {
+	width: 100%;
+    max-width: 100%;
+    height: 300px;
+    max-height: 300px;
+    background-size: 375px;
+}
+.smart-text > span:nth-child(1) {
+	letter-spacing: 0.2px;
+    margin-bottom: 1rem;
+    font-size: 30px;
+    line-height: 35px;
+}
+.smart-text > span:nth-child(2) {
+	margin-top: 0;
+    font-size: 16px;
+    width: 250px;
+    line-height: 25px;
+}
+.smart {
+	width: 100%;
+    max-width: 100%;
+    height: 247px;
+    max-height: 300px;
+}
+.beneficio {
+	width: 100%;
+    max-width: 100%;
+    height: 300px;
+    max-height: 300px;
+    background-size: 375px;
+}
+.texto-beneficio {
+	width: 100%;
+    max-width: 100%;
+    height: 247px;
+    max-height: 300px;
+}
+.texto-beneficio > span:nth-child(1) {
+	letter-spacing: 0.2px;
+    margin-bottom: 1rem;
+    font-size: 30px;
+    line-height: 35px;
+}
+.texto-beneficio > span:nth-child(2) {
+	margin-top: 0;
+    font-size: 16px;
+    width: 250px;
+    line-height: 25px;
+}
+.section-distint {
+	width: 100%;
+}
+.faq {
+	justify-content: space-evenly;
+}
+.faq h3 {
+	letter-spacing: 0.2px;
+    margin-bottom: 0 !important;
+    font-size: 30px;
+    line-height: 35px;
+    margin: 0;
+    padding: 3rem 0;
+}
+.section-distint > .faq > .content-faq {
+	width: 100%;
+    margin: 0;
+    padding-bottom: 3rem;
+}
+.accordion {
+	width: 100%;
+}
+.faq h2 {
+	margin-top: 0;
+    font-size: 22px;
+    width: 250px;
+    line-height: 25px;
+}
+.fq img {
+	width: 23px;
+}
+.btn-primary:active {
+	background-color: transparent !important;
+}
+.btn-primary:focus {
+	box-shadow: none !important;
+}
 }
 </style>
 </head>
@@ -716,7 +787,8 @@ footer .copyright {
 
 	<nav class="navbar navbar-expand-lg nav-bg fixed-top">
 		
-		<a class="navbar-brand" href="#"><img src="./images/icons/logo-mobile.svg" alt=""></a>
+		<a class="navbar-brand brand-destop" href="#"><img src="./images/icons/logo.svg" alt=""></a>
+		<a class="navbar-brand brand-mobile" href="#"><img src="./images/icons/logo-mobile.svg" alt=""></a>
 		
 
 			<button id="html" class="btn btn-primary outline-btn" >Ingresar</button>
