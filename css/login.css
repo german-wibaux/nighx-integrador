@@ -274,8 +274,22 @@ footer .copyright {
     padding: 35px 0;
     font-size: 18px;
 }
+a:hover {
+    color: inherit;
+    text-decoration: unset;
+}
+a {
+    color: inherit;
+}
 /* FOOTER Mobile */
 @media (max-width: 375px) {
+    a:hover {
+        color: inherit;
+        text-decoration: unset;
+    }
+    a {
+        color: inherit;
+    }
     footer {
         width: 375px;
         border-top: 2px solid rgb(105, 255, 51);;
