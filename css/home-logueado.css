@@ -165,11 +165,13 @@ html, body {
         display: none;
     }
     .navbar {
+        width: 375px;
         padding: 0px;
         padding-top: 10px;
     }
     .nav-mobile {
         display: block;
+        width: 375px;
         height: 80px;
         background: linear-gradient(rgb(0, 0, 0) 0%, rgb(37, 0, 56) 50%, rgba(255, 255, 255, 0) 100%);
     }
@@ -188,7 +190,7 @@ html, body {
     .icons-mobile {
         display: inline-flex;
         margin-top: 7px;
-        padding-right: 30px;
+        padding-right: 25px;
     }
     .nav-icon {
         padding: 0px !important;
@@ -208,7 +210,7 @@ html, body {
         margin-top: 10px;
     }
     .dropdown-menu-right {
-        right: -30px;
+        right: -25px;
         left: auto;
     }
     .dropdown-item {
@@ -228,12 +230,12 @@ html, body {
         height: 37px;
     }
     .cast {
-        left: -52px;
+        left: -54px;
     }
     .notifications {
         width: 199px;
         height: 364px;
-        left: -118px;
+        left: -120px;
     }
     .notif {
         width: 199px;
@@ -541,6 +543,9 @@ html, body {
 
 
 /* PROXIMOS LANZAMIENTOS */
+.proximos-mobile {
+    display: none;
+}
 .proximos {
     width: 1920px;
     height: 900px;
@@ -595,13 +600,63 @@ html, body {
 /* PROXIMOS LANZAMIENTOS Mobile */
 @media (max-width: 375px) {
     .proximos {
+        display: none;
+    }
+    .proximos-mobile {
         width: 375px;
-        height: 175px;
+        display: block;
+        border-top: 2px solid #69FF33;
+    }
+    .proximos-header-mobile {
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        background: linear-gradient(#250038, #000000);
+        margin-bottom: -1px;
+    }
+    .proximos-header-mobile h1 {
+        font-size: 22px;
+        text-align: center;
+        color: #D9D9D9;
+    }
+    .proximos-card-mobile {
+        width: 375px;
+        height: 780px;
+        overflow: hidden;
+        background: url(../images/proximos/proximos-mobile.svg);
+        transition: background-position-x 0.5s ease;
+    }
+    .proximos-buttons-mobile {
+        height: 0px;
+        position: relative;
+        top: 145px;
+    }
+    .proximos-btn-mobile {
+        padding: 0px;
+    }
+    .proximos-btn-mobile:focus {
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+
+/* @media (max-width: 375px) {
+    .proximos-card {
+        display: none;
+    }
+    .proximos-card-mobile {
+        display: block;
+    }
+    .proximos {
+        width: 375px;
+        height: 220px;
         border-top: 1px solid #69FF33;
     }
     .proximos-gradient {
         width: 375px;
-        height: 175px;
+        height: 220px;
     }
     .proximos-header {
         width: 375px;
@@ -615,11 +670,26 @@ html, body {
     }
     .proximos-tira {
         width: 340px;
-        height: 550px;
+        height: 150px;
         margin-left: 35px;
         overflow: hidden;  
     }
-}
+    .proximos-card {
+        height: 120px;
+        width: 266px;
+    }
+    .proximos-card img {
+        height: 120px;
+    }
+    .proximos-overlay {
+        height: 150px;
+    }
+    .proximos-buttons {
+        left: -77px;
+        bottom: 50px;
+        transform: scale(0.25);
+    }
+} */
 
 /* FOOTER */
 footer {

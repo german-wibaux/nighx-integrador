@@ -69,5 +69,32 @@ window.addEventListener('DOMContentLoaded', (event) => {
                 raProximos.classList.add('arrow-green');
             }
         }
-    };    
+    };
+
+    const proxMobile = document.getElementsByClassName('proximos-card-mobile')[0];
+    const laProxMobile = document.getElementById('lProximos-mobile');
+    const raProxMobile = document.getElementById('rProximos-mobile');
+    
+    const cardWidthMobile = 375;
+    const numOfCardsMobile = 4;
+    let pixelsMobile = 0;
+    let currentCardMobile = 1;
+
+    raProxMobile.onclick = function (event) {
+        event.preventDefault;
+        if (currentCardMobile >= 1 && currentCardMobile < numOfCardsMobile) {
+            currentCardMobile++;
+            pixelsMobile += cardWidthMobile;
+            proxMobile.style = 'background-position-x: -' + pixelsMobile + 'px;';
+        }
+    };
+    laProxMobile.onclick = function (event) {
+        event.preventDefault;
+        if (currentCardMobile > 1 && currentCardMobile <= numOfCardsMobile) {
+            currentCardMobile--;
+            pixelsMobile -= cardWidthMobile;
+            proxMobile.style = 'background-position-x: -' + pixelsMobile + 'px;';
+        }
+    };
+
 });
