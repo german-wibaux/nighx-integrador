@@ -19,6 +19,43 @@ html, body {
     background: url(../images/usuario-logueado.jpg)no-repeat center center;
     background-size: 100%;
 }
+#button-reproducir {
+    box-shadow: none;
+    background-color: rgba(41,6,60,.5);
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 0;
+}
+
+#button-reproducir-t {
+    box-shadow: none;
+    background-color: rgba(41,6,60,.5);
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 0;
+}
+
+#button-reproducir:active {
+    border: 2px solid #69FF33 !important;
+}
+
+#button-reproducir-t:active {
+    border: 2px solid #69FF33 !important;
+}
+
+#button-reproducir > .icon {
+    margin-top: 3px;
+}
+
+#button-reproducir-t > .icon {
+    height: 34px;
+}
 
 /* Main Mobile */
 @media (max-width: 375px) {
