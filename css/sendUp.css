@@ -63,9 +63,14 @@ html, body, .estreno {
     }
 
     .title_dark {
+        visibility: visible;        
         color: rgb(37, 0, 56);
         margin-top: 50px;
         margin-bottom: 0px;
+    }
+    .title_dark_mobile {
+        visibility: hidden;
+        display: none;
     }
     hr {
         margin-top: 0px;
@@ -177,17 +182,18 @@ html, body, .estreno {
         font-size: 22px !important;        
         letter-spacing: 0.49px;
         margin-bottom: 7rem;
-        color: rgba(36,0,58);
+        color:  rgb(37, 0, 56);
     }
 
     .btn-primary:hover {
-        background: linear-gradient(#d4fcc6 0%, #79ff4a 44%, #6fff3c 100%);
-        border: 3px solid rgba(37, 0, 56) !important;
-        font-weight: 600 !important;
-        color: rgba(36,0,58) !important;
+        border: 3px solid  rgb(37, 0, 56) !important;
+        color:  rgb(37, 0, 56) !important;
     }
     .btn-primary:active {
-        border: 4px solid rgba(37, 0, 56) !important;
+        color:rgb(37, 0, 56) !important;
+        background-color:  linear-gradient(#d4fcc6 0%, #79ff4a 44%, #6fff3c 100%) !important;
+        border-color: rgb(37, 0, 56) !important;
+        border: 4px solid  rgb(37, 0, 56) !important;
     }
     .form-check {
         padding-left: 0px;
@@ -225,7 +231,6 @@ html, body, .estreno {
     .container {
         margin: 0px;  
         margin-top: 0px; 
-        height: 850px; 
         width: 1920px;
         max-width: 1920px;
         background-image: linear-gradient(rgb(255,255, 255) 0%,rgb(217, 217, 217) 100%);
@@ -275,7 +280,7 @@ html, body, .estreno {
         /* border: 4px solid rgb(37,0,56); */
         margin-left: 20px;
         margin-right: 20px;
-        background: linear-gradient(rgb(255,255,255)0%,rgb(255,255,255)75%, rgb(217,217,217) 100%);
+        background: linear-gradient(rgba(255,255,255,0)0%,rgb(255,255,255)75%, rgb(217,217,217) 100%);
         color: rgb(37,0,56);
 
     }
@@ -287,7 +292,7 @@ html, body, .estreno {
         font-weight: 600 !important;
     }
     .card:active {
-        background: linear-gradient(rgb(255,255,255)0%,rgb(255,255,255)90%, rgb(105,255,51.6) 100%);
+        background: linear-gradient(rgb(255,255,255)0%,rgb(255,255,255)85%, rgb(105,255,51.6) 100%);
     }
     .card-derck {
         height: 300px;
@@ -384,13 +389,32 @@ html, body, .estreno {
     @media (max-width: 375px) {
         header {
             width: 375px;
+            height: 100px;
         }
        .background_nav {
            max-width: 375px;
        }
         .nav-bg {
-            width: 100%;
-            height: 275px;
+            width: 375px;
+            height: 100px;
+        }
+        .logoCenter {
+            width: 70px;
+        }
+        .title_dark {
+            display: none;
+            visibility: hidden;                
+        }
+        .title_dark_mobile {
+            visibility: visible; 
+            display: inline-block;       
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 0px;
+            margin-top: 30px;
+        }
+        .container_steps {
+            width: 350px;
         }
         .container_form {
             width: 100%;
@@ -398,13 +422,17 @@ html, body, .estreno {
         .container {
             max-width: 375px;
         }
-        .footerContainer {
-            height: 500px;
-            width:100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: black;
+        .container-steps {
+            max-width: 375px;
+        }
+        .card {
+            max-width: 375px;
+        }
+        .mb-3 {
+            max-width: 375px;
+        }
+        footer {
+            width:375px;
         }
         /* footer .links {
             height: 150px;
