@@ -663,6 +663,13 @@
 		.btn-primary:focus {
 			box-shadow: none !important;
 		}
+		#html-in > a {
+			color: inherit;			
+		}
+
+		#html-in > a:hover {
+			text-decoration: none;
+		}
 
 		@media only screen and (max-width: 600px) {
 			#cuando-quier {
@@ -920,7 +927,7 @@
 			<a class="navbar-brand brand-mobile" href="#"><img src="./images/icons/logo-mobile.svg" alt=""></a>
 
 
-			<a href="/nighx-integrador/login.html" class="btn btn-primary outline-btn">Ingresar</a>
+			<a href="./login.html" class="btn btn-primary outline-btn">Ingresar</a>
 
 
 
@@ -929,7 +936,7 @@
 			<div class="text-in">
 				<span>Miles de películas<br />clásicos y estrenos.<br />Series originales</span>
 			</div>
-			<button id="html-in" class="btn btn-primary outline-btn">Probar ahora</button>
+			<button id="html-in" class="btn btn-primary outline-btn"> <a href="./sendUp.html" >Probar ahora</a> </button>
 		</div>
 	</div>
 
@@ -972,7 +979,7 @@
 		</div>
 
 	</div>
-	<div class="row section-distint">
+	<div id="faq-section" class="row section-distint">
 		<!-- <div class="mask-distint" >
 
 		</div> -->
@@ -1119,9 +1126,9 @@
 	<footer>
 		<div>
 			<div class="links d-flex flex-column justyify-content-around">
-				<a href="#">Inicio</a>
-				<a href="#">Ayuda</a>
-				<a href="#">Planes</a>
+				<a href="#home_inicio">Inicio</a>
+				<a href="#faq-section">Ayuda</a>
+				<a href="./sendUp.html">Planes</a>
 			</div>
 			<div>
 				<div class="footer-logo">
