@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Nosifer&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>404</title>
+</head>
+<body>
+
+    <div class="popup" id="menu">
+        <div class="popup-content">
+            <!-- <h1>ZombieSpiderCleta Game</h1> -->
+            <img src="../images/icons/logo.svg" alt="">
+            <h4>La página a la que intentas acceder está en construcción o no existe</h4>
+            <p>Utilizá las flechas para que no te maten los monstruos</p>
+            <div class="botones">
+                <div>
+                    <button id="empezar" type="button" class="btn btn-outline-primary btn-lg button icon-violet-btn"><span class="btn-text">Jugar</span></button>
+                </div>
+                <div>
+                    <button id="volver" onclick='(function(){ window.history.back(); })();' type="button" class="btn btn-outline-primary btn-lg button icon-violet-btn"><span class="btn-text">Volver</span></button>
+                </div>
+                <!-- <a id="empezar" class="button">Jugar</a>
+                <a id="volver" onclick='(function(){ window.history.back(); })();' class="button">Volver</a> -->
+            </div>
+        </div>
+    </div>
+    
+    <div class="layer layer7">
+        <div class="layer layer6">
+            <div class="layer layer5">
+                <div class="layer layer4">
+                    <div class="layer layer3">
+                        <div class="layer layer2">
+                            <div class="layer layer1">
+                                
+                                <div id="avatar"></div>
+                                <div id="zombie"></div>
+                                <div id="spider"></div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- <audio loop type="audio/mpeg" id="audioGame" preload="auto" autoplay></audio> -->
+    <audio src="./sounds/die.mp3" type="audio/mpeg" id="dieAudio" preload="auto"></audio>
+        
+        <script src="./js/Character.js"></script>
+        <script src="./js/Avatar.js"></script>
+        <script src="./js/Zombie.js"></script>
+        <script src="./js/Spider.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
+    </html>
