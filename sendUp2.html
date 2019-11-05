@@ -30,56 +30,35 @@
         <div class="container_steps">
             <br /><br />
             <ul class="list-unstyled multi-steps">
-                <li class="is-active">Cuenta</li>
-                <li>Datos</li>
-                <li>Pago</li>
+                <li id="Paso1" class="is-active">Plan</li>
+                <li id="Paso2">Datos</li>
+                <li id="Paso3">Pago</li>
             </ul>
         </div>
         <div class="container_form">
-            <h1 class="color_text_global">Inicio de sesión</h1>
+            <h2 class="subtitle">Datos de usuario</h2>
+            <hr class="separator">
             <form>
                 <div class="form-group">
-                    <input type="email" class="form-control input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su email">
+                    <input type="email" class="form-control input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese email">
                     <div class="containerItemForm">                    
                     </div>
                 </div>
                 <div class="form-group">
-                    <input type="password" class="form-control input" id="exampleInputPassword1" placeholder="Ingrese su contraseña">
-                </div>
-                <div class="form-group form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label color_text_global" for="exampleCheck1">Recordarme</label>                 
-                    <a class="recoverPassword" href="">Olvidé mi contraseña</a>
-                </div>
-                <button class="buttonForm btn-primary outline-btn" ><a href="./login.html">Iniciar sesión</a></button>
-                <p class="color_text_global newAcount">¿Eres nuevo en Nighx?</p>
-                <a class="buttonForm btn btn-primary outline-btn" >Crear cuenta en Nighx</a>
-                <div class="form-group form-check">                 
-                    <a class="PregFrec recoverPassword" href="">¿Necesitas ayuda?</a>
-                </div>
-            </form>
+                    <input type="password" class="form-control input" id="exampleInputPassword1" placeholder="Ingrese contraseña válida">
+                <p>Debe contener al menos 8 caracteres</p>
+                </div>     
+                <div class="form-group">
+                     <input type="password" class="form-control input" id="exampleInputPassword1" placeholder="Repita su contraseña">
+                </div>                     
+            </form>       
         </div>
-        <form>
-            <div class="form-group">
-                <input type="email" class="form-control input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su email">
-            </div>
-            <div class="form-group">
-                <input type="password" class="form-control input" id="exampleInputPassword1" placeholder="Ingrese su contraseña">
-            </div>
-            <div class="form-group form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label color_text_global" for="exampleCheck1">Recordarme</label>                 
-                <a class="recoverPassword" href="">Olvidé mi contraseña</a>
-            </div>
-            <div class="form-group">
-                <input type="password" class="form-control input" id="exampleInputPassword1" placeholder="Ingrese su contraseña">
-            </div>
-            <div>
-                <button class="btn-primary outline-btn">Continuar</button> 
-            </div>    
-            </div>
-        </form> 
-       
+        <div>
+            <i class="fas fa-arrow-circle-left"></i>
+        </div>
+        <div>
+            <button type="submit" class="btn-primary outline-btn"> <a href="sendUp2.html">Continuar</a> </button> 
+        </div>        
     </div> 
     
     <footer>

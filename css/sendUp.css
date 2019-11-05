@@ -98,9 +98,10 @@ html, body, .estreno {
         margin-bottom: 20px;
     }
     .container_steps {
-        width: 700px;
+        width: 620px;
         margin-bottom: 50px;
     }
+
     .multi-steps > li.is-active:before, .multi-steps > li.is-active ~ li:before {
         content: counter(stepNum);
         font-family: inherit;
@@ -143,7 +144,7 @@ html, body, .estreno {
    }
     .multi-steps > li:after {
         content: '';
-        height: 10px;
+        height: 7px;
         width: 100%;
         margin-left: 18px;
         background-color: rgb(37, 0, 56);
@@ -194,6 +195,10 @@ html, body, .estreno {
   .btn-primary > a {
     width: 250px;
     height: 60px;
+    color:  rgb(37, 0, 56, .5) !important;
+    text-decoration: none;
+  }
+  .btn-primary > a:hover {  
     color:  rgb(37, 0, 56) !important;
     text-decoration: none;
     outline: none;
@@ -203,7 +208,7 @@ html, body, .estreno {
     height: 55px;
   }
     .btn-primary {
-        background: linear-gradient(#d4fcc6 0%, #79ff4a 44%, #6fff3c 100%);
+        background: linear-gradient(rgba(212, 252, 198,.5) 0%, rgba(121, 255, 74,.5) 44%, rgba(111, 255, 60,.5) 100%);
         width: 250px;
         height: 60px;
         border: 0 solid transparent !important;
@@ -221,6 +226,7 @@ html, body, .estreno {
     }
 
     .btn-primary:hover {
+        background: linear-gradient(rgba(212, 252, 198,1) 0%, rgba(121, 255, 74,1) 44%, rgba(111, 255, 60,1) 100%);
         background-color: rgb(37, 0, 56) !important;
         border: 2px solid  rgb(37, 0, 56) !important;
         color:  rgb(37, 0, 56) !important;
@@ -304,6 +310,7 @@ html, body, .estreno {
     h2 {
         color: rgb(37, 0, 56);
     }
+
     /*CARDS*/
     .card-header{
         padding: 20px 40px;
