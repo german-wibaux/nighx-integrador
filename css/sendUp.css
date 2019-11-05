@@ -98,7 +98,7 @@ html, body, .estreno {
         margin-bottom: 20px;
     }
     .container_steps {
-        width: 550px;
+        width: 620px;
         margin-bottom: 50px;
     }
 
@@ -298,9 +298,7 @@ html, body, .estreno {
     h2 {
         color: rgb(37, 0, 56);
     }
-    h2.subtitle {
-        margin-left: 7px;
-    }
+
     /*CARDS*/
     .card-header{
         padding: 20px 40px;
