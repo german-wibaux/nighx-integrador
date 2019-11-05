@@ -82,7 +82,7 @@ html, body, .estreno {
     img {
         margin: 35px 0px 0px 0px;
     }
-    p.messagePass {
+    p.messagePay {
         margin-bottom: 50px;
         text-align: center;
     }
@@ -231,6 +231,23 @@ html, body, .estreno {
     div.fa-arrow-circle-left {
         width: 50px;
     }
+    
+    .btn-second {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(#000000 0%, rgb(37, 0, 56) 44%,rgb(37, 0, 56));
+        width: 310px;
+        height: 60px;
+        border: 0 solid transparent !important;
+        font-weight: bold !important;
+        font-size: 22px !important;        
+        letter-spacing: 0.49px;
+        margin-bottom: 7rem;
+        margin-top: 40px;
+        color:  rgb(217, 217, 217);
+    }
+    }
     .btn-primary {
         display: flex;
         justify-content: center;
@@ -262,11 +279,9 @@ html, body, .estreno {
         border: 2px solid  rgb(37, 0, 56) !important;
         color:  rgb(37, 0, 56) !important;
     }
-    .btn-primary:active {
-        color:rgb(37, 0, 56) !important;
-        background-color:  linear-gradient(#d4fcc6 0%, #79ff4a 44%, #6fff3c 100%) !important;
-        border-color: rgb(37, 0, 56) !important;
-        border: 4px solid  rgb(37, 0, 56) !important;
+    .btn-primary:active {     
+        background:  linear-gradient(#d4fcc6 0%, #79ff4a 44%, #6fff3c 100%) !important;
+        border: 3px solid  rgb(37, 0, 56) !important;
     }
     .form-check {
         padding-left: 0px;

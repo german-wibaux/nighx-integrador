@@ -224,7 +224,7 @@ html, body, .estreno {
         color:  rgb(37, 0, 56) !important;
     }
     .btn-primary:active {
-        border: 4px solid  rgb(37, 0, 56) !important;
+        border: 3px solid  rgb(37, 0, 56) !important;
     }
     .form-check {
         padding-left: 0px;

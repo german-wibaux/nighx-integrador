@@ -216,12 +216,15 @@ html, body, .estreno {
     div.fa-arrow-circle-left {
         width: 50px;
     }
-    .btn-primary {
+    .contain_btn {
         display: flex;
+    }
+    .btn-second {
+        margin-right: 15px;
         justify-content: center;
         align-items: center;
-        background: linear-gradient(#d4fcc6 0%, #79ff4a 44%, #6fff3c 100%);
-        width: 310px;
+        background: linear-gradient(rgba(0, 0, 0,.7) 0%, rgba(37, 0, 56,.7) 44%,rgba(37, 0, 56,.7));
+        width: 250px;
         height: 60px;
         border: 0 solid transparent !important;
         font-weight: bold !important;
@@ -229,24 +232,44 @@ html, body, .estreno {
         letter-spacing: 0.49px;
         margin-bottom: 7rem;
         margin-top: 40px;
-        color:  rgb(37, 0, 56);
     }
-      .btn-primary {
+    .btn-second > a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        height: 50px;        
+        text-decoration: none;
+        color:  rgb(217, 217, 217) !important;
+    }
+    .btn-second:hover {
+        background: linear-gradient(rgba(0, 0, 0,.9) 0%, rgba(37, 0, 56,.9) 44%,rgba(37, 0, 56,.9)) !important;
+        color:  rgb(217, 217, 217) !important;
+    }
+    
+
+    .btn-second:active {
+        color:rgb(37, 0, 56) !important;
+        background: linear-gradient(rgba(0, 0, 0,.7) 0%, rgba(37, 0, 56,.7) 44%,rgba(37, 0, 56,.7));
+        border: 4px solid   rgb(217, 217, 217)  !important;
+    }
+    .btn-primary {
+        margin-left: 15px;
         display: flex;
         justify-content: center;
         align-items: center;
         background: linear-gradient(#d4fcc6 0%, #79ff4a 44%, #6fff3c 100%);
-        width: 310px;
+        width: 250px;
         height: 60px;
         border: 0 solid transparent !important;
         font-weight: bold !important;
         font-size: 22px !important;        
         letter-spacing: 0.49px;
-        margin-bottom: 7rem;
-        margin-top: 30px;
+        margin-bottom: 50px;
+        margin-top: 40px;
         color:  rgb(37, 0, 56);
     }
-   
+    
     .btn-primary > a {
         display: flex;
         justify-content: center;
@@ -263,10 +286,9 @@ html, body, .estreno {
         color:  rgb(37, 0, 56) !important;
     }
     .btn-primary:active {
-        color:rgb(37, 0, 56) !important;
-        background-color:  linear-gradient(#d4fcc6 0%, #79ff4a 44%, #6fff3c 100%) !important;
-        border-color: rgb(37, 0, 56) !important;
-        border: 4px solid  rgb(37, 0, 56) !important;
+        border: 3px solid  rgb(37, 0, 56) !important;        
+        color:  rgb(217, 217, 217) !important;
+        background:  linear-gradient(#d4fcc6 0%, #79ff4a 44%, #6fff3c 100%) !important;        
     }
     .form-check {
         padding-left: 0px;
@@ -328,6 +350,7 @@ html, body, .estreno {
     }
     p.messagePass {
         color: rgb(37,0,56);
+        text-align: center;
     }
     .estreno-nighx p {
         font-size: 30px;
@@ -408,6 +431,21 @@ html, body, .estreno {
         position: absolute;
         left: 20px;
         padding-right: 30px;
+    }
+    .volver a {
+        font-weight: 600;
+        color: rgb(37, 0, 56) !important;
+        letter-spacing: -.5px;
+    }
+    .volver { 
+        flex-direction: column;    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    .fa-arrow-circle-left::before {
+        font-size: 60px;
     }
     /* FOOTER */
     .footerContainer {
@@ -511,9 +549,9 @@ html, body, .estreno {
             font-size: 25px;
             margin-bottom: 10px;
             text-align: center;
+            width: 100%;
         }
-        
-       
+
         .container_form {
             align-self: flex-start;
             width: 100%;        
