@@ -98,7 +98,7 @@ html, body, .estreno {
         margin-bottom: 20px;
     }
     .container_steps {
-        width: 620px;
+        width: 420px;
         margin-bottom: 50px;
     }
 
@@ -159,9 +159,6 @@ html, body, .estreno {
     .multi-steps > li.is-active:before {
         background-color: rgb(105, 255, 51);
         border-color: rgb(105, 255, 51);
-        color: rgb(37, 0, 56);
-        z-index: 1;
-
    }
     .multi-steps > li.is-active ~ li {
         color: rgb(112, 112, 112);
@@ -192,37 +189,41 @@ html, body, .estreno {
     }
     /* Button */
    
-  .btn-primary > a {
-    width: 250px;
-    height: 60px;
-    color:  rgb(37, 0, 56, .5) !important;
-    text-decoration: none;
-  }
-  .btn-primary > a:hover {  
-    color:  rgb(37, 0, 56) !important;
-    text-decoration: none;
-  }
     .btn-primary {
-        background: linear-gradient(rgba(212, 252, 198,.5) 0%, rgba(121, 255, 74,.5) 44%, rgba(111, 255, 60,.5) 100%);
-        width: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(rgba(212, 252, 198,.5) 0%, rgba(121, 255, 74, .5) 44%, rgba(111, 255, 60, .5) 100%);        
+        width: 310px;
         height: 60px;
         border: 0 solid transparent !important;
         font-weight: bold !important;
         font-size: 22px !important;        
         letter-spacing: 0.49px;
-        margin-bottom: 7rem;      
+        margin-bottom: 7rem;
+        margin-top: 25px;
+        color:  rgba(37, 0, 56,.5);
     }
-
+   
+    .btn-primary > a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 310px;
+        height: 50px;
+        color:  rgba(37, 0, 56, .5) !important;
+        text-decoration: none;
+    }
+    .btn-primary > a:hover {
+        color:  rgba(37, 0, 56,1) !important;
+    }  
     .btn-primary:hover {
-        background: linear-gradient(rgba(212, 252, 198,1) 0%, rgba(121, 255, 74,1) 44%, rgba(111, 255, 60,1) 100%);
+        background: linear-gradient(rgba(212, 252, 198,1) 0%, rgba(121, 255, 74, 1) 44%, rgba(111, 255, 60, 1) 100%);        
         background-color: rgb(37, 0, 56) !important;
         border: 2px solid  rgb(37, 0, 56) !important;
         color:  rgb(37, 0, 56) !important;
     }
     .btn-primary:active {
-        color:rgb(37, 0, 56) !important;
-        background-color:  linear-gradient(#d4fcc6 0%, #79ff4a 44%, #6fff3c 100%) !important;
-        border-color: rgb(37, 0, 56) !important;
         border: 4px solid  rgb(37, 0, 56) !important;
     }
     .form-check {
@@ -426,8 +427,8 @@ html, body, .estreno {
             width: 375px;
             height: 100px;
         }
-        .logoCenter {
-            width: 70px;
+        .separator {
+            width: 88%;
         }
         .title_dark {
             display: none;
@@ -460,6 +461,12 @@ html, body, .estreno {
         .container_subtitle {
             width: 375px;
         }
+        .btn-primary > a {         
+            color:  rgba(37, 0, 56) !important;          
+        }
+        .btn-primary {         
+            background: linear-gradient(#d4fcc6 0%, #79ff4a 44%, #6fff3c 100%);
+        }
         .container_form {
             width: 100%;
         }
@@ -473,31 +480,10 @@ html, body, .estreno {
             max-width: 375px;
         }
         .mb-3 {
-            max-width: 375px;
+            max-width: 350px;
         }
         footer {
             width:375px;
         }
-        /* footer .links {
-            height: 150px;
-            font-size: 10px;
-            padding: 5px 0;
-            justify-content: center !important;
-        }
-        footer .links a {
-            margin-bottom: 2px;
-        }
-        footer img {
-            transform: scale(0.4);
-        }
-        .footer-logo{
-            height: 50px;
-            margin-bottom: 30px;
-        }
-        footer .copyright {
-            height: 45px;
-            border-top: 1px solid rgb(105, 255, 51);;
-            padding: 10px 0;
-            font-size: 12px;
-        } */
+
     }
