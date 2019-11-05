@@ -3,7 +3,7 @@ font-family: 'Open Sans', sans-serif;
     height: 100%;
 }
 header {
-    height: 275px;
+    height: 100px;
     width: 100%;
 }
 .color_text_global {
@@ -42,11 +42,11 @@ img.logCenter {
     border: 2px solid transparent;
 }
 .icon-img:hover {
-    border: 2px solid #rgb(105, 255, 51);;
+    border: 2px solid rgb(105, 255, 51);;
 }
 .nav-bg {
     max-width: 1920px;
-    height: 275px;
+    height: 100px;
     padding-left: 140px;
     padding-right: 140px;
     background: linear-gradient(rgb(0, 0, 0) 0%, rgb(37, 0, 56) 50%, rgb(0,0,0) 100%);
@@ -57,6 +57,9 @@ img.logCenter {
     justify-content: center;
     align-items: baseline;
 }
+.logoCenter {
+    width: 70px;
+}
 .background_nav {
     height: 275px;
     width: 1920px;
@@ -64,6 +67,7 @@ img.logCenter {
 }
 
 .container_form {
+    margin-top: 50px;
     align-self: flex-start;
     width: 600px;
     height: 750px;
@@ -87,12 +91,19 @@ a.recoverPassword {
     color: rgb(105, 255, 51);
     margin-right: 0px;
 }
+a.recoverPassword:hover {
+    font-size: 16px !important;
+    color: rgb(105, 255, 51)!important;
+    margin-right: 0px!important;
+    text-decoration: underline !important;
+}
 .form-check {
     display: flex;
     justify-content: space-between;
     height: 25px;
 }
 button {  
+    color: #D9D9D9 !important;
     border-radius: 0px !important;
     border: 4px solid transparent !important;
     font-size: 22px !important;
@@ -104,6 +115,7 @@ button {
     padding: 0 !important;
     text-align: center !important;
 }
+
 .buttonForm {
     width: 436px;    
     margin-top: 20px;
@@ -116,13 +128,16 @@ button {
 /* Outline button */
 .outline-btn {
     background: rgb(217, 217, 217);
-    border-color: rgb(105, 255, 51) !important;
+    
 }
-.btn-primary {
-    background-color: rgba(37, 0, 56, .5);
-}
+
 .btn-primary:hover {
+    color: white !important;
     background-color: rgba(37, 0, 56, 1);
+}
+.btn-primary:active {
+    color: rgb(217, 217, 217) !important;
+    background-color: rgba(37, 0, 56, 1) !important;
 }
 .form-check {
     padding-left: 0px;
@@ -195,10 +210,69 @@ justify-content: space-around;
 }
 
 /* Buttons en gral */
+
+.btn-primary {
+    background-color: rgba(37, 0, 56, .5);
+    border-color: rgb(105, 255, 51) !important;
+    color:#D9D9D9;
+    display: flex;
+    padding: 0;
+}
+
+/* .btn-primary {
+    width: 250px;
+    height: 60px;
+    border: 0 solid transparent !important;
+    font-weight: bold !important;
+    font-size: 22px !important;        
+    letter-spacing: 0.49px;
+    margin-bottom: 7rem;
+    display: flex;
+    padding: 0;
+} */
+
+.btn-primary > a {
+    width: 100%;
+    height: 46px !important;
+    color:  rgb(217, 217, 217) !important;
+    text-decoration: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+  }
+  /* .btn-primary > a{
+    padding:10px 80px;
+    width: 250px;
+    height: 60px;
+    color:  rgb(217, 217, 217) !important;
+    text-decoration: none;
+  } */
+    
+
+    .btn-primary:focus {
+        box-shadow: 0 0 0 0 rgba(255,255,255,.0) !important;
+        outline: none;
+    }
+
+    .btn-primary:hover {
+        background-color: rgb(37, 0, 56) !important;
+        color:  rgb(37, 0, 56) !important;
+    }
+
+
+
+
+
+
+
+  .btn-primary:active {
+    border: 2px solid rgb(105, 255, 51)!important;
+  }
 .button {
     border-radius: 0px;
     font-weight: bold;
-    border: 4px solid transparent;
     font-size: 22px;
     padding-bottom: 0.8rem;
     letter-spacing: 1.5px;
@@ -211,11 +285,13 @@ justify-content: space-around;
     position: absolute;
     color: rgb(217, 217, 217);
     background: rgba(41,6,60,.5);
-    border-color: rgb(105, 255, 51);
+    border-color: 4px solid rgb(105, 255, 51);
 }
-.icon-violet-btn:hover {
+
+.icon-violet-btn:active {
     background: rgba(41,6,60,1);
-    border-color: rgb(105, 255, 51);;
+    border: 2px solid rgb(105, 255, 51);
+
 }
 .icon-violet-btn .btn-text {
     position: relative;
@@ -307,13 +383,11 @@ a {
         margin-top: 20px;
     }
    .background_nav {
-    height: 275px;
+    height: 100px;
     width: 375px;
     background-color: black;
     }
-    .logoCenter {
-        width: 70px;
-    }
+
     .nav-bg {
         padding: 0;
         height: 100px;
