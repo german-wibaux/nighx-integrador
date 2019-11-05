@@ -261,7 +261,7 @@ html, body, .estreno {
         color:rgb(37, 0, 56) !important;
         background-color:  linear-gradient(#d4fcc6 0%, #79ff4a 44%, #6fff3c 100%) !important;
         border-color: rgb(37, 0, 56) !important;
-        border: 4px solid  rgb(37, 0, 56) !important;
+        border: 3px solid  rgb(37, 0, 56) !important;
     }
     .form-check {
         padding-left: 0px;
@@ -296,6 +296,7 @@ html, body, .estreno {
     
     /*BODY*/
     .container {
+        height: 540px;
         margin: 0px;  
         margin-top: 0px; 
         width: 1920px;
@@ -307,7 +308,9 @@ html, body, .estreno {
         flex-direction: column;
         z-index: -2;
     }
-    
+    .contain_title {
+        margin-top: 100px;
+    }
     .estreno-nighx {
         position: absolute;
         width: 900px;

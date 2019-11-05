@@ -213,9 +213,7 @@ html, body, .estreno {
         text-align: center;
     }
     /* Button */
-    div.fa-arrow-circle-left {
-        width: 50px;
-    }
+
     .contain_btn {
         display: flex;
     }
