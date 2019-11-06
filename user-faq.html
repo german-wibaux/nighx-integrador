@@ -1,19 +1,23 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    
     <!-- Bootstrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/home-logueado.css">
+    <link rel="stylesheet" href="css/user-faq.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="./images/icons/N.png" sizes="32x32">
     <title>Nighx</title>
-</head>
 
+
+</head>
+</style>
+
+
+</head>
 <body>
     <!-- HEADER -->
     <header>
@@ -22,9 +26,8 @@
             <nav class="navbar navbar-expand-lg nav-bg fixed-top">
 
                 <a class="navbar-brand" href="./home-logueado.html"><img src="./images/icons/logo.svg" alt=""></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"><img src="./images/icons/hamburg.svg" alt=""></span>
                 </button>
 
@@ -81,6 +84,9 @@
                                     src="./images/icons/bell-notif-icon.svg" alt=""></a>
                             <div class="dropdown-menu notifications">
                                 <div class="notif">
+                                    <a href="#" data-toggle="modal" data-target="#viernes-modal"><img src="./images/notif/viernes-notif.png" alt=""></a>
+                                </div>
+                                <div class="notif">
                                     <a href="#"><img src="./images/notif/notif1.png" alt=""></a>
                                 </div>
                                 <div class="dropdown-divider"></div>
@@ -98,15 +104,12 @@
                             <a data-toggle="dropdown" class="nav-icon" href="#"><img class="icon-img"
                                     src="./images/icons/user-icon.svg" alt=""></a>
                             <div class="dropdown-menu dropdown-menu-right">
-                                <button class="dropdown-item d-flex justify-content-between"
-                                    type="button">Silvia<span><img src="./images/icons/user-dropdown-icon.png"
-                                            alt=""></span></button>
-                                <button class="dropdown-item d-flex justify-content-between"
-                                    type="button">Casimiro<span><img src="./images/icons/user-dropdown-icon.png"
-                                            alt=""></span></button>
-                                <button class="dropdown-item d-flex justify-content-between"
-                                    type="button">Ernesto<span><img src="./images/icons/user-dropdown-icon.png"
-                                            alt=""></span></button>
+                                <button class="dropdown-item d-flex justify-content-between" type="button">Silvia<span><img
+                                            src="./images/icons/user-dropdown-icon.png" alt=""></span></button>
+                                <button class="dropdown-item d-flex justify-content-between" type="button">Casimiro<span><img
+                                            src="./images/icons/user-dropdown-icon.png" alt=""></span></button>
+                                <button class="dropdown-item d-flex justify-content-between" type="button">Ernesto<span><img
+                                            src="./images/icons/user-dropdown-icon.png" alt=""></span></button>
                                 <button class="dropdown-item" type="button">Administrar perfiles</button>
                                 <div class="dropdown-divider"></div>
                                 <button class="dropdown-item" type="button">Cuenta</button>
@@ -120,20 +123,19 @@
 
             </nav>
         </div>
-
+        
 
         <!-- NAV MOBILE -->
         <div class="nav-mobile fixed-top">
             <nav class="navbar navbar-expand-lg fixed-top">
-
-                <a class="navbar-brand" href="./home-logueado.html"><img src="./images/icons/logo-mobile.svg"
-                        alt=""></a>
-
+        
+                <a class="navbar-brand" href="./home-logueado.html"><img src="./images/icons/logo-mobile.svg" alt=""></a>
+        
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
                     aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"><img src="./images/icons/hamburg.svg" alt=""></span>
                 </button>
-
+        
                 <div class="icons-mobile">
                     <!-- Search -->
                     <div class="btn-group">
@@ -183,20 +185,19 @@
                         <div class="dropdown-menu dropdown-user dropdown-menu-right">
                             <button class="dropdown-item d-flex justify-content-between" type="button">Silvia<span><img
                                         src="./images/icons/user-dropdown-icon.png" alt=""></span></button>
-                            <button class="dropdown-item d-flex justify-content-between"
-                                type="button">Casimiro<span><img src="./images/icons/user-dropdown-icon.png"
-                                        alt=""></span></button>
+                            <button class="dropdown-item d-flex justify-content-between" type="button">Casimiro<span><img
+                                        src="./images/icons/user-dropdown-icon.png" alt=""></span></button>
                             <button class="dropdown-item d-flex justify-content-between" type="button">Ernesto<span><img
                                         src="./images/icons/user-dropdown-icon.png" alt=""></span></button>
                             <button class="dropdown-item" type="button">Administrar perfiles</button>
                             <div class="dropdown-divider"></div>
                             <button class="dropdown-item" type="button">Cuenta</button>
-                            <button class="dropdown-item anc-unique" type="button"><a href="./user-faq.html">Centro de ayuda</a></button>
-                                <button class="dropdown-item anc-unique" type="button"> <a href="./index.html">Cerrar sesión</a> </button>
+                            <button class="dropdown-item" type="button">Centro de ayuda</button>
+                            <button class="dropdown-item" type="button">Cerrar sesión</button>
                         </div>
                     </div>
                 </div>
-
+        
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                     <!-- Links -->
                     <ul class="navbar-nav mr-auto links-mobile">
@@ -216,17 +217,156 @@
                             <a class="nav-link link" href="./404/404.html">Mi Lista</a>
                         </li>
                     </ul>
-
+                    
                 </div>
             </nav>
         </div>
 
     </header>
 
+   
 
-    <div class="series">
-        <img src="./images/Series.svg" alt="">
-    </div>
+    <div id="faq-section" class="row section-distint">
+		<!-- <div class="mask-distint" >
+
+		</div> -->
+		<div class="faq">
+			<h3>Preguntas frecuentes</h3>
+			<div class="content-faq">
+				<!-- <div class="faq1" >
+	
+				</div>
+				<div class="faq1" >
+	
+				</div>
+				<div class="faq1" >
+	
+				</div>
+				<div class="faq1" >
+	
+				</div>
+				<div class="faq1" >
+	
+				</div> -->
+				<div class="accordion" id="accordionExample">
+					<div class="card faq">
+						<div class="card-header" id="headingOne">
+							<h2 class="mb-0">
+								¿Qué es Nighx?
+
+							</h2>
+							<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+								aria-expanded="true" aria-controls="collapseOne"><img class="faqPlus"
+									src="./images/icons/plus.svg" alt=""></button>
+						</div>
+
+						<div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+							data-parent="#accordionExample">
+							<div class="card-body">
+								Nighx es un servicio de streaming que ofrece una gran variedad de programas, películas y
+								documentales premiados en casi cualquier pantalla conectada a internet.
+								<br><br>
+								Todo lo que quieras ver, sin límites ni comerciales, a un costo muy accesible. Siempre
+								hay algo nuevo por descubrir, ¡y todas las semanas se agregan más programas y películas!
+							</div>
+						</div>
+					</div>
+					<div class="card faq">
+						<div class="card-header" id="headingTwo">
+							<h2 class="mb-0">
+								¿Cuánto cuesta Nighx?
+
+							</h2>
+							<button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+								data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><img
+									class="faqPlus" src="./images/icons/plus.svg" alt=""></button>
+						</div>
+						<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+							data-parent="#accordionExample">
+							<div class="card-body">
+								Ve Nighx en tu smartphone, Tablet, Smart TV, laptop o dispositivo de streaming, todo por
+								una tarifa plana mensual muy accesible. Planes desde $89.90 al mes (sin impuestos). Sin
+								costos adicionales ni contratos.
+							</div>
+						</div>
+					</div>
+					<div class="card faq">
+						<div class="card-header" id="headingThree">
+							<h2 class="mb-0">
+								¿Dónde puedo ver Nighx?
+
+							</h2>
+							<button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+								data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><img
+									class="faqPlus" src="./images/icons/plus.svg" alt=""></button>
+						</div>
+						<div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+							data-parent="#accordionExample">
+							<div class="card-body">
+								Ve donde quieras, cuando quieras y en todos los dispositivos que quieras. Inicia sesión
+								en tu cuenta de Netflix para ver contenido al instante a través de netflix.com o en
+								cualquier dispositivo con conexión a internet que cuente con la app de Netflix, como
+								smart TV, smartphones, tablets, reproductores multimedia y consolas de juegos.
+								<br><br>
+								Además, puedes descargar tus programas favoritos con iOS, Android o la app para Windows
+								10. Con la función de descarga, puedes ver donde vayas y sin conexión a internet. Lleva
+								Netflix contigo adonde sea.
+							</div>
+						</div>
+					</div>
+
+
+
+
+
+
+					<div class="card faq">
+						<div class="card-header" id="headingThree">
+							<h2 class="mb-0">
+								¿Como cancelo mi plan?
+
+							</h2>
+							<button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+								data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree"><img
+									class="faqPlus" src="./images/icons/plus.svg" alt=""></button>
+						</div>
+						<div id="collapseFour" class="collapse" aria-labelledby="headingThree"
+							data-parent="#accordionExample">
+							<div class="card-body">
+								Netflix es flexible. Sin contratos molestos ni compromisos. Cancela la membresía online
+								con solo dos clics. No hay cargos por cancelación. Empieza y termina cuando quieras.
+								<br><br>
+							</div>
+						</div>
+					</div>
+					<div class="card faq">
+						<div class="card-header" id="headingThree">
+							<h2 class="mb-0">
+								¿Qué puedo ver en Nighx?
+
+							</h2>
+							<button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+								data-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree"><img
+									class="faqPlus" src="./images/icons/plus.svg" alt=""></button>
+						</div>
+						<div id="collapseFive" class="collapse" aria-labelledby="headingThree"
+							data-parent="#accordionExample">
+							<div id="cuando-quier" class="card-body">
+								Netflix tiene un amplio catálogo de programas, películas, documentales, animes,
+								originales premiados y más. Todo lo que quieras ver, cuando quieras.
+								<br><br>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+
+
+	</div>
+
 
 
     <!-- FOOTER -->
@@ -234,7 +374,7 @@
         <div>
             <div class="links d-flex flex-column justyify-content-around">
                 <a href="./home-logueado.html">Inicio</a>
-                <a href="./user-faq.html">Ayuda</a>
+                <a href="#">Ayuda</a>
                 <a href="./sendUp.html">Planes</a>
             </div>
             <div>
@@ -245,7 +385,7 @@
                     <img src="./images/icons/social-footer.svg" alt="">
                 </div>
             </div>
-
+    
         </div>
         <div class="copyright">
             <div>
@@ -253,13 +393,12 @@
             </div>
         </div>
     </footer>
-
+    
     <script src="./js/jquery-3.4.1.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/cards-scroll.js"></script>
     <script src="./js/proximos.js"></script>
     <!-- <script src="./js/ajax.js"></script> -->
-
+    
 </body>
-
 </html>
