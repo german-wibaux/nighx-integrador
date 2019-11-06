@@ -1526,6 +1526,12 @@ footer .copyright {
 }
 
 @media only screen and (max-width: 600px) {
+    .back-view {
+        width: 100%;        
+    }
+    .bottom-hover {
+        display: none;
+    }
     #cuando-quier {
         padding-right: 40px;
     }
