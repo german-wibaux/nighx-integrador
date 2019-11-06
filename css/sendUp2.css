@@ -216,6 +216,7 @@ html, body, .estreno {
 
     .contain_btn {
         display: flex;
+        flex-direction: row;
     }
     .btn-second {
         margin-right: 15px;
@@ -560,9 +561,14 @@ html, body, .estreno {
             width: 350px;
         }
         .container {
-            height: 880px;
+            height: 1000px;
             padding: 0;
             max-width: 375px;
+        }
+        .contain_btn {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         .input {
             margin-top: 30px;
@@ -573,8 +579,19 @@ html, body, .estreno {
         .form-group {
             margin-bottom: 1rem;
         }
+        .contain_btn {
+            display: flex;
+            flex-direction: column-reverse;
+        }
         .btn-primary {
             margin-top:30px;
+            margin-left: 0px;
+            width: 310px;
+        }
+        .btn-second {
+            margin-top:30px;
+            margin-right: 0px;
+            width: 310px;
         }
         .buttonForm {
             width: 310px;

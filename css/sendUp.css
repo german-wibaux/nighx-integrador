@@ -357,6 +357,7 @@ html, body, .estreno {
      justify-content: center; 
    }
     .card {
+        cursor: pointer;
         margin-left: 20px;
         margin-right: 20px;
         background: linear-gradient(rgba(255,255,255,0)0%,rgb(255,255,255)75%, rgb(217,217,217) 100%);
@@ -501,7 +502,9 @@ html, body, .estreno {
         .btn-primary > a {         
             color:  rgba(37, 0, 56) !important;          
         }
-        .btn-primary {         
+        .btn-primary {
+            margin-left: 0px;;
+            width: 310px;         
             background: linear-gradient(#d4fcc6 0%, #79ff4a 44%, #6fff3c 100%);
         }
         .container_form {

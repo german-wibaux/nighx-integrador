@@ -12,6 +12,7 @@ html, body, .estreno {
     /*NAV*/
     .logoCenter {
         width: 70px;
+        margin-top:0px;
     }
     .navbar-brand {
         margin: 0;
@@ -94,6 +95,7 @@ html, body, .estreno {
         justify-content: center;
         align-items: center;
         width: 310px;
+        margin: 0 auto;
     }
     .form-control {
         display: block;
@@ -493,6 +495,10 @@ html, body, .estreno {
     }
     /* FOOTER Mobile */
     @media (max-width: 375px) {
+        .tarjetas {
+            margin-bottom: 70px;
+            max-width: 310px;      
+        }
         .h1, h1 {
             font-size: 2rem;
             margin:0;
@@ -544,6 +550,7 @@ html, body, .estreno {
             font-size: 25px;
             margin-bottom: 10px;
             text-align: center;
+            width: 100%;
         }
         
        
@@ -557,9 +564,25 @@ html, body, .estreno {
             width: 350px;
         }
         .container {
-            height: 880px;
+            height: 1800px;
             padding: 0;
             max-width: 375px;
+        }
+        .contain_btn {
+            display: flex;
+            flex-direction: column-reverse;
+            position: relative;
+            margin-top: 10rem;
+        }
+        .btn-primary {
+            margin-top:30px;
+            margin-left: 0px;
+            width: 310px;
+        }
+        .btn-second {
+            margin-top:30px;
+            margin-right: 0px;
+            width: 310px;
         }
         .input {
             margin-top: 30px;
