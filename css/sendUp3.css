@@ -79,6 +79,16 @@ html, body, .estreno {
         margin-bottom: 0px;
 
     }
+    img {
+        margin: 35px 0px 0px 0px;
+    }
+    p.messagePay {
+        color: rgb(37, 0, 56);
+        margin-top: 10px;
+        margin-bottom: 0px;
+        text-align: center;
+        font-weight: 700;
+    }
     form {
         display: block;
         justify-content: center;
@@ -100,6 +110,14 @@ html, body, .estreno {
      .multi-steps > li:after {
         height: 7px;
     }
+    li#Paso3 {
+        color: rgb(37, 0, 56) !important;
+    }
+    #Paso3::before {
+        color: rgb(37, 0, 56);
+        border-color: rgb(105,255,51);
+        background-color: rgba(105,255,51) !important;
+    }
     li#Paso2 {
         color: rgb(37, 0, 56) !important;
     }
@@ -120,7 +138,7 @@ html, body, .estreno {
         font-weight: 700;
    }
     .multi-steps > li.is-active:after, .multi-steps > li.is-active ~ li:after {
-        background-color: rgb(217, 217, 217);
+        background-color: rgba(105,255,51) !important;
    }
     .multi-steps {
         display: table;
@@ -192,9 +210,11 @@ html, body, .estreno {
         font-weight: 600;
     }
     .subtitle {
+        width: 666px;
         color: rgb(37, 0, 56);
         visibility: visible; 
-        display: inline-block;       
+        display: inline-block; 
+        margin-top: 50px;      
         margin-bottom: 10px;
         text-align: center;    
     }
@@ -213,7 +233,7 @@ html, body, .estreno {
         text-align: center;
     }
     /* Button */
-
+    
     .contain_btn {
         display: flex;
     }
@@ -304,7 +324,6 @@ html, body, .estreno {
     justify-content: space-around;
     }
     .input {
-        width: 100%;
         margin-bottom: 10px;
         margin-top: 40px;
         border-radius: 0px;
@@ -348,7 +367,6 @@ html, body, .estreno {
     }
     p.messagePass {
         color: rgb(37,0,56);
-        text-align: center;
     }
     .estreno-nighx p {
         font-size: 30px;
@@ -385,25 +403,19 @@ html, body, .estreno {
      margin-bottom: 20px;   
    }
     .card {
+        text-align: center;
+        width: 310px;
         margin-left: 20px;
         margin-right: 20px;
-        background: linear-gradient(rgba(255,255,255,0)0%,rgb(255,255,255)75%, rgb(217,217,217) 100%);
+        background: linear-gradient(rgb(255,255,255)0%,rgb(255,255,255)85%, rgb(105,255,51.6) 100%);
         color: rgb(37,0,56);
+        font-weight: 600 !important;
 
     }
-    .card:hover > .card-header > h3 {
+    .card > .card-header > h3 {
         color: rgb(105,255,51);
     }
-    .card:hover {
-        background: white;
-        font-weight: 600 !important;
-    }
-    .card:active {
-        background: linear-gradient(rgb(255,255,255)0%,rgb(255,255,255)85%, rgb(105,255,51.6) 100%);
-    }
-    .card-derck {
-        height: 300px;
-    }
+  
     .card-body {
         height: 250px;
         display: flex;
@@ -429,21 +441,6 @@ html, body, .estreno {
         position: absolute;
         left: 20px;
         padding-right: 30px;
-    }
-    .volver a {
-        font-weight: 600;
-        color: rgb(37, 0, 56) !important;
-        letter-spacing: -.5px;
-    }
-    .volver { 
-        flex-direction: column;    
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 50px;
-    }
-    .fa-arrow-circle-left::before {
-        font-size: 60px;
     }
     /* FOOTER */
     .footerContainer {
@@ -547,9 +544,9 @@ html, body, .estreno {
             font-size: 25px;
             margin-bottom: 10px;
             text-align: center;
-            width: 100%;
         }
-
+        
+       
         .container_form {
             align-self: flex-start;
             width: 100%;        

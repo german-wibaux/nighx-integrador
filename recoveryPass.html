@@ -7,7 +7,7 @@
     
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/recoveryPass.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="images/icons/N.png" sizes="32x32">    
     <title>Nighx</title>
@@ -16,31 +16,25 @@
     <header>
         <nav class="navbar navbar-expand-lg nav-bg">  
             <div class="nav__elements">
-                <a class="navbar-brand" href="./index.html"><img class="logoCenter" src="./images/icons/logoN.png" alt=""></a>
+                <a class="navbar-brand" href="index.html"><img class="logoCenter" src="./images/icons/logoN.png" alt=""></a>
             </div>      
         </nav>
     </header>   
    <div class="container">
         <div class="container_form">
-            <h1 class="color_text_global">Inicio de sesión</h1>
+            <h1 class="color_text_global">Recuperar contraseña</h1>
             <form>
                 <div class="form-group">
                     <input type="email" class="form-control input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su email">
-                    <div class="containerItemForm">
-                       
-                    </div>
                 </div>
                 <div class="form-group">
-                    <input type="password" class="form-control input" id="exampleInputPassword1" placeholder="Ingrese su contraseña">
+                    <input type="password" class="form-control input" id="exampleInputPassword1" placeholder="Ingrese su nueva contraseña">
+                    <p class="messagePass">Su conraseña debe contener al menos 8 caracteres</p>
                 </div>
-                <div class="form-group form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label color_text_global" for="exampleCheck1">Recordarme</label>                 
-                    <a class="recoverPassword" href="recoveryPass.html">Olvidé mi contraseña</a>
+                <div class="form-group">
+                    <input type="password" class="form-control input" id="exampleInputPassword1" placeholder="Repita su nueva contraseña">
                 </div>
-                <button class="buttonForm btn-primary outline-btn" > <a href="./home-logueado.html">Iniciar sesión</a> </button>
-                <p class="color_text_global newAcount">¿Eres nuevo en Nighx?</p>
-                <button class="buttonForm btn-primary outline-btn" > <a id="iniciar_sesion" href="./sendUp.html">Crear cuenta en Nighx</a></button>
+                <button class="buttonForm btn btn-primary outline-btn" > <a id="iniciar_sesion" href="recoveryPass2.html">Confirmar</a> </button>
                 <div class="form-group form-check">                 
                     <a class="PregFrec recoverPassword" href="">¿Necesitas ayuda?</a>
                 </div>
@@ -50,9 +44,9 @@
     <footer>
         <div>
             <div class="links d-flex flex-column justyify-content-around">
-                <a href="./index.html#home_inicio">Inicio</a>
-                <a href="./index.html#faq-section">Ayuda</a>
-                <a href="./sendUp.html">Planes</a>
+                <a href="#">Inicio</a>
+                <a href="#">Ayuda</a>
+                <a href="#">Planes</a>
             </div>
             <div>
                 <div class="footer-logo">
